@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Visualisation</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+</head>
+
+<body>
+    <script>
+        function clicked() {
+            var username = document.getElementById("username").value;
+            var numUsers = document.getElementById("numUsers").value;
+            if (username.length > 3 && numUsers > 1) {
+                getJSON(username, numUsers);
+
+
+            } else {
+                alert("Invalid input!");
+            }
+
+
+        }
+
+        function getJSON(startUser, numUsers) {
+            var startObj = {
+                name: startUser,
+                artists: getUsersTopArtists(startUser)
+            };
+
+            var users = [];
+
+            users.push(startObj);
+            var allGood = true;
+
+            f(0, 500);
+
+            function f(count, timer) {
+                getFriendsOfUser(users[count].name);
+
+                setTimeout(function () {
+                    var str = JSON.stringify(users, null, 2);
+                    // 
+                    console.log(users.length);
+
+                    if (allGood) {
+                        f(count + 1, timer+100);
+                        document.getElementById("textarea").value = str;
+                    }
+                }, timer);
+            }
+
+
+            function userExists(username) {
+                for (var i = 0; i < users.length; i++) {
+                    if (users[i].name == username) {
+                        return true;
+                    }
+                }
+                return false;
+            }
+
+            function getUsersTopArtists(user) {
+                var array = [];
+
+                $.ajax({
+                    type: 'POST',
+                    url: 'http://ws.audioscrobbler.com/2.0/',
+                    data: 'method=user.gettopartists&' +
+                        'user=' + user + '&' +
+                        'period=overall&' +
+                        'api_key=57ee3318536b23ee81d6b27e36997cde&' +
+                        'format=json',
+                    dataType: 'jsonp',
+                    success: function (data) {
+                        $.each(data.topartists.artist, function (index, element) {
+                            var obj = {
+                                name: element.name,
+                                playcount: element.playcount
+                            };
+                            array.push(obj);
+                        });
+                    },
+                    error: function (code, message) {
+                        console.log(code + message);
+                    }
+                });
+                return array;
+            }
+
+            function getFriendsOfUser(user) {
+                $.ajax({
+                    type: 'POST',
+                    url: 'http://ws.audioscrobbler.com/2.0/',
+                    data: 'method=user.getfriends&' +
+                        'user=' + user + '&' +
+                        'api_key=57ee3318536b23ee81d6b27e36997cde&' +
+                        'format=json',
+                    dataType: 'jsonp',
+                    success: function (data) {
+                        $.each(data.friends.user, function (index, element) {
+                            if (!userExists(element.name)) {
+                                var obj = {
+                                    name: element.name,
+                                    artists: getUsersTopArtists(element.name)
+                                };
+
+                                if (users.length < numUsers) {
+                                    users.push(obj);
+                                } else {
+                                    allGood = false;
+                                }
+
+                            }
+                        });
+                    },
+                    error: function (code, message) {
+                        console.log(code + message);
+                    }
+                });
+            }
+
+
+        }
+
+
+        //551c5aef1c1959bd79cdb1aa301d60f0
+    </script>
+
+    Username: <input id="username" type="text"><br>
+    Num users: <input id="numUsers" type="text"><br>
+    <button onclick="clicked()">Get JSON</button><br>
+    <textarea id="textarea" rows="50" cols="70">
+
+    </textarea>
+</body>
+
+</html>

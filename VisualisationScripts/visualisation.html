@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Visualisation</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+
+    <style>
+        svg {
+            border-style: solid;
+            border-width: 3px;
+        }
+
+        circle {
+            fill: #5481c9;
+            opacity: 50%;
+        }
+
+        div.tooltip {
+            position: absolute;
+            text-align: center;
+            width: 120px;
+            height: 16px;
+            padding: 2px;
+            font: 12px sans-serif;
+            background: lightsteelblue;
+            border: 0px;
+            border-radius: 8px;
+            pointer-events: none;
+        }
+
+        body {
+            font-family: "Arial", sans-serif;
+        }
+        
+        .bar {
+            fill: #5481c9;
+        }
+        
+        .axis {
+            font-size: 13px;
+        }
+        
+        .axis path,
+        .axis line {
+            fill: none;
+            display: none;
+        }
+        
+        .label {
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        var width = 1000;
+        var height = 1000;
+
+        // Define the div for the tooltip
+        var div = d3.select("body").append("div")
+            .attr("class", "tooltip")
+            .style("opacity", 0);
+
+        var svg = d3.select("body").append("svg")
+            .attr("width", width)
+            .attr("height", height)
+            .attr("id", "svg");
+
+        var xScale = d3.scale.linear().range([0, width - 60]);
+        var yScale = d3.scale.linear().range([height - 60, 0]);
+
+        function render(data) {
+            xScale.domain(d3.extent(data, function (d) { return d.x; }));
+            yScale.domain(d3.extent(data, function (d) { return d.y; }));
+
+            var circles = svg.selectAll("circle")
+                .data(data);
+            circles.enter().append("circle");
+            circles
+                .attr("cx", function (d) { return xScale(d.x) + 30; })
+                .attr("cy", function (d) { return yScale(d.y) + 30; })
+                .attr("r", 5)
+                .attr("id", function (d) { return d.name })
+                .on("mouseover", function (d) {
+                    div.transition()
+                        .duration(200)
+                        .style("opacity", .9);
+                    div.html(d.name)
+                        .style("left", (d3.event.pageX) + "px")
+                        .style("top", (d3.event.pageY - 28) + "px");
+                })
+                .on("mouseout", function (d) {
+                    div.transition()
+                        .duration(500)
+                        .style("opacity", 0);
+                });
+            circles.on("click", function (d) {
+                var nextColor = this.style.fill == "red" ? "#5481c9" : "red";
+                d3.select(this).style("fill", nextColor);
+                generateBarChart(d.name);
+            });
+            circles.exit().remove();
+        }
+
+        function type(d) {
+            d.x = +d.x;
+            d.y = +d.y;
+            return d;
+        }
+
+        d3.csv("VisualAnalyticsProject/BinaryData.csv", type, render);
+
+        function getTopTagsForUser(user) {
+
+        }
+
+
+
+        function clicked() {
+            var username = $("#username").val();
+            document.getElementById(username).style.fill = "red";
+            generateBarChart(username);
+        }
+
+        function openInNewTab(name) {
+            var url = "https://www.last.fm/user/" + name + "/library/artists";
+            var win = window.open(url, '_blank');
+            win.focus();
+        }
+
+        function generateBarChart(user) {
+            // var barchart = document.getElementById("barchart");
+            // barchart.parentNode.removeChild(barchart);
+
+            var artists = getTopArtists(user);
+            alert("yoop yoodel my noodle hang on");
+
+            setTimeout(function () {
+                console.log(artists);
+                //sort bars based on value
+                artists = artists.sort(function (a, b) {
+                    return d3.ascending(a.playcount, b.playcount);
+                })
+
+                var url = "https://www.last.fm/user/" + user + "/library/artists";
+                document.getElementById('charts').innerHTML = "<h2><a href=" + url + ">" + user + "</a></h2>"
+
+
+
+                //set up svg using margin conventions - we'll need plenty of room on the left for labels
+                var margin = {
+                    top: 15,
+                    right: 25,
+                    bottom: 15,
+                    left: 250
+                };
+
+                var width2 = 1000 - margin.left - margin.right,
+                    height2 = 1000 - margin.top - margin.bottom;
+
+                var svg = d3.select("#charts").append("svg")
+                    .attr("width", width2 + margin.left + margin.right)
+                    .attr("height", height2 + margin.top + margin.bottom)
+                    .append("g")
+                    .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+                    .attr("id", "barchart");
+
+                var x = d3.scale.linear()
+                    .range([0, width2])
+                    .domain([0, d3.max(artists, function (d) {
+                        return d.playcount;
+                    })]);
+
+                var y = d3.scale.ordinal()
+                    .rangeRoundBands([height2, 0], .1)
+                    .domain(artists.map(function (d) {
+                        return d.name;
+                    }));
+
+                //make y axis to show bar names
+                var yAxis = d3.svg.axis()
+                    .scale(y)
+                    //no tick marks
+                    .tickSize(0)
+                    .orient("left");
+
+                var gy = svg.append("g")
+                    .attr("class", "y axis")
+                    .call(yAxis)
+
+                var bars = svg.selectAll(".bar")
+                    .data(artists)
+                    .enter()
+                    .append("g")
+
+                //append rects
+                bars.append("rect")
+                    .attr("class", "bar")
+                    .attr("y", function (d) {
+                        return y(d.name);
+                    })
+                    .attr("height", y.rangeBand())
+                    .attr("x", 0)
+                    .attr("width", function (d) {
+                        return x(d.playcount);
+                    })
+                    .on("mouseover", function (d) {
+                        div.transition()
+                            .duration(200)
+                            .style("opacity", .9);
+                        div.html(d.playcount)
+                            .style("left", (d3.event.pageX) + "px")
+                            .style("top", (d3.event.pageY - 28) + "px");
+                    })
+                    .on("mouseout", function (d) {
+                        div.transition()
+                            .duration(500)
+                            .style("opacity", 0);
+                    });
+
+                //add a value label to the right of each bar
+                bars.append("text")
+                    .attr("class", "label")
+                    //y position of the label is halfway down the bar
+                    .attr("y", function (d) {
+                        return y(d.name) + y.rangeBand() / 2 + 4;
+                    })
+                    //x position is 3 pixels to the right of the bar
+                    .attr("x", function (d) {
+                        return x(d.playcount) + 3;
+                    })
+                    .text(function (d) {
+                        return d.playcount;
+                    });
+            }, 1000);
+        }
+
+        function getTopArtists(user) {
+            var artists = [];
+
+            $.ajax({
+                type: 'POST',
+                url: 'http://ws.audioscrobbler.com/2.0/',
+                data: 'method=user.gettopartists&' +
+                    'user=' + user + '&' +
+                    'period=overall&' +
+                    'api_key=57ee3318536b23ee81d6b27e36997cde&' +
+                    'format=json',
+                dataType: 'jsonp',
+                success: function (data) {
+                    $.each(data.topartists.artist, function (index, element) {
+                        artists.push({ name: element.name, playcount: element.playcount });
+                    });
+                },
+                error: function (code, message) {
+                    console.log(code + message);
+                }
+            });
+            return artists;
+        }
+
+
+    </script>
+
+    <br>
+
+    Username: <input id="username" type="text">
+    <button onclick="clicked()">Highlight User</button><br>
+
+    <hr>
+
+    <div id="charts">
+
+    </div>
+</body>
+
+</html>
