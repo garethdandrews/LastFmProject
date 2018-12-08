@@ -24,6 +24,51 @@
 
         }
 
+        function tagsButtonClicked() {
+            var map = new Map();
+
+            var txtArea = document.getElementById("textarea").value;
+
+            var users = JSON.parse(txtArea);
+            console.log(users);
+            var timer = 500;
+            $.each(users, function (i, user) {
+                
+                $.each(user.artists, function (j, artist) {
+                    
+                        getArtistTopTags(artist.name);
+                    
+                    
+
+                });
+            });
+
+            function getArtistTopTags(artist) {
+            $.ajax({
+                type: 'POST',
+                url: 'http://ws.audioscrobbler.com/2.0/',
+                data: 'method=artist.gettoptags&' +
+                    'artist=' + artist + '&' +
+                    'api_key=57ee3318536b23ee81d6b27e36997cde&' +
+                    'format=json',
+                dataType: 'jsonp',
+                success: function (data) {
+                    var topTag = data.toptags[0].name.replace("-", "");
+                    
+                    // if (!map.has(artist)) {
+                    //     map.set(artist, data.toptags[0].name)
+                    // }
+                    console.log(artist + ": " +data.toptags.tag[0].name);
+                },
+                error: function (code, message) {
+                    console.log(code + message);
+                }
+            });
+        }
+        }
+
+        
+
         function getJSON(startUser, numUsers) {
             var startObj = {
                 name: startUser,
@@ -46,7 +91,7 @@
                     console.log(users.length);
 
                     if (allGood) {
-                        f(count + 1, timer+100);
+                        f(count + 1, timer + 100);
                         document.getElementById("textarea").value = str;
                     }
                 }, timer);
@@ -61,6 +106,8 @@
                 }
                 return false;
             }
+
+
 
             function getUsersTopArtists(user) {
                 var array = [];
@@ -131,8 +178,8 @@
 
     Username: <input id="username" type="text"><br>
     Num users: <input id="numUsers" type="text"><br>
-    <button onclick="clicked()">Get JSON</button><br>
-    <textarea id="textarea" rows="50" cols="70">
+    <button onclick="clicked()">Get JSON</button><button onclick="tagsButtonClicked()">Add Top User Tags</button><br>
+    <textarea id="textarea" rows="50" cols="70" readonly>
 
     </textarea>
 </body>
