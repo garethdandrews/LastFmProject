@@ -112,7 +112,7 @@
             return d;
         }
 
-        d3.csv("VisualAnalyticsProject/BinaryData.csv", type, render);
+        d3.csv("VisualAnalyticsProject/CosineMDSPoints1000.csv", type, render);
 
         function getTopTagsForUser(user) {
 
@@ -271,7 +271,9 @@
     Username: <input id="username" type="text">
     <button onclick="clicked()">Highlight User</button><br>
 
-    <hr>
+    <br>
+
+    <button onclick="showTagClusters()">Highlight User</button><br>
 
     <div id="charts">
 

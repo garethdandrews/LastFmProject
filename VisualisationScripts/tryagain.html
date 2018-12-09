@@ -25,49 +25,70 @@
         }
 
         function tagsButtonClicked() {
-            var map = new Map();
+
 
             var txtArea = document.getElementById("textarea").value;
 
             var users = JSON.parse(txtArea);
             console.log(users);
             var timer = 500;
+
             $.each(users, function (i, user) {
-                
+                var obj = {};
                 $.each(user.artists, function (j, artist) {
-                    
-                        getArtistTopTags(artist.name);
-                    
-                    
-
+                    getArtistTopTags(obj, artist.name);
                 });
-            });
 
-            function getArtistTopTags(artist) {
-            $.ajax({
-                type: 'POST',
-                url: 'http://ws.audioscrobbler.com/2.0/',
-                data: 'method=artist.gettoptags&' +
-                    'artist=' + artist + '&' +
-                    'api_key=57ee3318536b23ee81d6b27e36997cde&' +
-                    'format=json',
-                dataType: 'jsonp',
-                success: function (data) {
-                    var topTag = data.toptags[0].name.replace("-", "");
+                setTimeout(function () {
+                    var max = {name: "", val: 0};
+                    //var d = Object.keys(obj).reduce(function (a, b) { return obj[a] > obj[b] ? a : b });
+                    Object.keys(obj).forEach(function(key) {
+                        if (obj[key] > max.val) {
+                            max.name = key;
+                            max.val = obj[key];
+                        }
+                    });
                     
-                    // if (!map.has(artist)) {
-                    //     map.set(artist, data.toptags[0].name)
-                    // }
-                    console.log(artist + ": " +data.toptags.tag[0].name);
-                },
-                error: function (code, message) {
-                    console.log(code + message);
-                }
+                    // users[user].topGenre = max.name;
+                    // var str = JSON.stringify(users, null, 2);
+                    // document.getElementById("textarea").value = str;
+                    
+                }, 500);
+
+                // setTimeout(function() {
+                //     console.log(obj);
+                // }, 500);
             });
-        }
+
+            function getArtistTopTags(obj, artist) {
+
+                $.ajax({
+                    type: 'POST',
+                    url: 'http://ws.audioscrobbler.com/2.0/',
+                    data: 'method=artist.gettoptags&' +
+                        'artist=' + artist + '&' +
+                        'api_key=57ee3318536b23ee81d6b27e36997cde&' +
+                        'format=json',
+                    dataType: 'jsonp',
+                    success: function (data) {
+                        console.log(data);
+                        var topTag = data.toptags.tag[0].name;
+
+                        if (obj[topTag] != null) {
+                            obj[topTag]++;
+                        } else {
+                            obj[topTag] = 0;
+                        }
+                        obj[topTag];
+                    },
+                    error: function (code, message) {
+                        console.log(code + message);
+                    }
+                });
+            }
         }
 
-        
+
 
         function getJSON(startUser, numUsers) {
             var startObj = {
