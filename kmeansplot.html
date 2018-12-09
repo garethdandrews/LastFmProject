@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Visualisation</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+
+    <style>
+        svg {
+            border-style: solid;
+            border-width: 3px;
+        }
+
+        circle {
+            fill: #5481c9;
+            opacity: 50%;
+        }
+
+        div.tooltip {
+            position: absolute;
+            text-align: center;
+            width: 150px;
+            height: 30px;
+            padding: 2px;
+            font: 12px sans-serif;
+            background: lightsteelblue;
+            border: 0px;
+            border-radius: 8px;
+            pointer-events: none;
+        }
+
+        body {
+            font-family: "Arial", sans-serif;
+        }
+        
+        .bar {
+            fill: #5481c9;
+        }
+        
+        .axis {
+            font-size: 13px;
+        }
+        
+        .axis path,
+        .axis line {
+            fill: none;
+            display: none;
+        }
+        
+        .label {
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+
+        var width = 1000;
+        var height = 1000;
+
+        // Define the div for the tooltip
+        var div = d3.select("body").append("div")
+            .attr("class", "tooltip")
+            .style("opacity", 0);
+
+        var svg = d3.select("body").append("svg")
+            .attr("width", width)
+            .attr("height", height)
+            .attr("id", "svg");
+
+        var xScale = d3.scale.linear().range([0, width - 60]);
+        var yScale = d3.scale.linear().range([height - 60, 0]);
+
+        function kmeans(data) {
+            console.log(data);
+            
+            var stoppingCriteria = false;
+            
+
+            while (!stoppingCriteria) {
+
+            }
+
+        }
+
+        function type(d) {
+            d.x = +d.x;
+            d.y = +d.y;
+            return d;
+        }
+
+        d3.csv("VisualAnalyticsProject/CosineMDSPointsTopTags1000.csv", type, kmeans);
+
+    </script>
+
+    <div id="charts">
+
+    </div>
+</body>
+
+</html>
