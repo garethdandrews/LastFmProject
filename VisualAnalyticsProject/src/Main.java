@@ -19,10 +19,12 @@ class User {
     static ArrayList<User> users = new ArrayList<>();
 
     String name;
+    String topTag;
     ArrayList artists;
 
-    User(String n) {
-        this.name = n;
+    User(String name, String topTag) {
+        this.name = name;
+        this.topTag = topTag;
         artists = new ArrayList();
     }
 
@@ -36,9 +38,9 @@ class Artist {
     String name;
     int playcount;
 
-    Artist(String n, int p) {
-        this.name = n;
-        this.playcount = p;
+    Artist(String name, int playCount) {
+        this.name = name;
+        this.playcount = playCount;
     }
 }
 
@@ -61,7 +63,7 @@ public class Main {
 
     public static void main(String[] args) throws JSONException, IOException, ParseException {
 
-        loadJSON("jsonArrayInput1000.json");
+        loadJSON("jsonArrayInputTopTag1000.json");
         double[][] dissimilarities = getDissimilarityMatrix();
         double[][] output = MDSJ.classicalScaling(dissimilarities);
         writeToCSV(output);
@@ -102,14 +104,14 @@ public class Main {
      */
     static void writeToCSV(double[][] output) throws IOException {
         StringBuilder b = new StringBuilder();
-        b.append("x,y,name");
+        b.append("x,y,name,topGenre");
         b.append("\n");
 
         for (int i = 0; i < output[0].length; i++) {
-            b.append(output[0][i] + "," + output[1][i] + "," + User.users.get(i).name);
+            b.append(output[0][i] + "," + output[1][i] + "," + User.users.get(i).name + "," + User.users.get(i).topTag);
             b.append("\n");
         }
-        BufferedWriter w = new BufferedWriter(new FileWriter("CosineMDSPoints.csv"));
+        BufferedWriter w = new BufferedWriter(new FileWriter("CosineMDSPointsTopTags1000.csv"));
         w.write(b.toString());
         w.close();
     }
@@ -157,7 +159,7 @@ public class Main {
 
             // Only allow users with a minimum number of artists for comparison
             if (jArtists.size() == NUM_ARTISTS) {
-                User user = new User((String) jUser.get("name"));
+                User user = new User((String) jUser.get("name"), (String) jUser.get("topGenre"));
                 User.users.add(i, user);
                 int j = 0;
                 for (Object a : jArtists) {

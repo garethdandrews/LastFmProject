@@ -85,6 +85,26 @@
                 .attr("cy", function (d) { return yScale(d.y) + 30; })
                 .attr("r", 5)
                 .attr("id", function (d) { return d.name })
+                .style("fill", function (d) {
+                    var t = d.topGenre;
+                    if (t === "classic rock" || t === "rock" || t === "Progressive rock") {
+                        return "red";
+                    } else if (t === "pop" || t === "indie") {
+                        return "green";
+                    } else if (t === "metalcore" || t === "Progressive metal") {
+                        return "black";
+                    } else if (t === "electronic" || t === "Drum and bass" || t === "House" || t === "dubstep" || t === "synthwave") {
+                        return "orange";
+                    } else if (t === "Hip-Hop") {
+                        return "blue";
+                    } else if (t === "folk" || t === "country") {
+                        return "brown";
+                    } else if (t === "reggae" || t === "ska") {
+                        return "purple";
+                    } else {
+                        return "pink";
+                    }
+                })
                 .on("mouseover", function (d) {
                     div.transition()
                         .duration(200)
@@ -112,13 +132,7 @@
             return d;
         }
 
-        d3.csv("VisualAnalyticsProject/CosineMDSPoints1000.csv", type, render);
-
-        function getTopTagsForUser(user) {
-
-        }
-
-
+        d3.csv("VisualAnalyticsProject/CosineMDSPointsTopTags1000.csv", type, render);
 
         function clicked() {
             var username = $("#username").val();

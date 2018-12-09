@@ -30,18 +30,19 @@
             var txtArea = document.getElementById("textarea").value;
 
             var users = JSON.parse(txtArea);
-            console.log(users);
+            console.log(users[0]);
             var timer = 10000;
 
             var map = new Map();
 
             $.each(users, function (i, user) {
-                var obj = {test: 0};
-                $.each(user.artists, function (j, artist) {
-                    getArtistTopTags(obj, artist.name);
-                });
+                if (user.topGenre === "test") {
+                    var obj = { undefined: 0 };
+                    $.each(user.artists, function (j, artist) {
+                        getArtistTopTags(obj, artist.name);
+                    });
 
-                // var max = {val: 0};
+                    // var max = {val: 0};
                     // Object.keys(obj).forEach(function(key) {
                     //     if (obj[key] > max.val) {
                     //         max.name = key;
@@ -49,64 +50,73 @@
                     //     }
                     // });
 
-                setTimeout(function () {
-                    var res = Object.keys(obj).reduce((a, b) => obj[a] > obj[b] ? a : b);
-                    console.log(i + ": " + res);
-                    
-                    user.topGenre = res;
-                    var str = JSON.stringify(users, null, 2);
-                    document.getElementById("textarea").value = str;
-                    
-                }, timer);
+                    setTimeout(function () {
+                        var res = Object.keys(obj).reduce((a, b) => obj[a] > obj[b] ? a : b);
+                        //console.log(i + ": " + res);
 
-                timer += 2000;
+                        user.topGenre = res;
+                        // var str = JSON.stringify(users, null, 2);
+                        console.log(i + ": " + res);
+                        //document.getElementById("textarea").value = str;
 
-                // setTimeout(function() {
-                //     console.log(obj);
-                // }, 500);
+                    }, timer);
+
+                    timer += 2000;
+
+                    // setTimeout(function() {
+                    //     console.log(obj);
+                    // }, 500);
+                }
+
+
             });
+
+            setTimeout(function () {
+                var str = JSON.stringify(users, null, 2);
+                document.getElementById("textarea").value = str;
+            }, timer+10000)
 
             function getArtistTopTags(obj, artist) {
                 if (map.has(artist)) {
                     incrementGenreCount(obj, map.get(artist));
                 } else {
                     $.ajax({
-                    type: 'POST',
-                    url: 'http://ws.audioscrobbler.com/2.0/',
-                    data: 'method=artist.gettoptags&' +
-                        'artist=' + artist + '&' +
-                        'api_key=57ee3318536b23ee81d6b27e36997cde&' +
-                        'format=json',
-                    dataType: 'jsonp',
-                    success: function (data) {
-                        var topTag = data.toptags.tag[0].name;
-                        map.set(artist, topTag);
+                        type: 'POST',
+                        url: 'http://ws.audioscrobbler.com/2.0/',
+                        data: 'method=artist.gettoptags&' +
+                            'artist=' + artist + '&' +
+                            'api_key=57ee3318536b23ee81d6b27e36997cde&' +
+                            'format=json',
+                        dataType: 'jsonp',
+                        success: function (data) {
+                            var topTag = data.toptags.tag[0].name;
+                            map.set(artist, topTag);
 
-                        incrementGenreCount(obj, topTag);
+                            incrementGenreCount(obj, topTag);
 
-                        // if (obj[topTag] != null) {
-                        //     obj[topTag]++;
-                        // } else {
-                        //     obj[topTag] = 0;
-                        // }
-                        // obj[topTag];
-                    },
-                    error: function (code, message) {
-                        console.log(code + message);
-                    }
-                });
+                            // if (obj[topTag] != null) {
+                            //     obj[topTag]++;
+                            // } else {
+                            //     obj[topTag] = 0;
+                            // }
+                            // obj[topTag];
+                        },
+                        error: function (code, message) {
+                            console.log(code + message);
+                        }
+                    });
                 }
 
                 function incrementGenreCount(obj, topTag) {
                     if (obj[topTag] != null) {
-                            obj[topTag]++;
-                        } else {
-                            obj[topTag] = 0;
-                        }
+                        obj[topTag]++;
+                    } else {
+                        obj[topTag] = 0;
+                    }
                 }
             }
 
-            
+
         }
 
 
@@ -221,7 +231,7 @@
     Username: <input id="username" type="text"><br>
     Num users: <input id="numUsers" type="text"><br>
     <button onclick="clicked()">Get JSON</button><button onclick="tagsButtonClicked()">Add Top User Tags</button><br>
-    <textarea id="textarea" rows="50" cols="70" readonly>
+    <textarea id="textarea" rows="50" cols="70">
 
     </textarea>
 </body>
