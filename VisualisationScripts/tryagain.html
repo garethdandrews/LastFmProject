@@ -51,7 +51,7 @@
 
                 setTimeout(function () {
                     var res = Object.keys(obj).reduce((a, b) => obj[a] > obj[b] ? a : b);
-                    //console.log(res);
+                    console.log(i + ": " + res);
                     
                     user.topGenre = res;
                     var str = JSON.stringify(users, null, 2);
@@ -59,7 +59,7 @@
                     
                 }, timer);
 
-                timer += 500;
+                timer += 2000;
 
                 // setTimeout(function() {
                 //     console.log(obj);
@@ -67,12 +67,10 @@
             });
 
             function getArtistTopTags(obj, artist) {
-                // if (map.has(artist)) {
-                //     map.get(artist);
-                // }
-                
-
-                $.ajax({
+                if (map.has(artist)) {
+                    incrementGenreCount(obj, map.get(artist));
+                } else {
+                    $.ajax({
                     type: 'POST',
                     url: 'http://ws.audioscrobbler.com/2.0/',
                     data: 'method=artist.gettoptags&' +
@@ -81,22 +79,30 @@
                         'format=json',
                     dataType: 'jsonp',
                     success: function (data) {
-                        // console.log(data);
                         var topTag = data.toptags.tag[0].name;
+                        map.set(artist, topTag);
 
-                        if (obj[topTag] != null) {
-                            obj[topTag]++;
-                        } else {
-                            obj[topTag] = 0;
-                        }
+                        incrementGenreCount(obj, topTag);
+
+                        // if (obj[topTag] != null) {
+                        //     obj[topTag]++;
+                        // } else {
+                        //     obj[topTag] = 0;
+                        // }
                         // obj[topTag];
                     },
                     error: function (code, message) {
                         console.log(code + message);
                     }
                 });
+                }
 
-                function incrementGenre(obj, topTag) {
+                function incrementGenreCount(obj, topTag) {
+                    if (obj[topTag] != null) {
+                            obj[topTag]++;
+                        } else {
+                            obj[topTag] = 0;
+                        }
                 }
             }
 
