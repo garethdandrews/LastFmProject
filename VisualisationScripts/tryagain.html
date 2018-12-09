@@ -31,29 +31,35 @@
 
             var users = JSON.parse(txtArea);
             console.log(users);
-            var timer = 500;
+            var timer = 10000;
+
+            var map = new Map();
 
             $.each(users, function (i, user) {
-                var obj = {};
+                var obj = {test: 0};
                 $.each(user.artists, function (j, artist) {
                     getArtistTopTags(obj, artist.name);
                 });
 
+                // var max = {val: 0};
+                    // Object.keys(obj).forEach(function(key) {
+                    //     if (obj[key] > max.val) {
+                    //         max.name = key;
+                    //         max.val = obj[key];
+                    //     }
+                    // });
+
                 setTimeout(function () {
-                    var max = {name: "", val: 0};
-                    //var d = Object.keys(obj).reduce(function (a, b) { return obj[a] > obj[b] ? a : b });
-                    Object.keys(obj).forEach(function(key) {
-                        if (obj[key] > max.val) {
-                            max.name = key;
-                            max.val = obj[key];
-                        }
-                    });
+                    var res = Object.keys(obj).reduce((a, b) => obj[a] > obj[b] ? a : b);
+                    //console.log(res);
                     
-                    // users[user].topGenre = max.name;
-                    // var str = JSON.stringify(users, null, 2);
-                    // document.getElementById("textarea").value = str;
+                    user.topGenre = res;
+                    var str = JSON.stringify(users, null, 2);
+                    document.getElementById("textarea").value = str;
                     
-                }, 500);
+                }, timer);
+
+                timer += 500;
 
                 // setTimeout(function() {
                 //     console.log(obj);
@@ -61,6 +67,10 @@
             });
 
             function getArtistTopTags(obj, artist) {
+                // if (map.has(artist)) {
+                //     map.get(artist);
+                // }
+                
 
                 $.ajax({
                     type: 'POST',
@@ -71,7 +81,7 @@
                         'format=json',
                     dataType: 'jsonp',
                     success: function (data) {
-                        console.log(data);
+                        // console.log(data);
                         var topTag = data.toptags.tag[0].name;
 
                         if (obj[topTag] != null) {
@@ -79,13 +89,18 @@
                         } else {
                             obj[topTag] = 0;
                         }
-                        obj[topTag];
+                        // obj[topTag];
                     },
                     error: function (code, message) {
                         console.log(code + message);
                     }
                 });
+
+                function incrementGenre(obj, topTag) {
+                }
             }
+
+            
         }
 
 
