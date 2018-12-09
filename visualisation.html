@@ -87,29 +87,33 @@
                 .attr("id", function (d) { return d.name })
                 .style("fill", function (d) {
                     var t = d.topGenre;
-                    if (t === "classic rock" || t === "rock" || t === "Progressive rock") {
-                        return "red";
-                    } else if (t === "pop" || t === "indie") {
-                        return "green";
-                    } else if (t === "metalcore" || t === "Progressive metal") {
+                    if (t === "post-rock" || t === "punk" || t === "post-punk" || t === "classic rock" || t === "rock" || t === "hard rock" || t === "alternative rock" || t === "alternative" || t === "Progressive rock" || t === "indie rock") {
+                        return "#ff0000";
+                    } else if (t === "pop" || t === "indie" || t === "Lo-Fi" || t === "" || t === "funk" || t === "latin" || t === "soul" || t === "k-pop") {
+                        return "#5bbf3b";
+                    } else if (t === "Melodic Death Metal" || t === "Power metal" || t === "black metal" || t === "metalcore" || t === "Progressive metal" || t === "heavy metal" || t === "thrash metal" || t === "death metal") {
                         return "black";
-                    } else if (t === "electronic" || t === "Drum and bass" || t === "House" || t === "dubstep" || t === "synthwave") {
-                        return "orange";
-                    } else if (t === "Hip-Hop") {
+                    } else if (t === "industrial" || t === "trance" || t === "electronic" || t === "Drum and bass" || t === "House" || t === "dance" || t === "dubstep" || t === "synthwave") {
+                        return "#ff9000";
+                    } else if (t === "Hip-Hop" || t === "rap") {
                         return "blue";
-                    } else if (t === "folk" || t === "country") {
+                    } else if (t === "jazz") {
+                        return "#ffe500";
+                    } else if (t === "folk" || t === "country" || t === "world" || t === "italian") {
                         return "brown";
+                    } else if (t === "Classical" || t === "Soundtrack" || t === "ambient") {
+                        return "#07f7e7";
                     } else if (t === "reggae" || t === "ska") {
-                        return "purple";
+                        return "#e307f7";
                     } else {
-                        return "pink";
+                        return "#a9aab2";
                     }
                 })
                 .on("mouseover", function (d) {
                     div.transition()
                         .duration(200)
                         .style("opacity", .9);
-                    div.html(d.name)
+                    div.html(d.name + " " + d.topGenre)
                         .style("left", (d3.event.pageX) + "px")
                         .style("top", (d3.event.pageY - 28) + "px");
                 })
