@@ -36,7 +36,7 @@
             var map = new Map();
 
             $.each(users, function (i, user) {
-                if (user.topGenre === "test") {
+                //if (user.topGenre === "test") {
                     var obj = { undefined: 0 };
                     $.each(user.artists, function (j, artist) {
                         getArtistTopTags(obj, artist.name);
@@ -61,16 +61,16 @@
 
                     }, timer);
 
-                    timer += 2000;
+                    timer += 1000;
 
                     // setTimeout(function() {
                     //     console.log(obj);
                     // }, 500);
-                }
+                //}
 
 
             });
-
+            conole.log("Started Timeout");
             setTimeout(function () {
                 var str = JSON.stringify(users, null, 2);
                 document.getElementById("textarea").value = str;
