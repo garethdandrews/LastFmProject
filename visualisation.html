@@ -73,10 +73,12 @@
         var xScale = d3.scale.linear().range([0, width - 60]);
         var yScale = d3.scale.linear().range([height - 60, 0]);
 
-        var dataa;
+        var data;
 
-        function render(data) {
-            dataa = data;
+        function render() {
+            console.log(data);
+
+            // dataa = data;
             xScale.domain(d3.extent(data, function (d) { return d.x; }));
             yScale.domain(d3.extent(data, function (d) { return d.y; }));
 
@@ -89,7 +91,7 @@
                 .attr("r", 5)
                 .attr("id", function (d) { return d.name })
                 .style("fill", function (d) {
-                    var t = d.topGenre;
+                    var t = d.topTag;
                     if (t === "post-rock" || t === "punk" || t === "post-punk" || t === "classic rock" || t === "rock" || t === "hard rock" || t === "alternative rock" || t === "alternative" || t === "Progressive rock" || t === "indie rock") {
                         return "#ff0000";
                     } else if (t === "pop" || t === "indie" || t === "Lo-Fi" || t === "" || t === "funk" || t === "latin" || t === "soul" || t === "k-pop") {
@@ -119,13 +121,13 @@
                         .duration(200)
                         .style("opacity", .9);
                     div.html(
-                        "<b>" + d.name + "</b><br> " + d.topGenre + "</br>" +
-                        " <b>1:</b> " + d.A1 + "</br>" +
-                        " <b>2:</b> " + d.A2 + "</br>" +
-                        " <b>3:</b> " + d.A3 + "</br>" +
-                        " <b>4:</b> " + d.A4 + "</br>" +
-                        " <b>5:</b> " + d.A5 + "</br>"
-                        )
+                        "<b>" + d.name + "</b><br> " + d.topTag + "</br>" +
+                        " <b>1:</b> " + d.artists[0].name + "</br>" +
+                        " <b>2:</b> " + d.artists[1].name + "</br>" +
+                        " <b>3:</b> " + d.artists[2].name + "</br>" +
+                        " <b>4:</b> " + d.artists[3].name + "</br>" +
+                        " <b>5:</b> " + d.artists[4].name + "</br>"
+                    )
                         .style("left", (d3.event.pageX) + "px")
                         .style("top", (d3.event.pageY - 28) + "px");
                 })
@@ -151,8 +153,13 @@
             return d;
         }
 
-        // d3.json("VisualAnalyticsProject/CosineMDSPointsTopTagsArtists50.json", render);
-        d3.csv("VisualAnalyticsProject/CosineMDSPointsTopTagsArtists1000.csv", type, render);
+        d3.json("VisualAnalyticsProject/CosineMDSPointsTopTagsArtists1000.json", function (e, d) {
+            data = d;
+            setTimeout(function () {
+                render();
+            }, 3000);
+        });
+        // d3.csv("VisualAnalyticsProject/CosineMDSPointsTopTagsArtists1000.csv", type, render);
 
         function clicked() {
             var username = $("#username").val();
@@ -162,7 +169,7 @@
                 }))
                 .attr("r", 12)
                 .style("fill-opacity", 1);
-            
+
             generateBarChart(username);
         }
 
@@ -172,121 +179,121 @@
             win.focus();
         }
 
-        // function generateBarChart(user) {
-        //     console.log(dataa.filter(function (d) {
-        //         return d.name == user;
-        //     }));
+        function generateBarChart(user) {
+            // console.log(data.filter(function (d) {
+            // return d.name == user;
+            // }));
+
+            var u = data.filter(function (d) {
+                return d.name == user;
+            });
+
+            console.log(u[0]);
+
+            //     // var barchart = document.getElementById("barchart");
+            //     // barchart.parentNode.removeChild(barchart);
+
+            alert("yoop yoodel my noodle hang on");
+
+            //     // setTimeout(function () {
             
-        //     var artists = dataa.filter(function (d) {
-        //         return d.name == user;
-        //     });
-        //     // OUTPUT FROM JAVA AS JSON OBJECT
+            //sort bars based on value
+            var artists = u[0].artists.sort(function (a, b) {
+                return d3.ascending(a.playcount, b.playcount);
+            })
 
-        //     // var barchart = document.getElementById("barchart");
-        //     // barchart.parentNode.removeChild(barchart);
-
-        //     // var artists = getTopArtists(user);
-        //     alert("yoop yoodel my noodle hang on");
-
-        //     // setTimeout(function () {
-        //         // console.log(artists);
-        //         //sort bars based on value
-        //         artists = artists.sort(function (a, b) {
-        //             return d3.ascending(a.playcount, b.playcount);
-        //         })
-
-        //         var url = "https://www.last.fm/user/" + user + "/library/artists";
-        //         document.getElementById('charts').innerHTML = "<h2><a href=" + url + ">" + user + "</a></h2>"
+            var url = "https://www.last.fm/user/" + user + "/library/artists";
+            document.getElementById('charts').innerHTML = "<h2><a href=" + url + ">" + user + "</a></h2>"
 
 
 
-        //         //set up svg using margin conventions - we'll need plenty of room on the left for labels
-        //         var margin = {
-        //             top: 15,
-        //             right: 25,
-        //             bottom: 15,
-        //             left: 250
-        //         };
+            //set up svg using margin conventions - we'll need plenty of room on the left for labels
+            var margin = {
+                top: 15,
+                right: 25,
+                bottom: 15,
+                left: 250
+            };
 
-        //         var width2 = 1000 - margin.left - margin.right,
-        //             height2 = 1000 - margin.top - margin.bottom;
+            var width2 = 1000 - margin.left - margin.right,
+                height2 = 1000 - margin.top - margin.bottom;
 
-        //         var svg = d3.select("#charts").append("svg")
-        //             .attr("width", width2 + margin.left + margin.right)
-        //             .attr("height", height2 + margin.top + margin.bottom)
-        //             .append("g")
-        //             .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
-        //             .attr("id", "barchart");
+            var svg = d3.select("#charts").append("svg")
+                .attr("width", width2 + margin.left + margin.right)
+                .attr("height", height2 + margin.top + margin.bottom)
+                .append("g")
+                .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+                .attr("id", "barchart");
 
-        //         var x = d3.scale.linear()
-        //             .range([0, width2])
-        //             .domain([0, d3.max(artists, function (d) {
-        //                 return d.playcount;
-        //             })]);
+            var x = d3.scale.linear()
+                .range([0, width2])
+                .domain([0, d3.max(artists, function (d) {
+                    return d.playcount;
+                })]);
 
-        //         var y = d3.scale.ordinal()
-        //             .rangeRoundBands([height2, 0], .1)
-        //             .domain(artists.map(function (d) {
-        //                 return d.name;
-        //             }));
+            var y = d3.scale.ordinal()
+                .rangeRoundBands([height2, 0], .1)
+                .domain(artists.map(function (d) {
+                    return d.name;
+                }));
 
-        //         //make y axis to show bar names
-        //         var yAxis = d3.svg.axis()
-        //             .scale(y)
-        //             //no tick marks
-        //             .tickSize(0)
-        //             .orient("left");
+            //make y axis to show bar names
+            var yAxis = d3.svg.axis()
+                .scale(y)
+                //no tick marks
+                .tickSize(0)
+                .orient("left");
 
-        //         var gy = svg.append("g")
-        //             .attr("class", "y axis")
-        //             .call(yAxis)
+            var gy = svg.append("g")
+                .attr("class", "y axis")
+                .call(yAxis)
 
-        //         var bars = svg.selectAll(".bar")
-        //             .data(artists)
-        //             .enter()
-        //             .append("g")
+            var bars = svg.selectAll(".bar")
+                .data(artists)
+                .enter()
+                .append("g")
 
-        //         //append rects
-        //         bars.append("rect")
-        //             .attr("class", "bar")
-        //             .attr("y", function (d) {
-        //                 return y(d.name);
-        //             })
-        //             .attr("height", y.rangeBand())
-        //             .attr("x", 0)
-        //             .attr("width", function (d) {
-        //                 return x(d.playcount);
-        //             })
-        //             .on("mouseover", function (d) {
-        //                 div.transition()
-        //                     .duration(200)
-        //                     .style("opacity", .9);
-        //                 div.html(d.playcount)
-        //                     .style("left", (d3.event.pageX) + "px")
-        //                     .style("top", (d3.event.pageY - 28) + "px");
-        //             })
-        //             .on("mouseout", function (d) {
-        //                 div.transition()
-        //                     .duration(500)
-        //                     .style("opacity", 0);
-        //             });
+            //append rects
+            bars.append("rect")
+                .attr("class", "bar")
+                .attr("y", function (d) {
+                    return y(d.name);
+                })
+                .attr("height", y.rangeBand())
+                .attr("x", 0)
+                .attr("width", function (d) {
+                    return x(d.playcount);
+                })
+                .on("mouseover", function (d) {
+                    div.transition()
+                        .duration(200)
+                        .style("opacity", .9);
+                    div.html(d.playcount)
+                        .style("left", (d3.event.pageX) + "px")
+                        .style("top", (d3.event.pageY - 28) + "px");
+                })
+                .on("mouseout", function (d) {
+                    div.transition()
+                        .duration(500)
+                        .style("opacity", 0);
+                });
 
-        //         //add a value label to the right of each bar
-        //         bars.append("text")
-        //             .attr("class", "label")
-        //             //y position of the label is halfway down the bar
-        //             .attr("y", function (d) {
-        //                 return y(d.name) + y.rangeBand() / 2 + 4;
-        //             })
-        //             //x position is 3 pixels to the right of the bar
-        //             .attr("x", function (d) {
-        //                 return x(d.playcount) + 3;
-        //             })
-        //             .text(function (d) {
-        //                 return d.playcount;
-        //             });
-        //     // }, 1000);
-        // }
+            //add a value label to the right of each bar
+            bars.append("text")
+                .attr("class", "label")
+                //y position of the label is halfway down the bar
+                .attr("y", function (d) {
+                    return y(d.name) + y.rangeBand() / 2 + 4;
+                })
+                //x position is 3 pixels to the right of the bar
+                .attr("x", function (d) {
+                    return x(d.playcount) + 3;
+                })
+                .text(function (d) {
+                    return d.playcount;
+                });
+            //     // }, 1000);
+        }
 
         function getTopArtists(user) {
             var artists = [];

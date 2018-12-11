@@ -137,7 +137,10 @@ public class Main {
             for (int j = 0; j < u.artists.size(); j++) {
                 Artist a = u.artists.get(j);
                 b.append("{" + "\n");
-                b.append("\"name\": \"" + a.name.replace("\"", "'") + "\"," + "\n");
+                String n = a.name;
+                n.replaceAll("\\\\", "\\\\\\\\");
+                n.replace("\"", "'");
+                b.append("\"name\": \"" + n + "\"," + "\n");
                 b.append("\"playcount\": " + a.playcount + "\n");
                 b.append("}" + "\n");
                 if (j != u.artists.size() - 1) {
