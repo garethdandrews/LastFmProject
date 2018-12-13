@@ -282,6 +282,20 @@
             });
         }
 
+        function clicked() {
+            var username = document.getElementById("username").value;
+
+            svg.selectAll("circle")
+                .data(data.filter(function (d) {
+                    return d.name === username;
+                }))
+                .attr("r", 12)
+                .style("fill", "red")
+                .style("fill-opacity", 1);
+
+            generateBarChart(username);
+        }
+
         function genreTags() {
             if (document.getElementById("genreTags").checked) {
                 circles.style("fill", function (d) {
@@ -326,9 +340,13 @@
     </script>
 
     <div>
+            Username: <input id="username" type="text">
+            <button onclick="clicked()">Highlight User</button>
         <input type="checkbox" id="genreTags" onclick="genreTags()"> Genre Tags
         <button onclick="kmeans(10)">K-Means</button>
-        <button onclick="reset()">Reset Canvas</button><br>
+        <button onclick="reset()">Reset Canvas</button>
+        
+        
     </div>
 
     <div id="barChart">
