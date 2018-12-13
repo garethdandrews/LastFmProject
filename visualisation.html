@@ -155,9 +155,7 @@
 
         d3.json("VisualAnalyticsProject/CosineMDSPointsTopTagsArtists1000.json", function (e, d) {
             data = d;
-            setTimeout(function () {
-                render();
-            }, 3000);
+            render();
         });
         // d3.csv("VisualAnalyticsProject/CosineMDSPointsTopTagsArtists1000.csv", type, render);
 
@@ -328,8 +326,6 @@
     <button onclick="clicked()">Highlight User</button><br>
 
     <br>
-
-    <button onclick="showTagClusters()">Highlight User</button><br>
 
     <div id="charts">
 
