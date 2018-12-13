@@ -16,10 +16,10 @@
 
         div.tooltip {
             position: absolute;
-            text-align: center;
+            text-align: left;
             width: 150px;
-            height: 120px;
-            padding: 2px;
+            height: 115px;
+            padding: 8px;
             font: 12px sans-serif;
             background: lightsteelblue;
             border: 0px;
@@ -55,6 +55,11 @@
     <script>
         var data;
 
+        d3.json("VisualAnalyticsProject/CosineMDSPointsTopTagsArtists1000.json", function (e, d) {
+            data = d;
+            render();
+        });
+
         var margin = {
             top: 30,
             right: 30,
@@ -82,9 +87,6 @@
         var circles = svg.append("g").attr("id", "circles");
 
         function render() {
-            console.log(data);
-
-            // dataa = data;
             xScale.domain(d3.extent(data, function (d) { return d.x; }));
             yScale.domain(d3.extent(data, function (d) { return d.y; }));
 
@@ -129,16 +131,96 @@
             circles.exit().remove();
         }
 
-        function type(d) {
-            d.x = +d.x;
-            d.y = +d.y;
-            return d;
-        }
+        function kmeans(k) {
+            document.getElementById("genreTags").checked = false;
 
-        d3.json("VisualAnalyticsProject/CosineMDSPointsTopTagsArtists1000.json", function (e, d) {
-            data = d;
-            render();
-        });
+            var points = [];
+            var centroids = [];
+            var colours = ["#ff0000", "#5bbf3b", "black", "#ff9000", "blue", "#ffe500", "brown", "#07f7e7", "#e307f7", "#a9aab2"];
+
+            // Initialise centroids
+            for (var i = 0; i < k; i++) {
+                var point = {
+                    x: Math.round(Math.random() * plotWidth),
+                    y: Math.round(Math.random() * plotHeight),
+                    fill: colours[i],
+                    clusterId: i
+                }
+                centroids.push(point);
+            }
+
+            // circles[0].forEach(function (d) {
+            //     d.cluster = 0;
+            // });
+            var iteration = 0;
+            while (iteration < 1) {
+                circles[0].forEach(function (d, i) {
+                    // Find closest centroid to point
+                    var closest = findClosestCentroid(d);
+                    d.cluster = closest.clusterId;
+
+                });
+
+                // Update centroid position to the mean
+                for (var i = 0; i < k; i++) {
+                    var totalX = 0, totalY = 0;
+
+                    circles[0].forEach(function (d) {
+                        if (d.cluster == i) {
+                            totalX += +d.attributes.cx.nodeValue;
+                            totalY += +d.attributes.cy.nodeValue
+                        }
+                    });
+
+                    var meanX = totalX / circles[0].length;
+                    var meanY = totalY / circles[0].length;
+
+                    // console.log(i + ": " + meanX + "," + meanY);
+
+                    centroids[i].x = meanX;
+                    centroids[i].y = meanY;
+                    // console.log(centroids[i]);
+                }
+
+
+                visualiseClusters();
+                iteration++;
+            }
+
+            function visualiseClusters() {
+                circles[0].forEach(function (d) {
+                    var clusterId = d.cluster;
+                    d.attributes.style.nodeValue = "fill:" + colours[clusterId] + "; fill-opacity: 0.8; stroke: black;"
+                });
+                // circles.style("fill", function(d) {
+                //     console.log(d);
+                //     return colours[d.cluster];
+                // })
+            }
+
+            function getEuclidianDistance(a, b) {
+
+                var dx = b.attributes.cx.nodeValue - a.x,
+                    dy = b.attributes.cy.nodeValue - a.y;
+                return Math.sqrt(Math.pow(dx, 2) + Math.pow(dy, 2));
+            }
+
+            function findClosestCentroid(point) {
+                var closest = { clusterId: -1, distance: svgWidth * 2 };
+                centroids.forEach(function (d, i) {
+                    var distance = getEuclidianDistance(d, point);
+
+                    if (distance < closest.distance) {
+                        closest.clusterId = i;
+                        closest.distance = distance;
+                    }
+                });
+                return (centroids[closest.clusterId]);
+            }
+
+
+
+        }
 
         function generateBarChart(user) {
             var u = data.filter(function (d) {
@@ -158,7 +240,7 @@
                 top: 15,
                 right: 75,
                 bottom: 15,
-                left: 250
+                left: 200
             };
 
             var svgWidth = 1000, svgHeight = 1000;
@@ -245,11 +327,13 @@
 
     <div>
         <input type="checkbox" id="genreTags" onclick="genreTags()"> Genre Tags
-        <button onclick="kmeans()">K-Means</button>
+        <button onclick="kmeans(10)">K-Means</button>
         <button onclick="reset()">Reset Canvas</button><br>
     </div>
 
     <div id="barChart">
 
     </div>
+
+    <div id="kmeans" class="kmeans-chart"></div>
 </body>
