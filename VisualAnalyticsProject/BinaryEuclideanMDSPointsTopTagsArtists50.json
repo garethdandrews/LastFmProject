@@ -1,0 +1,8740 @@
+[
+{
+"x": 0.03948432193269254,
+"y": 0.49372442650532805,
+"name": "garethdandrews",
+"topTag": "classic rock",
+"artists":  [
+{
+"name": "The Beatles",
+"playcount": 4611
+}
+,
+{
+"name": "Tame Impala",
+"playcount": 2515
+}
+,
+{
+"name": "The Beach Boys",
+"playcount": 2125
+}
+,
+{
+"name": "Pink Floyd",
+"playcount": 1825
+}
+,
+{
+"name": "Cream",
+"playcount": 1026
+}
+,
+{
+"name": "Mac DeMarco",
+"playcount": 863
+}
+,
+{
+"name": "Led Zeppelin",
+"playcount": 640
+}
+,
+{
+"name": "Oasis",
+"playcount": 564
+}
+,
+{
+"name": "Bob Dylan",
+"playcount": 447
+}
+,
+{
+"name": "Fleetwood Mac",
+"playcount": 394
+}
+,
+{
+"name": "King Gizzard & The Lizard Wizard",
+"playcount": 394
+}
+,
+{
+"name": "Derek and the Dominos",
+"playcount": 380
+}
+,
+{
+"name": "Above & Beyond",
+"playcount": 351
+}
+,
+{
+"name": "Twenty One Pilots",
+"playcount": 324
+}
+,
+{
+"name": "Kanye West",
+"playcount": 295
+}
+,
+{
+"name": "Temples",
+"playcount": 274
+}
+,
+{
+"name": "Eric Clapton",
+"playcount": 270
+}
+,
+{
+"name": "alt-J",
+"playcount": 268
+}
+,
+{
+"name": "Red Hot Chili Peppers",
+"playcount": 256
+}
+,
+{
+"name": "The Kinks",
+"playcount": 255
+}
+,
+{
+"name": "Arctic Monkeys",
+"playcount": 254
+}
+,
+{
+"name": "Two Door Cinema Club",
+"playcount": 245
+}
+,
+{
+"name": "Pendulum",
+"playcount": 226
+}
+,
+{
+"name": "blink-182",
+"playcount": 217
+}
+,
+{
+"name": "Psychedelic Porn Crumpets",
+"playcount": 208
+}
+,
+{
+"name": "George Harrison",
+"playcount": 200
+}
+,
+{
+"name": "The Who",
+"playcount": 200
+}
+,
+{
+"name": "Radiohead",
+"playcount": 197
+}
+,
+{
+"name": "Coldplay",
+"playcount": 193
+}
+,
+{
+"name": "Foo Fighters",
+"playcount": 187
+}
+,
+{
+"name": "Unknown Mortal Orchestra",
+"playcount": 182
+}
+,
+{
+"name": "Paul McCartney",
+"playcount": 179
+}
+,
+{
+"name": "Anderson .Paak",
+"playcount": 178
+}
+,
+{
+"name": "Marty Robbins",
+"playcount": 175
+}
+,
+{
+"name": "Queen",
+"playcount": 168
+}
+,
+{
+"name": "Royal Blood",
+"playcount": 161
+}
+,
+{
+"name": "Nirvana",
+"playcount": 156
+}
+,
+{
+"name": "Cage the Elephant",
+"playcount": 155
+}
+,
+{
+"name": "Bring Me the Horizon",
+"playcount": 151
+}
+,
+{
+"name": "Jimi Hendrix",
+"playcount": 147
+}
+,
+{
+"name": "deadmau5",
+"playcount": 143
+}
+,
+{
+"name": "Frank Sinatra",
+"playcount": 137
+}
+,
+{
+"name": "David Bowie",
+"playcount": 134
+}
+,
+{
+"name": "Childish Gambino",
+"playcount": 127
+}
+,
+{
+"name": "Ella Fitzgerald",
+"playcount": 127
+}
+,
+{
+"name": "Gorillaz",
+"playcount": 126
+}
+,
+{
+"name": "The Smiths",
+"playcount": 115
+}
+,
+{
+"name": "The Skints",
+"playcount": 113
+}
+,
+{
+"name": "Al Green",
+"playcount": 107
+}
+,
+{
+"name": "Yusuf / Cat Stevens",
+"playcount": 107
+}
+]
+}
+,{
+"x": -0.07503822511003619,
+"y": 0.300935981858393,
+"name": "bearcalleddave",
+"topTag": "classic rock",
+"artists":  [
+{
+"name": "Lake Street Dive",
+"playcount": 517
+}
+,
+{
+"name": "Houndmouth",
+"playcount": 215
+}
+,
+{
+"name": "I'm With Her",
+"playcount": 213
+}
+,
+{
+"name": "Otis Redding",
+"playcount": 196
+}
+,
+{
+"name": "Chris Stapleton",
+"playcount": 168
+}
+,
+{
+"name": "The Beatles",
+"playcount": 168
+}
+,
+{
+"name": "Eagles",
+"playcount": 165
+}
+,
+{
+"name": "Eric Clapton",
+"playcount": 162
+}
+,
+{
+"name": "Nickel Creek",
+"playcount": 147
+}
+,
+{
+"name": "Supertramp",
+"playcount": 113
+}
+,
+{
+"name": "Derek and the Dominos",
+"playcount": 104
+}
+,
+{
+"name": "St. Paul & The Broken Bones",
+"playcount": 95
+}
+,
+{
+"name": "Ed Sheeran",
+"playcount": 94
+}
+,
+{
+"name": "JJ Grey & Mofro",
+"playcount": 87
+}
+,
+{
+"name": "Joe Rogan",
+"playcount": 78
+}
+,
+{
+"name": "Aretha Franklin",
+"playcount": 72
+}
+,
+{
+"name": "Pink Floyd",
+"playcount": 70
+}
+,
+{
+"name": "Caro Emerald",
+"playcount": 69
+}
+,
+{
+"name": "Shakey Graves",
+"playcount": 64
+}
+,
+{
+"name": "Danielle Nicole",
+"playcount": 55
+}
+,
+{
+"name": "Faces",
+"playcount": 54
+}
+,
+{
+"name": "Jimi Hendrix",
+"playcount": 52
+}
+,
+{
+"name": "The Wood Brothers",
+"playcount": 50
+}
+,
+{
+"name": "Boston",
+"playcount": 48
+}
+,
+{
+"name": "Randy Newman",
+"playcount": 47
+}
+,
+{
+"name": "Green Day",
+"playcount": 43
+}
+,
+{
+"name": "Little Richard",
+"playcount": 43
+}
+,
+{
+"name": "Eddie Izzard",
+"playcount": 41
+}
+,
+{
+"name": "The Beach Boys",
+"playcount": 41
+}
+,
+{
+"name": "The Kinks",
+"playcount": 40
+}
+,
+{
+"name": "Lianne La Havas",
+"playcount": 39
+}
+,
+{
+"name": "The Other Favorites",
+"playcount": 38
+}
+,
+{
+"name": "The Harpoonist & The Axe Murderer",
+"playcount": 35
+}
+,
+{
+"name": "Tedeschi Trucks Band",
+"playcount": 34
+}
+,
+{
+"name": "Arctic Monkeys",
+"playcount": 31
+}
+,
+{
+"name": "John Mayer",
+"playcount": 31
+}
+,
+{
+"name": "Mac DeMarco",
+"playcount": 30
+}
+,
+{
+"name": "Queen",
+"playcount": 30
+}
+,
+{
+"name": "B.B. King",
+"playcount": 28
+}
+,
+{
+"name": "Al Green",
+"playcount": 26
+}
+,
+{
+"name": "James Gang",
+"playcount": 25
+}
+,
+{
+"name": "Bob Dylan",
+"playcount": 23
+}
+,
+{
+"name": "Dave Rawlings Machine",
+"playcount": 23
+}
+,
+{
+"name": "Sara Bareilles",
+"playcount": 23
+}
+,
+{
+"name": "Sum 41",
+"playcount": 23
+}
+,
+{
+"name": "Neil Young",
+"playcount": 22
+}
+,
+{
+"name": "Adele",
+"playcount": 21
+}
+,
+{
+"name": "Commodores",
+"playcount": 19
+}
+,
+{
+"name": "Kirk Fletcher",
+"playcount": 18
+}
+,
+{
+"name": "Corinne Bailey Rae",
+"playcount": 17
+}
+]
+}
+,{
+"x": 0.007190580009015311,
+"y": -0.008306034575572791,
+"name": "khuneeee",
+"topTag": "Drum and bass",
+"artists":  [
+{
+"name": "Radiohead",
+"playcount": 323
+}
+,
+{
+"name": "Coldplay",
+"playcount": 307
+}
+,
+{
+"name": "Pendulum",
+"playcount": 285
+}
+,
+{
+"name": "Run the Jewels",
+"playcount": 253
+}
+,
+{
+"name": "Kendrick Lamar",
+"playcount": 250
+}
+,
+{
+"name": "The Glitch Mob",
+"playcount": 198
+}
+,
+{
+"name": "Atmosphere",
+"playcount": 187
+}
+,
+{
+"name": "Mick Gordon",
+"playcount": 187
+}
+,
+{
+"name": "Eric Prydz",
+"playcount": 181
+}
+,
+{
+"name": "Muse",
+"playcount": 170
+}
+,
+{
+"name": "Joey Bada$$",
+"playcount": 168
+}
+,
+{
+"name": "Noisia",
+"playcount": 156
+}
+,
+{
+"name": "A Broken Silence",
+"playcount": 149
+}
+,
+{
+"name": "Infected Mushroom",
+"playcount": 141
+}
+,
+{
+"name": "Metrik",
+"playcount": 127
+}
+,
+{
+"name": "Matrix & Futurebound",
+"playcount": 126
+}
+,
+{
+"name": "GoldLink",
+"playcount": 123
+}
+,
+{
+"name": "BABYMETAL",
+"playcount": 114
+}
+,
+{
+"name": "Memtrix",
+"playcount": 114
+}
+,
+{
+"name": "Thank You Scientist",
+"playcount": 104
+}
+,
+{
+"name": "fox capture plan",
+"playcount": 102
+}
+,
+{
+"name": "Delta Heavy",
+"playcount": 101
+}
+,
+{
+"name": "Black Sun Empire",
+"playcount": 98
+}
+,
+{
+"name": "Above & Beyond",
+"playcount": 94
+}
+,
+{
+"name": "Tyler, the Creator",
+"playcount": 94
+}
+,
+{
+"name": "The Underachievers",
+"playcount": 92
+}
+,
+{
+"name": "Kaiser Chiefs",
+"playcount": 86
+}
+,
+{
+"name": "Sufjan Stevens",
+"playcount": 86
+}
+,
+{
+"name": "Jorja Smith",
+"playcount": 82
+}
+,
+{
+"name": "The Pineapple Thief",
+"playcount": 81
+}
+,
+{
+"name": "Davip",
+"playcount": 79
+}
+,
+{
+"name": "Danny Byrd",
+"playcount": 78
+}
+,
+{
+"name": "Hans Zimmer",
+"playcount": 77
+}
+,
+{
+"name": "Red Hot Chili Peppers",
+"playcount": 75
+}
+,
+{
+"name": "Foo Fighters",
+"playcount": 74
+}
+,
+{
+"name": "t+pazolite",
+"playcount": 74
+}
+,
+{
+"name": "Datsik",
+"playcount": 72
+}
+,
+{
+"name": "Fight The Fade",
+"playcount": 72
+}
+,
+{
+"name": "The Bloody Beetroots",
+"playcount": 70
+}
+,
+{
+"name": "Tristam",
+"playcount": 70
+}
+,
+{
+"name": "Grabbitz",
+"playcount": 69
+}
+,
+{
+"name": "Native Construct",
+"playcount": 69
+}
+,
+{
+"name": "Injury Reserve",
+"playcount": 67
+}
+,
+{
+"name": "Noel Gallagher's High Flying Birds",
+"playcount": 67
+}
+,
+{
+"name": "Rejjie Snow",
+"playcount": 67
+}
+,
+{
+"name": "The Qemists",
+"playcount": 67
+}
+,
+{
+"name": "Logic",
+"playcount": 65
+}
+,
+{
+"name": "Seven Lions",
+"playcount": 64
+}
+,
+{
+"name": "Toploader",
+"playcount": 63
+}
+,
+{
+"name": "DC Breaks",
+"playcount": 60
+}
+]
+}
+,{
+"x": 0.052958933772342495,
+"y": 0.3115818231529683,
+"name": "Whatashamemum",
+"topTag": "rock",
+"artists":  [
+{
+"name": "blink-182",
+"playcount": 1759
+}
+,
+{
+"name": "Enter Shikari",
+"playcount": 1375
+}
+,
+{
+"name": "David Bowie",
+"playcount": 780
+}
+,
+{
+"name": "Green Day",
+"playcount": 739
+}
+,
+{
+"name": "Neck Deep",
+"playcount": 715
+}
+,
+{
+"name": "BROCKHAMPTON",
+"playcount": 594
+}
+,
+{
+"name": "My Chemical Romance",
+"playcount": 501
+}
+,
+{
+"name": "System of a Down",
+"playcount": 427
+}
+,
+{
+"name": "Gorillaz",
+"playcount": 406
+}
+,
+{
+"name": "Foo Fighters",
+"playcount": 387
+}
+,
+{
+"name": "Alkaline Trio",
+"playcount": 377
+}
+,
+{
+"name": "Bring Me the Horizon",
+"playcount": 355
+}
+,
+{
+"name": "The Beatles",
+"playcount": 355
+}
+,
+{
+"name": "Royal Blood",
+"playcount": 354
+}
+,
+{
+"name": "A Day to Remember",
+"playcount": 347
+}
+,
+{
+"name": "Oasis",
+"playcount": 335
+}
+,
+{
+"name": "Pendulum",
+"playcount": 329
+}
+,
+{
+"name": "Superorganism",
+"playcount": 312
+}
+,
+{
+"name": "Kanye West",
+"playcount": 303
+}
+,
+{
+"name": "Two Door Cinema Club",
+"playcount": 292
+}
+,
+{
+"name": "The Story So Far",
+"playcount": 288
+}
+,
+{
+"name": "Arctic Monkeys",
+"playcount": 286
+}
+,
+{
+"name": "Tyler, the Creator",
+"playcount": 277
+}
+,
+{
+"name": "Queen",
+"playcount": 262
+}
+,
+{
+"name": "Pixies",
+"playcount": 256
+}
+,
+{
+"name": "Wolf Alice",
+"playcount": 252
+}
+,
+{
+"name": "Nas",
+"playcount": 250
+}
+,
+{
+"name": "The Strokes",
+"playcount": 249
+}
+,
+{
+"name": "Red Hot Chili Peppers",
+"playcount": 248
+}
+,
+{
+"name": "Rage Against the Machine",
+"playcount": 247
+}
+,
+{
+"name": "Biffy Clyro",
+"playcount": 242
+}
+,
+{
+"name": "Vant",
+"playcount": 228
+}
+,
+{
+"name": "Sum 41",
+"playcount": 217
+}
+,
+{
+"name": "Muse",
+"playcount": 206
+}
+,
+{
+"name": "Pink Floyd",
+"playcount": 199
+}
+,
+{
+"name": "While She Sleeps",
+"playcount": 197
+}
+,
+{
+"name": "The Front Bottoms",
+"playcount": 196
+}
+,
+{
+"name": "Moose Blood",
+"playcount": 194
+}
+,
+{
+"name": "Architects",
+"playcount": 180
+}
+,
+{
+"name": "Linkin Park",
+"playcount": 175
+}
+,
+{
+"name": "Nirvana",
+"playcount": 173
+}
+,
+{
+"name": "Zebrahead",
+"playcount": 172
+}
+,
+{
+"name": "Skepta",
+"playcount": 170
+}
+,
+{
+"name": "Metallica",
+"playcount": 156
+}
+,
+{
+"name": "Audioslave",
+"playcount": 149
+}
+,
+{
+"name": "Earl Sweatshirt",
+"playcount": 149
+}
+,
+{
+"name": "Yellowcard",
+"playcount": 149
+}
+,
+{
+"name": "Fleetwood Mac",
+"playcount": 144
+}
+,
+{
+"name": "Marmozets",
+"playcount": 141
+}
+,
+{
+"name": "The Wonder Years",
+"playcount": 141
+}
+]
+}
+,{
+"x": 0.24659743359374134,
+"y": 0.15967345950228423,
+"name": "JamesPicton",
+"topTag": "Drum and bass",
+"artists":  [
+{
+"name": "Kasabian",
+"playcount": 87
+}
+,
+{
+"name": "Red Hot Chili Peppers",
+"playcount": 83
+}
+,
+{
+"name": "alt-J",
+"playcount": 78
+}
+,
+{
+"name": "Audioslave",
+"playcount": 59
+}
+,
+{
+"name": "Noisia",
+"playcount": 46
+}
+,
+{
+"name": "Foals",
+"playcount": 40
+}
+,
+{
+"name": "Cage the Elephant",
+"playcount": 38
+}
+,
+{
+"name": "Gorillaz",
+"playcount": 35
+}
+,
+{
+"name": "Vant",
+"playcount": 34
+}
+,
+{
+"name": "Holy Goof",
+"playcount": 32
+}
+,
+{
+"name": "Tame Impala",
+"playcount": 32
+}
+,
+{
+"name": "Weezer",
+"playcount": 32
+}
+,
+{
+"name": "Queens of the Stone Age",
+"playcount": 30
+}
+,
+{
+"name": "Royal Blood",
+"playcount": 28
+}
+,
+{
+"name": "Don Broco",
+"playcount": 27
+}
+,
+{
+"name": "Nirvana",
+"playcount": 27
+}
+,
+{
+"name": "Chris Lorenzo",
+"playcount": 24
+}
+,
+{
+"name": "Wiley",
+"playcount": 23
+}
+,
+{
+"name": "The Jam",
+"playcount": 21
+}
+,
+{
+"name": "My Nu Leng",
+"playcount": 19
+}
+,
+{
+"name": "Neil Davidge",
+"playcount": 19
+}
+,
+{
+"name": "Post Malone",
+"playcount": 19
+}
+,
+{
+"name": "Wolf Alice",
+"playcount": 19
+}
+,
+{
+"name": "DJ Zinc",
+"playcount": 18
+}
+,
+{
+"name": "Fatherson",
+"playcount": 18
+}
+,
+{
+"name": "Kanye West",
+"playcount": 18
+}
+,
+{
+"name": "Skepsis",
+"playcount": 18
+}
+,
+{
+"name": "TQD",
+"playcount": 17
+}
+,
+{
+"name": "BROCKHAMPTON",
+"playcount": 16
+}
+,
+{
+"name": "CHVRCHES",
+"playcount": 16
+}
+,
+{
+"name": "Drake",
+"playcount": 16
+}
+,
+{
+"name": "Unknown Mortal Orchestra",
+"playcount": 16
+}
+,
+{
+"name": "AC Slater",
+"playcount": 15
+}
+,
+{
+"name": "Childish Gambino",
+"playcount": 15
+}
+,
+{
+"name": "Darkzy",
+"playcount": 15
+}
+,
+{
+"name": "Serum",
+"playcount": 15
+}
+,
+{
+"name": "DJ Hazard",
+"playcount": 14
+}
+,
+{
+"name": "DJ Q",
+"playcount": 14
+}
+,
+{
+"name": "Wilkinson",
+"playcount": 14
+}
+,
+{
+"name": "Anderson .Paak",
+"playcount": 13
+}
+,
+{
+"name": "Biffy Clyro",
+"playcount": 13
+}
+,
+{
+"name": "Bonobo",
+"playcount": 13
+}
+,
+{
+"name": "Dawn Wall",
+"playcount": 13
+}
+,
+{
+"name": "Flava D",
+"playcount": 13
+}
+,
+{
+"name": "Jamie T",
+"playcount": 13
+}
+,
+{
+"name": "Kano",
+"playcount": 13
+}
+,
+{
+"name": "Nothing But Thieves",
+"playcount": 13
+}
+,
+{
+"name": "The Smashing Pumpkins",
+"playcount": 13
+}
+,
+{
+"name": "Skream",
+"playcount": 12
+}
+,
+{
+"name": "The Presidents of the United States of America",
+"playcount": 12
+}
+]
+}
+,{
+"x": 0.25373885912094074,
+"y": 0.01197496413114442,
+"name": "TheProseph",
+"topTag": "House",
+"artists":  [
+{
+"name": "Kanye West",
+"playcount": 2813
+}
+,
+{
+"name": "Childish Gambino",
+"playcount": 527
+}
+,
+{
+"name": "Anderson .Paak",
+"playcount": 448
+}
+,
+{
+"name": "Kendrick Lamar",
+"playcount": 444
+}
+,
+{
+"name": "Icarus",
+"playcount": 267
+}
+,
+{
+"name": "Oliver Heldens",
+"playcount": 265
+}
+,
+{
+"name": "Tchami",
+"playcount": 211
+}
+,
+{
+"name": "Pink Floyd",
+"playcount": 197
+}
+,
+{
+"name": "Ice Cube",
+"playcount": 192
+}
+,
+{
+"name": "Drake",
+"playcount": 190
+}
+,
+{
+"name": "Chance the Rapper",
+"playcount": 189
+}
+,
+{
+"name": "Shift K3Y",
+"playcount": 174
+}
+,
+{
+"name": "The Notorious B.I.G.",
+"playcount": 146
+}
+,
+{
+"name": "Stormzy",
+"playcount": 138
+}
+,
+{
+"name": "Dr. Dre",
+"playcount": 131
+}
+,
+{
+"name": "Vato Gonzalez",
+"playcount": 131
+}
+,
+{
+"name": "Disciples",
+"playcount": 120
+}
+,
+{
+"name": "Low Steppa",
+"playcount": 108
+}
+,
+{
+"name": "Gorgon City",
+"playcount": 93
+}
+,
+{
+"name": "Jengi",
+"playcount": 93
+}
+,
+{
+"name": "Hi-Lo",
+"playcount": 86
+}
+,
+{
+"name": "Mr. Belt & Wezol",
+"playcount": 85
+}
+,
+{
+"name": "High Contrast",
+"playcount": 83
+}
+,
+{
+"name": "Chocolate Puma",
+"playcount": 70
+}
+,
+{
+"name": "Katy Perry",
+"playcount": 67
+}
+,
+{
+"name": "Logic",
+"playcount": 66
+}
+,
+{
+"name": "Just Kiddin",
+"playcount": 64
+}
+,
+{
+"name": "Lucky Charmes",
+"playcount": 62
+}
+,
+{
+"name": "Gorillaz",
+"playcount": 61
+}
+,
+{
+"name": "MK",
+"playcount": 58
+}
+,
+{
+"name": "Joss Stone",
+"playcount": 57
+}
+,
+{
+"name": "Lupe Fiasco",
+"playcount": 57
+}
+,
+{
+"name": "Martin Garrix",
+"playcount": 54
+}
+,
+{
+"name": "TQD",
+"playcount": 54
+}
+,
+{
+"name": "Bakermat",
+"playcount": 52
+}
+,
+{
+"name": "Calvin Harris",
+"playcount": 51
+}
+,
+{
+"name": "Snoop Dogg",
+"playcount": 47
+}
+,
+{
+"name": "arle",
+"playcount": 46
+}
+,
+{
+"name": "BROHUG",
+"playcount": 46
+}
+,
+{
+"name": "Skepta",
+"playcount": 46
+}
+,
+{
+"name": "Throttle",
+"playcount": 46
+}
+,
+{
+"name": "Alex Preston",
+"playcount": 43
+}
+,
+{
+"name": "Oliver Nelson",
+"playcount": 43
+}
+,
+{
+"name": "DJ Zinc",
+"playcount": 42
+}
+,
+{
+"name": "VanRip",
+"playcount": 42
+}
+,
+{
+"name": "XYconstant",
+"playcount": 42
+}
+,
+{
+"name": "AC Slater",
+"playcount": 41
+}
+,
+{
+"name": "Cosmo's Midnight",
+"playcount": 41
+}
+,
+{
+"name": "Duke Dumont",
+"playcount": 41
+}
+,
+{
+"name": "Go Freek",
+"playcount": 41
+}
+]
+}
+,{
+"x": 0.30522891147732034,
+"y": 0.21258358494193147,
+"name": "dylankench",
+"topTag": "Hip-Hop",
+"artists":  [
+{
+"name": "BROCKHAMPTON",
+"playcount": 251
+}
+,
+{
+"name": "Kanye West",
+"playcount": 200
+}
+,
+{
+"name": "Gorillaz",
+"playcount": 189
+}
+,
+{
+"name": "Sufjan Stevens",
+"playcount": 180
+}
+,
+{
+"name": "Kendrick Lamar",
+"playcount": 154
+}
+,
+{
+"name": "Weezer",
+"playcount": 138
+}
+,
+{
+"name": "Car Seat Headrest",
+"playcount": 115
+}
+,
+{
+"name": "Johnny Cash",
+"playcount": 115
+}
+,
+{
+"name": "Father John Misty",
+"playcount": 109
+}
+,
+{
+"name": "Denzel Curry",
+"playcount": 100
+}
+,
+{
+"name": "The Beatles",
+"playcount": 91
+}
+,
+{
+"name": "Kids See Ghosts",
+"playcount": 88
+}
+,
+{
+"name": "Tyler, the Creator",
+"playcount": 88
+}
+,
+{
+"name": "Simon & Garfunkel",
+"playcount": 83
+}
+,
+{
+"name": "Travi$ Scott",
+"playcount": 83
+}
+,
+{
+"name": "Chase & Status",
+"playcount": 73
+}
+,
+{
+"name": "The Mouse Outfit",
+"playcount": 73
+}
+,
+{
+"name": "Pusha T",
+"playcount": 69
+}
+,
+{
+"name": "Wolf Alice",
+"playcount": 69
+}
+,
+{
+"name": "Neil Young",
+"playcount": 67
+}
+,
+{
+"name": "The Mountain Goats",
+"playcount": 67
+}
+,
+{
+"name": "Lorde",
+"playcount": 66
+}
+,
+{
+"name": "Superorganism",
+"playcount": 66
+}
+,
+{
+"name": "Bob Dylan",
+"playcount": 64
+}
+,
+{
+"name": "Vince Staples",
+"playcount": 64
+}
+,
+{
+"name": "Post Malone",
+"playcount": 60
+}
+,
+{
+"name": "Jorja Smith",
+"playcount": 56
+}
+,
+{
+"name": "Radiohead",
+"playcount": 55
+}
+,
+{
+"name": "J Dilla",
+"playcount": 54
+}
+,
+{
+"name": "Joey Bada$$",
+"playcount": 54
+}
+,
+{
+"name": "CHVRCHES",
+"playcount": 53
+}
+,
+{
+"name": "Drake",
+"playcount": 51
+}
+,
+{
+"name": "DANGERDOOM",
+"playcount": 50
+}
+,
+{
+"name": "The Killers",
+"playcount": 50
+}
+,
+{
+"name": "Hank Williams",
+"playcount": 49
+}
+,
+{
+"name": "Fleet Foxes",
+"playcount": 46
+}
+,
+{
+"name": "JPEGMAFIA",
+"playcount": 44
+}
+,
+{
+"name": "The Prodigy",
+"playcount": 44
+}
+,
+{
+"name": "Billy Bragg",
+"playcount": 42
+}
+,
+{
+"name": "Verb T",
+"playcount": 42
+}
+,
+{
+"name": "Arcade Fire",
+"playcount": 40
+}
+,
+{
+"name": "Daft Punk",
+"playcount": 40
+}
+,
+{
+"name": "Nothing But Thieves",
+"playcount": 40
+}
+,
+{
+"name": "Remo Drive",
+"playcount": 40
+}
+,
+{
+"name": "blink-182",
+"playcount": 37
+}
+,
+{
+"name": "The Dear Hunter",
+"playcount": 37
+}
+,
+{
+"name": "Anderson .Paak",
+"playcount": 36
+}
+,
+{
+"name": "LIL UZI VERT",
+"playcount": 36
+}
+,
+{
+"name": "MGMT",
+"playcount": 36
+}
+,
+{
+"name": "Jimi Hendrix",
+"playcount": 35
+}
+]
+}
+,{
+"x": 0.4083264290268347,
+"y": 0.1670710191038865,
+"name": "percyDD",
+"topTag": "Hip-Hop",
+"artists":  [
+{
+"name": "BROCKHAMPTON",
+"playcount": 1383
+}
+,
+{
+"name": "Nothing But Thieves",
+"playcount": 733
+}
+,
+{
+"name": "Kendrick Lamar",
+"playcount": 671
+}
+,
+{
+"name": "Childish Gambino",
+"playcount": 628
+}
+,
+{
+"name": "Post Malone",
+"playcount": 592
+}
+,
+{
+"name": "Enter Shikari",
+"playcount": 565
+}
+,
+{
+"name": "Anderson .Paak",
+"playcount": 521
+}
+,
+{
+"name": "Tyler, the Creator",
+"playcount": 471
+}
+,
+{
+"name": "Kanye West",
+"playcount": 456
+}
+,
+{
+"name": "Jorja Smith",
+"playcount": 337
+}
+,
+{
+"name": "Manchester Orchestra",
+"playcount": 324
+}
+,
+{
+"name": "The Japanese House",
+"playcount": 298
+}
+,
+{
+"name": "Methyl Ethel",
+"playcount": 293
+}
+,
+{
+"name": "Nahko and Medicine for the People",
+"playcount": 292
+}
+,
+{
+"name": "The Internet",
+"playcount": 278
+}
+,
+{
+"name": "Gorillaz",
+"playcount": 268
+}
+,
+{
+"name": "Unknown Mortal Orchestra",
+"playcount": 264
+}
+,
+{
+"name": "Frank Ocean",
+"playcount": 254
+}
+,
+{
+"name": "Wolf Alice",
+"playcount": 230
+}
+,
+{
+"name": "Two Door Cinema Club",
+"playcount": 226
+}
+,
+{
+"name": "SZA",
+"playcount": 223
+}
+,
+{
+"name": "Mother Mother",
+"playcount": 221
+}
+,
+{
+"name": "Drake",
+"playcount": 211
+}
+,
+{
+"name": "London Grammar",
+"playcount": 207
+}
+,
+{
+"name": "Marmozets",
+"playcount": 205
+}
+,
+{
+"name": "Kids See Ghosts",
+"playcount": 198
+}
+,
+{
+"name": "Temples",
+"playcount": 194
+}
+,
+{
+"name": "Chance the Rapper",
+"playcount": 187
+}
+,
+{
+"name": "Tame Impala",
+"playcount": 182
+}
+,
+{
+"name": "A Tribe Called Quest",
+"playcount": 180
+}
+,
+{
+"name": "Loyle Carner",
+"playcount": 179
+}
+,
+{
+"name": "James Blake",
+"playcount": 167
+}
+,
+{
+"name": "Kaytranada",
+"playcount": 160
+}
+,
+{
+"name": "Beach House",
+"playcount": 158
+}
+,
+{
+"name": "Kevin Abstract",
+"playcount": 154
+}
+,
+{
+"name": "Circa Survive",
+"playcount": 151
+}
+,
+{
+"name": "Eminem",
+"playcount": 147
+}
+,
+{
+"name": "Mac Miller",
+"playcount": 141
+}
+,
+{
+"name": "MGMT",
+"playcount": 140
+}
+,
+{
+"name": "Twenty One Pilots",
+"playcount": 138
+}
+,
+{
+"name": "EarthGang",
+"playcount": 135
+}
+,
+{
+"name": "Lower Than Atlantis",
+"playcount": 130
+}
+,
+{
+"name": "Billie Eilish",
+"playcount": 122
+}
+,
+{
+"name": "Stick Figure",
+"playcount": 118
+}
+,
+{
+"name": "Pusha T",
+"playcount": 113
+}
+,
+{
+"name": "A Day to Remember",
+"playcount": 110
+}
+,
+{
+"name": "Stormzy",
+"playcount": 110
+}
+,
+{
+"name": "Lil Dicky",
+"playcount": 107
+}
+,
+{
+"name": "Willow",
+"playcount": 107
+}
+,
+{
+"name": "Pink Floyd",
+"playcount": 105
+}
+]
+}
+,{
+"x": 0.17897395097682983,
+"y": 0.3417640724836144,
+"name": "CatTemplar",
+"topTag": "seen live",
+"artists":  [
+{
+"name": "The Dear Hunter",
+"playcount": 3652
+}
+,
+{
+"name": "Dream Theater",
+"playcount": 840
+}
+,
+{
+"name": "Deerhunter",
+"playcount": 716
+}
+,
+{
+"name": "Sufjan Stevens",
+"playcount": 680
+}
+,
+{
+"name": "Pink Floyd",
+"playcount": 545
+}
+,
+{
+"name": "The Japanese House",
+"playcount": 494
+}
+,
+{
+"name": "Two Door Cinema Club",
+"playcount": 470
+}
+,
+{
+"name": "Kanye West",
+"playcount": 430
+}
+,
+{
+"name": "Tame Impala",
+"playcount": 425
+}
+,
+{
+"name": "Manchester Orchestra",
+"playcount": 424
+}
+,
+{
+"name": "The Beatles",
+"playcount": 421
+}
+,
+{
+"name": "Biffy Clyro",
+"playcount": 403
+}
+,
+{
+"name": "Childish Gambino",
+"playcount": 386
+}
+,
+{
+"name": "Unknown Mortal Orchestra",
+"playcount": 372
+}
+,
+{
+"name": "Queen",
+"playcount": 349
+}
+,
+{
+"name": "Methyl Ethel",
+"playcount": 332
+}
+,
+{
+"name": "Gorillaz",
+"playcount": 330
+}
+,
+{
+"name": "Fleetwood Mac",
+"playcount": 321
+}
+,
+{
+"name": "Devin Townsend Project",
+"playcount": 320
+}
+,
+{
+"name": "Dr. Dog",
+"playcount": 315
+}
+,
+{
+"name": "Kendrick Lamar",
+"playcount": 299
+}
+,
+{
+"name": "Death Grips",
+"playcount": 288
+}
+,
+{
+"name": "Ween",
+"playcount": 288
+}
+,
+{
+"name": "Animal Collective",
+"playcount": 272
+}
+,
+{
+"name": "Jimi Hendrix",
+"playcount": 269
+}
+,
+{
+"name": "BROCKHAMPTON",
+"playcount": 264
+}
+,
+{
+"name": "Don Broco",
+"playcount": 260
+}
+,
+{
+"name": "Nothing But Thieves",
+"playcount": 249
+}
+,
+{
+"name": "Father John Misty",
+"playcount": 246
+}
+,
+{
+"name": "Flying Colors",
+"playcount": 239
+}
+,
+{
+"name": "Andrew Judah",
+"playcount": 224
+}
+,
+{
+"name": "Ty Segall",
+"playcount": 222
+}
+,
+{
+"name": "Creedence Clearwater Revival",
+"playcount": 215
+}
+,
+{
+"name": "Phantogram",
+"playcount": 213
+}
+,
+{
+"name": "Enter Shikari",
+"playcount": 208
+}
+,
+{
+"name": "Mac DeMarco",
+"playcount": 198
+}
+,
+{
+"name": "Run the Jewels",
+"playcount": 198
+}
+,
+{
+"name": "Courtney Barnett",
+"playcount": 193
+}
+,
+{
+"name": "La Femme",
+"playcount": 188
+}
+,
+{
+"name": "Anderson .Paak",
+"playcount": 177
+}
+,
+{
+"name": "The Growlers",
+"playcount": 175
+}
+,
+{
+"name": "Dr Syntax",
+"playcount": 173
+}
+,
+{
+"name": "CHVRCHES",
+"playcount": 153
+}
+,
+{
+"name": "Glass Animals",
+"playcount": 152
+}
+,
+{
+"name": "Coheed and Cambria",
+"playcount": 151
+}
+,
+{
+"name": "Carpenter Brut",
+"playcount": 148
+}
+,
+{
+"name": "TesseracT",
+"playcount": 148
+}
+,
+{
+"name": "Haken",
+"playcount": 146
+}
+,
+{
+"name": "Jack Garratt",
+"playcount": 145
+}
+,
+{
+"name": "Neutral Milk Hotel",
+"playcount": 145
+}
+]
+}
+,{
+"x": 0.5139858816501564,
+"y": -0.04220749138009877,
+"name": "SonnyThornhill",
+"topTag": "Hip-Hop",
+"artists":  [
+{
+"name": "Frank Ocean",
+"playcount": 784
+}
+,
+{
+"name": "Kanye West",
+"playcount": 747
+}
+,
+{
+"name": "BROCKHAMPTON",
+"playcount": 575
+}
+,
+{
+"name": "Tyler, the Creator",
+"playcount": 463
+}
+,
+{
+"name": "Amin�",
+"playcount": 348
+}
+,
+{
+"name": "Kendrick Lamar",
+"playcount": 300
+}
+,
+{
+"name": "Post Malone",
+"playcount": 296
+}
+,
+{
+"name": "Chance the Rapper",
+"playcount": 265
+}
+,
+{
+"name": "A$AP Rocky",
+"playcount": 258
+}
+,
+{
+"name": "Mura Masa",
+"playcount": 252
+}
+,
+{
+"name": "Vince Staples",
+"playcount": 202
+}
+,
+{
+"name": "Kids See Ghosts",
+"playcount": 198
+}
+,
+{
+"name": "Travi$ Scott",
+"playcount": 193
+}
+,
+{
+"name": "Gorillaz",
+"playcount": 149
+}
+,
+{
+"name": "Rejjie Snow",
+"playcount": 145
+}
+,
+{
+"name": "J Dilla",
+"playcount": 138
+}
+,
+{
+"name": "Dave",
+"playcount": 127
+}
+,
+{
+"name": "Denzel Curry",
+"playcount": 125
+}
+,
+{
+"name": "Mick Jenkins",
+"playcount": 121
+}
+,
+{
+"name": "Young Fathers",
+"playcount": 117
+}
+,
+{
+"name": "Childish Gambino",
+"playcount": 115
+}
+,
+{
+"name": "Young Thug",
+"playcount": 113
+}
+,
+{
+"name": "Lil Yachty",
+"playcount": 111
+}
+,
+{
+"name": "Kali Uchis",
+"playcount": 108
+}
+,
+{
+"name": "LIL UZI VERT",
+"playcount": 108
+}
+,
+{
+"name": "Skepta",
+"playcount": 107
+}
+,
+{
+"name": "SZA",
+"playcount": 106
+}
+,
+{
+"name": "Corbin",
+"playcount": 105
+}
+,
+{
+"name": "Playboi Carti",
+"playcount": 104
+}
+,
+{
+"name": "Migos",
+"playcount": 101
+}
+,
+{
+"name": "Drake",
+"playcount": 100
+}
+,
+{
+"name": "Joey Bada$$",
+"playcount": 100
+}
+,
+{
+"name": "Steve Lacy",
+"playcount": 97
+}
+,
+{
+"name": "Anderson .Paak",
+"playcount": 95
+}
+,
+{
+"name": "Dizzee Rascal",
+"playcount": 92
+}
+,
+{
+"name": "Glass Animals",
+"playcount": 88
+}
+,
+{
+"name": "Jai Paul",
+"playcount": 86
+}
+,
+{
+"name": "Pusha T",
+"playcount": 83
+}
+,
+{
+"name": "Jorja Smith",
+"playcount": 81
+}
+,
+{
+"name": "Nas",
+"playcount": 80
+}
+,
+{
+"name": "Kano",
+"playcount": 78
+}
+,
+{
+"name": "J.I.D",
+"playcount": 77
+}
+,
+{
+"name": "A$AP Mob",
+"playcount": 76
+}
+,
+{
+"name": "The 1975",
+"playcount": 76
+}
+,
+{
+"name": "GoldLink",
+"playcount": 73
+}
+,
+{
+"name": "Future",
+"playcount": 70
+}
+,
+{
+"name": "Marian Hill",
+"playcount": 69
+}
+,
+{
+"name": "Flatbush ZOMBiES",
+"playcount": 67
+}
+,
+{
+"name": "Nxworries",
+"playcount": 67
+}
+,
+{
+"name": "Cardi B",
+"playcount": 65
+}
+]
+}
+,{
+"x": 0.33339779864855695,
+"y": -0.17758896109101874,
+"name": "AndyPhillips_",
+"topTag": "Hip-Hop",
+"artists":  [
+{
+"name": "Post Malone",
+"playcount": 578
+}
+,
+{
+"name": "Fetty Wap",
+"playcount": 382
+}
+,
+{
+"name": "A Boogie Wit da Hoodie",
+"playcount": 186
+}
+,
+{
+"name": "LIL UZI VERT",
+"playcount": 179
+}
+,
+{
+"name": "Lil Yachty",
+"playcount": 164
+}
+,
+{
+"name": "Logic",
+"playcount": 105
+}
+,
+{
+"name": "J Hus",
+"playcount": 87
+}
+,
+{
+"name": "Drake",
+"playcount": 86
+}
+,
+{
+"name": "PNB Rock",
+"playcount": 84
+}
+,
+{
+"name": "Trippie Redd",
+"playcount": 71
+}
+,
+{
+"name": "Gucci Mane",
+"playcount": 61
+}
+,
+{
+"name": "Dram",
+"playcount": 60
+}
+,
+{
+"name": "KYLE",
+"playcount": 58
+}
+,
+{
+"name": "Migos",
+"playcount": 57
+}
+,
+{
+"name": "21 Savage",
+"playcount": 50
+}
+,
+{
+"name": "Ty Dolla $ign",
+"playcount": 48
+}
+,
+{
+"name": "NAV",
+"playcount": 45
+}
+,
+{
+"name": "Dave",
+"playcount": 43
+}
+,
+{
+"name": "Tay-K",
+"playcount": 36
+}
+,
+{
+"name": "MOSTACK",
+"playcount": 34
+}
+,
+{
+"name": "Travi$ Scott",
+"playcount": 33
+}
+,
+{
+"name": "6ix9ine",
+"playcount": 32
+}
+,
+{
+"name": "ramz",
+"playcount": 31
+}
+,
+{
+"name": "xxxtentacion",
+"playcount": 29
+}
+,
+{
+"name": "Childish Gambino",
+"playcount": 26
+}
+,
+{
+"name": "Camila Cabello",
+"playcount": 24
+}
+,
+{
+"name": "KnuckS",
+"playcount": 24
+}
+,
+{
+"name": "AJ Tracey",
+"playcount": 22
+}
+,
+{
+"name": "Kid Ink",
+"playcount": 22
+}
+,
+{
+"name": "Young Thug",
+"playcount": 22
+}
+,
+{
+"name": "Blackbear",
+"playcount": 21
+}
+,
+{
+"name": "Calvin Harris",
+"playcount": 21
+}
+,
+{
+"name": "Kojo Funds",
+"playcount": 21
+}
+,
+{
+"name": "Not3s",
+"playcount": 21
+}
+,
+{
+"name": "Figure Flows",
+"playcount": 20
+}
+,
+{
+"name": "Future",
+"playcount": 19
+}
+,
+{
+"name": "Big Boi",
+"playcount": 18
+}
+,
+{
+"name": "MADEINTYO",
+"playcount": 18
+}
+,
+{
+"name": "N.W.A",
+"playcount": 18
+}
+,
+{
+"name": "Yungen",
+"playcount": 18
+}
+,
+{
+"name": "Krept & Konan",
+"playcount": 16
+}
+,
+{
+"name": "Steel Banglez",
+"playcount": 16
+}
+,
+{
+"name": "Big Sean",
+"playcount": 15
+}
+,
+{
+"name": "Vic Mensa",
+"playcount": 15
+}
+,
+{
+"name": "Joey Bada$$",
+"playcount": 13
+}
+,
+{
+"name": "Kanye West",
+"playcount": 12
+}
+,
+{
+"name": "Kodak Black",
+"playcount": 12
+}
+,
+{
+"name": "GoldLink",
+"playcount": 11
+}
+,
+{
+"name": "Usher",
+"playcount": 11
+}
+,
+{
+"name": "2Pac",
+"playcount": 10
+}
+]
+}
+,{
+"x": 0.18404313872863345,
+"y": -3.4319701743202626E-4,
+"name": "CianKel",
+"topTag": "Hip-Hop",
+"artists":  [
+{
+"name": "Childish Gambino",
+"playcount": 2631
+}
+,
+{
+"name": "Kanye West",
+"playcount": 2497
+}
+,
+{
+"name": "Aesop Rock",
+"playcount": 1915
+}
+,
+{
+"name": "Watsky",
+"playcount": 1774
+}
+,
+{
+"name": "Anderson Paak",
+"playcount": 1127
+}
+,
+{
+"name": "Eminem",
+"playcount": 1075
+}
+,
+{
+"name": "Walk Off the Earth",
+"playcount": 777
+}
+,
+{
+"name": "Kush Mody",
+"playcount": 705
+}
+,
+{
+"name": "Metric",
+"playcount": 643
+}
+,
+{
+"name": "Donnie Trumpet & The Social Experiment",
+"playcount": 545
+}
+,
+{
+"name": "Pentatonix",
+"playcount": 489
+}
+,
+{
+"name": "Marina & the Diamonds",
+"playcount": 455
+}
+,
+{
+"name": "Chance the Rapper",
+"playcount": 444
+}
+,
+{
+"name": "Macklemore & Ryan Lewis",
+"playcount": 443
+}
+,
+{
+"name": "Caravan Palace",
+"playcount": 432
+}
+,
+{
+"name": "Mumford & Sons",
+"playcount": 378
+}
+,
+{
+"name": "Flobots",
+"playcount": 346
+}
+,
+{
+"name": "Darren Korb",
+"playcount": 341
+}
+,
+{
+"name": "Silversun Pickups",
+"playcount": 326
+}
+,
+{
+"name": "Mura Masa",
+"playcount": 307
+}
+,
+{
+"name": "Sam Lachow",
+"playcount": 307
+}
+,
+{
+"name": "Mac Miller",
+"playcount": 304
+}
+,
+{
+"name": "Death Cab for Cutie",
+"playcount": 296
+}
+,
+{
+"name": "Kendrick Lamar",
+"playcount": 292
+}
+,
+{
+"name": "Maxence Cyrin",
+"playcount": 274
+}
+,
+{
+"name": "Fleetwood Mac",
+"playcount": 271
+}
+,
+{
+"name": "Capital Cities",
+"playcount": 270
+}
+,
+{
+"name": "The Shins",
+"playcount": 266
+}
+,
+{
+"name": "Barenaked Ladies",
+"playcount": 260
+}
+,
+{
+"name": "The D�",
+"playcount": 250
+}
+,
+{
+"name": "Porter Robinson",
+"playcount": 243
+}
+,
+{
+"name": "fun.",
+"playcount": 241
+}
+,
+{
+"name": "Anna Ternheim",
+"playcount": 224
+}
+,
+{
+"name": "Hundred Waters",
+"playcount": 223
+}
+,
+{
+"name": "Jeremy Messersmith",
+"playcount": 214
+}
+,
+{
+"name": "Tove Lo",
+"playcount": 214
+}
+,
+{
+"name": "Halsey",
+"playcount": 212
+}
+,
+{
+"name": "Graeme James",
+"playcount": 208
+}
+,
+{
+"name": "Say Anything",
+"playcount": 208
+}
+,
+{
+"name": "Fall Out Boy",
+"playcount": 207
+}
+,
+{
+"name": "The Knocks",
+"playcount": 206
+}
+,
+{
+"name": "Colin Hay",
+"playcount": 201
+}
+,
+{
+"name": "Macklemore",
+"playcount": 201
+}
+,
+{
+"name": "Mick Jenkins",
+"playcount": 201
+}
+,
+{
+"name": "Ellie Goulding",
+"playcount": 195
+}
+,
+{
+"name": "Hoodie Allen",
+"playcount": 195
+}
+,
+{
+"name": "Ed Sheeran",
+"playcount": 194
+}
+,
+{
+"name": "Pogo",
+"playcount": 194
+}
+,
+{
+"name": "Avicii",
+"playcount": 192
+}
+,
+{
+"name": "Gorillaz",
+"playcount": 189
+}
+]
+}
+,{
+"x": 0.35020360489294877,
+"y": 0.08599224579144993,
+"name": "tomoswootton",
+"topTag": "Hip-Hop",
+"artists":  [
+{
+"name": "Gorillaz",
+"playcount": 631
+}
+,
+{
+"name": "Bob Marley & The Wailers",
+"playcount": 558
+}
+,
+{
+"name": "Kendrick Lamar",
+"playcount": 390
+}
+,
+{
+"name": "Stick Figure",
+"playcount": 365
+}
+,
+{
+"name": "Passenger",
+"playcount": 361
+}
+,
+{
+"name": "BROCKHAMPTON",
+"playcount": 356
+}
+,
+{
+"name": "Glass Animals",
+"playcount": 317
+}
+,
+{
+"name": "Ziggy Marley",
+"playcount": 286
+}
+,
+{
+"name": "Raging Fyah",
+"playcount": 258
+}
+,
+{
+"name": "London Grammar",
+"playcount": 255
+}
+,
+{
+"name": "Nahko and Medicine for the People",
+"playcount": 236
+}
+,
+{
+"name": "alt-J",
+"playcount": 219
+}
+,
+{
+"name": "Run the Jewels",
+"playcount": 210
+}
+,
+{
+"name": "Milky Chance",
+"playcount": 209
+}
+,
+{
+"name": "Post Malone",
+"playcount": 208
+}
+,
+{
+"name": "Kanye West",
+"playcount": 203
+}
+,
+{
+"name": "Milo",
+"playcount": 201
+}
+,
+{
+"name": "Russ",
+"playcount": 200
+}
+,
+{
+"name": "Mungo's Hi Fi",
+"playcount": 174
+}
+,
+{
+"name": "Popcaan",
+"playcount": 174
+}
+,
+{
+"name": "Mura Masa",
+"playcount": 168
+}
+,
+{
+"name": "Jason Mraz",
+"playcount": 160
+}
+,
+{
+"name": "Vince Staples",
+"playcount": 156
+}
+,
+{
+"name": "The Cat Empire",
+"playcount": 152
+}
+,
+{
+"name": "Tame Impala",
+"playcount": 142
+}
+,
+{
+"name": "A$AP Rocky",
+"playcount": 137
+}
+,
+{
+"name": "Anderson .Paak",
+"playcount": 136
+}
+,
+{
+"name": "Alborosie",
+"playcount": 133
+}
+,
+{
+"name": "Childish Gambino",
+"playcount": 132
+}
+,
+{
+"name": "Midnite",
+"playcount": 129
+}
+,
+{
+"name": "Oka",
+"playcount": 126
+}
+,
+{
+"name": "Coast Modern",
+"playcount": 125
+}
+,
+{
+"name": "Daft Punk",
+"playcount": 123
+}
+,
+{
+"name": "The Dirty Heads",
+"playcount": 117
+}
+,
+{
+"name": "Everything Everything",
+"playcount": 115
+}
+,
+{
+"name": "Frank Ocean",
+"playcount": 115
+}
+,
+{
+"name": "Barrington Levy",
+"playcount": 112
+}
+,
+{
+"name": "Kabaka Pyramid",
+"playcount": 108
+}
+,
+{
+"name": "Chill Bump",
+"playcount": 107
+}
+,
+{
+"name": "Queen Ifrica",
+"playcount": 104
+}
+,
+{
+"name": "MGMT",
+"playcount": 103
+}
+,
+{
+"name": "Damian Marley",
+"playcount": 102
+}
+,
+{
+"name": "Capital Cities",
+"playcount": 99
+}
+,
+{
+"name": "Kaytranada",
+"playcount": 98
+}
+,
+{
+"name": "Michael Jackson",
+"playcount": 97
+}
+,
+{
+"name": "The Streets",
+"playcount": 97
+}
+,
+{
+"name": "Frankie Stew and Harvey Gunn",
+"playcount": 95
+}
+,
+{
+"name": "Fugees",
+"playcount": 95
+}
+,
+{
+"name": "Bugle",
+"playcount": 94
+}
+,
+{
+"name": "Unknown Mortal Orchestra",
+"playcount": 94
+}
+]
+}
+,{
+"x": 0.0173362365587588,
+"y": 0.05341172874405491,
+"name": "JonnyClark1990",
+"topTag": "seen live",
+"artists":  [
+{
+"name": "The Dear Hunter",
+"playcount": 2444
+}
+,
+{
+"name": "Manchester Orchestra",
+"playcount": 1468
+}
+,
+{
+"name": "Thrice",
+"playcount": 1294
+}
+,
+{
+"name": "Hands Like Houses",
+"playcount": 1252
+}
+,
+{
+"name": "Don Broco",
+"playcount": 1052
+}
+,
+{
+"name": "Radiohead",
+"playcount": 1039
+}
+,
+{
+"name": "Kendrick Lamar",
+"playcount": 831
+}
+,
+{
+"name": "Bon Iver",
+"playcount": 797
+}
+,
+{
+"name": "BROCKHAMPTON",
+"playcount": 747
+}
+,
+{
+"name": "�lafur Arnalds",
+"playcount": 728
+}
+,
+{
+"name": "Periphery",
+"playcount": 725
+}
+,
+{
+"name": "TesseracT",
+"playcount": 715
+}
+,
+{
+"name": "Dance Gavin Dance",
+"playcount": 639
+}
+,
+{
+"name": "Oceansize",
+"playcount": 524
+}
+,
+{
+"name": "Polyphia",
+"playcount": 518
+}
+,
+{
+"name": "Max Richter",
+"playcount": 498
+}
+,
+{
+"name": "J�hann J�hannsson",
+"playcount": 497
+}
+,
+{
+"name": "Sufjan Stevens",
+"playcount": 474
+}
+,
+{
+"name": "Unknown Mortal Orchestra",
+"playcount": 467
+}
+,
+{
+"name": "Intervals",
+"playcount": 428
+}
+,
+{
+"name": "Reuben",
+"playcount": 379
+}
+,
+{
+"name": "65daysofstatic",
+"playcount": 377
+}
+,
+{
+"name": "Anberlin",
+"playcount": 365
+}
+,
+{
+"name": "Royal Blood",
+"playcount": 358
+}
+,
+{
+"name": "Jack Garratt",
+"playcount": 347
+}
+,
+{
+"name": "Emarosa",
+"playcount": 345
+}
+,
+{
+"name": "Kanye West",
+"playcount": 342
+}
+,
+{
+"name": "Half Moon Run",
+"playcount": 319
+}
+,
+{
+"name": "This Will Destroy You",
+"playcount": 307
+}
+,
+{
+"name": "Explosions in the Sky",
+"playcount": 299
+}
+,
+{
+"name": "Biffy Clyro",
+"playcount": 295
+}
+,
+{
+"name": "The Receiving End of Sirens",
+"playcount": 295
+}
+,
+{
+"name": "Deerhunter",
+"playcount": 294
+}
+,
+{
+"name": "Lower Than Atlantis",
+"playcount": 286
+}
+,
+{
+"name": "The Reign Of Kindo",
+"playcount": 277
+}
+,
+{
+"name": "Mew",
+"playcount": 276
+}
+,
+{
+"name": "Pain of Salvation",
+"playcount": 261
+}
+,
+{
+"name": "Mallory Knox",
+"playcount": 256
+}
+,
+{
+"name": "William Fitzsimmons",
+"playcount": 256
+}
+,
+{
+"name": "Sleepmakeswaves",
+"playcount": 250
+}
+,
+{
+"name": "Kay Kay and His Weathered Underground",
+"playcount": 248
+}
+,
+{
+"name": "The 1975",
+"playcount": 242
+}
+,
+{
+"name": "Phoria",
+"playcount": 239
+}
+,
+{
+"name": "Panic! at the Disco",
+"playcount": 235
+}
+,
+{
+"name": "Sonata Arctica",
+"playcount": 231
+}
+,
+{
+"name": "Nural",
+"playcount": 225
+}
+,
+{
+"name": "Zedd",
+"playcount": 223
+}
+,
+{
+"name": "CHON",
+"playcount": 218
+}
+,
+{
+"name": "Frank Ocean",
+"playcount": 215
+}
+,
+{
+"name": "Nils Frahm",
+"playcount": 213
+}
+]
+}
+,{
+"x": -0.047315225929895836,
+"y": 0.4147997267716223,
+"name": "matgracias",
+"topTag": "folk",
+"artists":  [
+{
+"name": "The Dear Hunter",
+"playcount": 636
+}
+,
+{
+"name": "Father John Misty",
+"playcount": 597
+}
+,
+{
+"name": "King Gizzard & The Lizard Wizard",
+"playcount": 567
+}
+,
+{
+"name": "Mac DeMarco",
+"playcount": 507
+}
+,
+{
+"name": "Car Seat Headrest",
+"playcount": 446
+}
+,
+{
+"name": "Courtney Barnett",
+"playcount": 324
+}
+,
+{
+"name": "Arctic Monkeys",
+"playcount": 281
+}
+,
+{
+"name": "Ty Segall",
+"playcount": 246
+}
+,
+{
+"name": "Radiohead",
+"playcount": 245
+}
+,
+{
+"name": "Pink Floyd",
+"playcount": 232
+}
+,
+{
+"name": "Bon Iver",
+"playcount": 230
+}
+,
+{
+"name": "BROCKHAMPTON",
+"playcount": 223
+}
+,
+{
+"name": "The Family Crest",
+"playcount": 199
+}
+,
+{
+"name": "Parquet Courts",
+"playcount": 164
+}
+,
+{
+"name": "Queens of the Stone Age",
+"playcount": 163
+}
+,
+{
+"name": "Mild High Club",
+"playcount": 156
+}
+,
+{
+"name": "Vulfpeck",
+"playcount": 156
+}
+,
+{
+"name": "Led Zeppelin",
+"playcount": 152
+}
+,
+{
+"name": "The Beatles",
+"playcount": 145
+}
+,
+{
+"name": "Fleet Foxes",
+"playcount": 139
+}
+,
+{
+"name": "Naked Giants",
+"playcount": 124
+}
+,
+{
+"name": "The White Stripes",
+"playcount": 124
+}
+,
+{
+"name": "Madi Sipes & The Painted Blue",
+"playcount": 111
+}
+,
+{
+"name": "King Krule",
+"playcount": 101
+}
+,
+{
+"name": "Queen",
+"playcount": 96
+}
+,
+{
+"name": "Tame Impala",
+"playcount": 96
+}
+,
+{
+"name": "Gogol Bordello",
+"playcount": 94
+}
+,
+{
+"name": "Idles",
+"playcount": 91
+}
+,
+{
+"name": "Phoebe Bridgers",
+"playcount": 88
+}
+,
+{
+"name": "Tera Melos",
+"playcount": 88
+}
+,
+{
+"name": "Novo Amor",
+"playcount": 76
+}
+,
+{
+"name": "Yes",
+"playcount": 75
+}
+,
+{
+"name": "CHON",
+"playcount": 73
+}
+,
+{
+"name": "Arcade Fire",
+"playcount": 71
+}
+,
+{
+"name": "Lucy Dacus",
+"playcount": 69
+}
+,
+{
+"name": "Rush",
+"playcount": 69
+}
+,
+{
+"name": "Spendtime Palace",
+"playcount": 69
+}
+,
+{
+"name": "Tom Waits",
+"playcount": 69
+}
+,
+{
+"name": "LCD Soundsystem",
+"playcount": 67
+}
+,
+{
+"name": "Mumford & Sons",
+"playcount": 67
+}
+,
+{
+"name": "The Smiths",
+"playcount": 67
+}
+,
+{
+"name": "Julien Baker",
+"playcount": 65
+}
+,
+{
+"name": "Psychedelic Porn Crumpets",
+"playcount": 65
+}
+,
+{
+"name": "The Raconteurs",
+"playcount": 65
+}
+,
+{
+"name": "The Black Keys",
+"playcount": 64
+}
+,
+{
+"name": "Hozier",
+"playcount": 61
+}
+,
+{
+"name": "Shakey Graves",
+"playcount": 61
+}
+,
+{
+"name": "Jimi Hendrix",
+"playcount": 57
+}
+,
+{
+"name": "Fleetwood Mac",
+"playcount": 56
+}
+,
+{
+"name": "Thundercat",
+"playcount": 56
+}
+]
+}
+,{
+"x": -0.039856129708064694,
+"y": 0.1110818829812945,
+"name": "Primo_s",
+"topTag": "synthwave",
+"artists":  [
+{
+"name": "M83",
+"playcount": 827
+}
+,
+{
+"name": "MGMT",
+"playcount": 825
+}
+,
+{
+"name": "Daft Punk",
+"playcount": 683
+}
+,
+{
+"name": "Gunship",
+"playcount": 588
+}
+,
+{
+"name": "The Midnight",
+"playcount": 522
+}
+,
+{
+"name": "Kyle Dixon & Michael Stein",
+"playcount": 518
+}
+,
+{
+"name": "Max Richter",
+"playcount": 454
+}
+,
+{
+"name": "Radiohead",
+"playcount": 424
+}
+,
+{
+"name": "David Bowie",
+"playcount": 382
+}
+,
+{
+"name": "Justice",
+"playcount": 354
+}
+,
+{
+"name": "Perturbator",
+"playcount": 340
+}
+,
+{
+"name": "Dance With The Dead",
+"playcount": 326
+}
+,
+{
+"name": "Carpenter Brut",
+"playcount": 261
+}
+,
+{
+"name": "Ghost",
+"playcount": 231
+}
+,
+{
+"name": "Tame Impala",
+"playcount": 211
+}
+,
+{
+"name": "Gorillaz",
+"playcount": 209
+}
+,
+{
+"name": "Timecop1983",
+"playcount": 207
+}
+,
+{
+"name": "deadmau5",
+"playcount": 195
+}
+,
+{
+"name": "Porter Robinson",
+"playcount": 169
+}
+,
+{
+"name": "Home",
+"playcount": 160
+}
+,
+{
+"name": "Alvvays",
+"playcount": 152
+}
+,
+{
+"name": "Watsky",
+"playcount": 150
+}
+,
+{
+"name": "Lazerhawk",
+"playcount": 145
+}
+,
+{
+"name": "The Killers",
+"playcount": 136
+}
+,
+{
+"name": "Sigur R�s",
+"playcount": 131
+}
+,
+{
+"name": "FM-84",
+"playcount": 130
+}
+,
+{
+"name": "Hans Zimmer",
+"playcount": 124
+}
+,
+{
+"name": "Murray Gold",
+"playcount": 117
+}
+,
+{
+"name": "Alexandre Desplat",
+"playcount": 116
+}
+,
+{
+"name": "Madeon",
+"playcount": 115
+}
+,
+{
+"name": "Oasis",
+"playcount": 113
+}
+,
+{
+"name": "God Is An Astronaut",
+"playcount": 89
+}
+,
+{
+"name": "Haken",
+"playcount": 88
+}
+,
+{
+"name": "Le Matos",
+"playcount": 84
+}
+,
+{
+"name": "Lorn",
+"playcount": 82
+}
+,
+{
+"name": "Com Truise",
+"playcount": 80
+}
+,
+{
+"name": "Fixions",
+"playcount": 80
+}
+,
+{
+"name": "Nox Arcana",
+"playcount": 80
+}
+,
+{
+"name": "Clint Mansell",
+"playcount": 79
+}
+,
+{
+"name": "Mitch Murder",
+"playcount": 78
+}
+,
+{
+"name": "Beach House",
+"playcount": 70
+}
+,
+{
+"name": "Hollywood Burns",
+"playcount": 69
+}
+,
+{
+"name": "Kavinsky",
+"playcount": 68
+}
+,
+{
+"name": "S U R V I V E",
+"playcount": 68
+}
+,
+{
+"name": "Waveshaper",
+"playcount": 67
+}
+,
+{
+"name": "Howard Shore",
+"playcount": 66
+}
+,
+{
+"name": "Neon Indian",
+"playcount": 65
+}
+,
+{
+"name": "Gost",
+"playcount": 64
+}
+,
+{
+"name": "King Gizzard & The Lizard Wizard",
+"playcount": 64
+}
+,
+{
+"name": "W O L F C L U B",
+"playcount": 62
+}
+]
+}
+,{
+"x": -0.13993345881023375,
+"y": -0.03520608582355945,
+"name": "Callipyginous",
+"topTag": "electronic",
+"artists":  [
+{
+"name": "Death Cab for Cutie",
+"playcount": 2195
+}
+,
+{
+"name": "Fleet Foxes",
+"playcount": 1603
+}
+,
+{
+"name": "Gotye",
+"playcount": 1347
+}
+,
+{
+"name": "Florence + the Machine",
+"playcount": 1027
+}
+,
+{
+"name": "British India",
+"playcount": 1021
+}
+,
+{
+"name": "DevilDriver",
+"playcount": 987
+}
+,
+{
+"name": "The Middle East",
+"playcount": 982
+}
+,
+{
+"name": "Lamb of God",
+"playcount": 956
+}
+,
+{
+"name": "Moby",
+"playcount": 930
+}
+,
+{
+"name": "Pendulum",
+"playcount": 898
+}
+,
+{
+"name": "Daft Punk",
+"playcount": 889
+}
+,
+{
+"name": "The Chemical Brothers",
+"playcount": 868
+}
+,
+{
+"name": "Opeth",
+"playcount": 862
+}
+,
+{
+"name": "J�nsi & Alex",
+"playcount": 830
+}
+,
+{
+"name": "Sigur R�s",
+"playcount": 793
+}
+,
+{
+"name": "The Mountain Goats",
+"playcount": 721
+}
+,
+{
+"name": "Amon Amarth",
+"playcount": 714
+}
+,
+{
+"name": "The Wombats",
+"playcount": 710
+}
+,
+{
+"name": "Dream Theater",
+"playcount": 692
+}
+,
+{
+"name": "Nine Inch Nails",
+"playcount": 641
+}
+,
+{
+"name": "As I Lay Dying",
+"playcount": 619
+}
+,
+{
+"name": "Tool",
+"playcount": 591
+}
+,
+{
+"name": "Machine Head",
+"playcount": 585
+}
+,
+{
+"name": "Parkway Drive",
+"playcount": 557
+}
+,
+{
+"name": "Linkin Park",
+"playcount": 532
+}
+,
+{
+"name": "Bat for Lashes",
+"playcount": 522
+}
+,
+{
+"name": "Katatonia",
+"playcount": 507
+}
+,
+{
+"name": "Vast",
+"playcount": 493
+}
+,
+{
+"name": "UNKLE",
+"playcount": 490
+}
+,
+{
+"name": "Anathema",
+"playcount": 480
+}
+,
+{
+"name": "TesseracT",
+"playcount": 456
+}
+,
+{
+"name": "65daysofstatic",
+"playcount": 450
+}
+,
+{
+"name": "Cut Copy",
+"playcount": 449
+}
+,
+{
+"name": "Trentem�ller",
+"playcount": 436
+}
+,
+{
+"name": "Mastodon",
+"playcount": 431
+}
+,
+{
+"name": "LCD Soundsystem",
+"playcount": 430
+}
+,
+{
+"name": "Nightwish",
+"playcount": 429
+}
+,
+{
+"name": "Metallica",
+"playcount": 424
+}
+,
+{
+"name": "The Naked and Famous",
+"playcount": 403
+}
+,
+{
+"name": "Gorillaz",
+"playcount": 401
+}
+,
+{
+"name": "A Perfect Circle",
+"playcount": 398
+}
+,
+{
+"name": "Bring Me the Horizon",
+"playcount": 395
+}
+,
+{
+"name": "In Fear and Faith",
+"playcount": 385
+}
+,
+{
+"name": "Ou Est Le Swimming Pool",
+"playcount": 385
+}
+,
+{
+"name": "The Avalanches",
+"playcount": 383
+}
+,
+{
+"name": "Crystal Castles",
+"playcount": 375
+}
+,
+{
+"name": "The xx",
+"playcount": 372
+}
+,
+{
+"name": "Solar Fields",
+"playcount": 349
+}
+,
+{
+"name": "Symphony X",
+"playcount": 345
+}
+,
+{
+"name": "Placebo",
+"playcount": 322
+}
+]
+}
+,{
+"x": 0.28060501730844256,
+"y": 0.24720786479860943,
+"name": "seam_boi",
+"topTag": "Hip-Hop",
+"artists":  [
+{
+"name": "Kanye West",
+"playcount": 9082
+}
+,
+{
+"name": "Childish Gambino",
+"playcount": 6907
+}
+,
+{
+"name": "The Doors",
+"playcount": 3659
+}
+,
+{
+"name": "Kendrick Lamar",
+"playcount": 3550
+}
+,
+{
+"name": "BROCKHAMPTON",
+"playcount": 2760
+}
+,
+{
+"name": "Kansas",
+"playcount": 2643
+}
+,
+{
+"name": "Travi$ Scott",
+"playcount": 2126
+}
+,
+{
+"name": "The Jimi Hendrix Experience",
+"playcount": 1705
+}
+,
+{
+"name": "Tyler, the Creator",
+"playcount": 1213
+}
+,
+{
+"name": "Chance the Rapper",
+"playcount": 1178
+}
+,
+{
+"name": "Frank Ocean",
+"playcount": 1079
+}
+,
+{
+"name": "Kasabian",
+"playcount": 1065
+}
+,
+{
+"name": "Joey Bada$$",
+"playcount": 1042
+}
+,
+{
+"name": "Led Zeppelin",
+"playcount": 930
+}
+,
+{
+"name": "King Crimson",
+"playcount": 872
+}
+,
+{
+"name": "Kid Cudi",
+"playcount": 833
+}
+,
+{
+"name": "Queen",
+"playcount": 833
+}
+,
+{
+"name": "Pusha T",
+"playcount": 711
+}
+,
+{
+"name": "Pink Floyd",
+"playcount": 678
+}
+,
+{
+"name": "Justin Timberlake",
+"playcount": 663
+}
+,
+{
+"name": "The Beatles",
+"playcount": 655
+}
+,
+{
+"name": "The Heavy",
+"playcount": 636
+}
+,
+{
+"name": "David Bowie",
+"playcount": 614
+}
+,
+{
+"name": "Nick Cave & The Bad Seeds",
+"playcount": 567
+}
+,
+{
+"name": "Jay-Z & Kanye West",
+"playcount": 527
+}
+,
+{
+"name": "Anderson .Paak",
+"playcount": 515
+}
+,
+{
+"name": "Jay-Z",
+"playcount": 511
+}
+,
+{
+"name": "The Who",
+"playcount": 511
+}
+,
+{
+"name": "King Gizzard & The Lizard Wizard",
+"playcount": 465
+}
+,
+{
+"name": "Kids See Ghosts",
+"playcount": 454
+}
+,
+{
+"name": "A Tribe Called Quest",
+"playcount": 419
+}
+,
+{
+"name": "Rush",
+"playcount": 414
+}
+,
+{
+"name": "Badfinger",
+"playcount": 409
+}
+,
+{
+"name": "John Williams",
+"playcount": 398
+}
+,
+{
+"name": "Danny Brown",
+"playcount": 382
+}
+,
+{
+"name": "N*E*R*D",
+"playcount": 349
+}
+,
+{
+"name": "G.O.O.D. Music",
+"playcount": 326
+}
+,
+{
+"name": "Donnie Trumpet",
+"playcount": 313
+}
+,
+{
+"name": "Jaden Smith",
+"playcount": 312
+}
+,
+{
+"name": "Saba",
+"playcount": 299
+}
+,
+{
+"name": "Nickelback",
+"playcount": 292
+}
+,
+{
+"name": "The Police",
+"playcount": 288
+}
+,
+{
+"name": "NoName",
+"playcount": 287
+}
+,
+{
+"name": "Denzel Curry",
+"playcount": 284
+}
+,
+{
+"name": "Tommy James & The Shondells",
+"playcount": 273
+}
+,
+{
+"name": "OutKast",
+"playcount": 259
+}
+,
+{
+"name": "Eminem",
+"playcount": 256
+}
+,
+{
+"name": "Toto",
+"playcount": 241
+}
+,
+{
+"name": "Fleetwood Mac",
+"playcount": 236
+}
+,
+{
+"name": "R.E.M.",
+"playcount": 228
+}
+]
+}
+,{
+"x": 0.34059032993097155,
+"y": 0.08490707893538321,
+"name": "BroomPerson21",
+"topTag": "Hip-Hop",
+"artists":  [
+{
+"name": "The Mountain Goats",
+"playcount": 23453
+}
+,
+{
+"name": "Kanye West",
+"playcount": 10264
+}
+,
+{
+"name": "Father John Misty",
+"playcount": 9309
+}
+,
+{
+"name": "Drake",
+"playcount": 5528
+}
+,
+{
+"name": "Frank Ocean",
+"playcount": 5173
+}
+,
+{
+"name": "The Beatles",
+"playcount": 4813
+}
+,
+{
+"name": "Travi$ Scott",
+"playcount": 3574
+}
+,
+{
+"name": "BROCKHAMPTON",
+"playcount": 3450
+}
+,
+{
+"name": "Sufjan Stevens",
+"playcount": 3065
+}
+,
+{
+"name": "Action Bronson",
+"playcount": 2694
+}
+,
+{
+"name": "Bob Dylan",
+"playcount": 2584
+}
+,
+{
+"name": "Lana Del Rey",
+"playcount": 2299
+}
+,
+{
+"name": "Fleet Foxes",
+"playcount": 2267
+}
+,
+{
+"name": "Kid Cudi",
+"playcount": 1887
+}
+,
+{
+"name": "Bon Iver",
+"playcount": 1777
+}
+,
+{
+"name": "The Weeknd",
+"playcount": 1530
+}
+,
+{
+"name": "Death Grips",
+"playcount": 1400
+}
+,
+{
+"name": "Kendrick Lamar",
+"playcount": 1386
+}
+,
+{
+"name": "TV on the Radio",
+"playcount": 1383
+}
+,
+{
+"name": "Childish Gambino",
+"playcount": 1331
+}
+,
+{
+"name": "Nas",
+"playcount": 1307
+}
+,
+{
+"name": "Beach House",
+"playcount": 1296
+}
+,
+{
+"name": "Young Thug",
+"playcount": 1277
+}
+,
+{
+"name": "A$AP Rocky",
+"playcount": 1270
+}
+,
+{
+"name": "The Doors",
+"playcount": 1177
+}
+,
+{
+"name": "Chance the Rapper",
+"playcount": 1105
+}
+,
+{
+"name": "J. Tillman",
+"playcount": 1100
+}
+,
+{
+"name": "Leonard Cohen",
+"playcount": 1085
+}
+,
+{
+"name": "Vince Staples",
+"playcount": 998
+}
+,
+{
+"name": "James Blake",
+"playcount": 966
+}
+,
+{
+"name": "Skizzy Mars",
+"playcount": 962
+}
+,
+{
+"name": "Courtney Barnett",
+"playcount": 925
+}
+,
+{
+"name": "Future",
+"playcount": 897
+}
+,
+{
+"name": "Alex Cameron",
+"playcount": 884
+}
+,
+{
+"name": "Lupe Fiasco",
+"playcount": 838
+}
+,
+{
+"name": "Mac Miller",
+"playcount": 831
+}
+,
+{
+"name": "John Vanderslice",
+"playcount": 783
+}
+,
+{
+"name": "Jay-Z & Kanye West",
+"playcount": 770
+}
+,
+{
+"name": "LIL UZI VERT",
+"playcount": 763
+}
+,
+{
+"name": "G-Eazy",
+"playcount": 692
+}
+,
+{
+"name": "Weezer",
+"playcount": 692
+}
+,
+{
+"name": "John Lennon",
+"playcount": 675
+}
+,
+{
+"name": "PARTYNEXTDOOR",
+"playcount": 648
+}
+,
+{
+"name": "Ramin Djawadi",
+"playcount": 604
+}
+,
+{
+"name": "The Extra Glenns",
+"playcount": 598
+}
+,
+{
+"name": "Run the Jewels",
+"playcount": 580
+}
+,
+{
+"name": "2Pac",
+"playcount": 558
+}
+,
+{
+"name": "Wu-Tang Clan",
+"playcount": 538
+}
+,
+{
+"name": "Mitski",
+"playcount": 526
+}
+,
+{
+"name": "Drake & Future",
+"playcount": 518
+}
+]
+}
+,{
+"x": 0.34312092836082136,
+"y": -0.15046978182967102,
+"name": "Mathearny95",
+"topTag": "Hip-Hop",
+"artists":  [
+{
+"name": "Ugly God",
+"playcount": 35
+}
+,
+{
+"name": "Healy",
+"playcount": 15
+}
+,
+{
+"name": "BROCKHAMPTON",
+"playcount": 12
+}
+,
+{
+"name": "Kendrick Lamar",
+"playcount": 12
+}
+,
+{
+"name": "MADEINTYO",
+"playcount": 12
+}
+,
+{
+"name": "Avicii",
+"playcount": 11
+}
+,
+{
+"name": "Klangkarussell",
+"playcount": 11
+}
+,
+{
+"name": "YBN Nahmir",
+"playcount": 11
+}
+,
+{
+"name": "San Holo",
+"playcount": 10
+}
+,
+{
+"name": "The Black Keys",
+"playcount": 10
+}
+,
+{
+"name": "Young Thug",
+"playcount": 9
+}
+,
+{
+"name": "LIL UZI VERT",
+"playcount": 8
+}
+,
+{
+"name": "Travi$ Scott",
+"playcount": 8
+}
+,
+{
+"name": "Two Door Cinema Club",
+"playcount": 8
+}
+,
+{
+"name": "AJ Tracey",
+"playcount": 7
+}
+,
+{
+"name": "NAV",
+"playcount": 7
+}
+,
+{
+"name": "SKI MASK THE SLUMP GOD",
+"playcount": 7
+}
+,
+{
+"name": "Miguel",
+"playcount": 6
+}
+,
+{
+"name": "Yung Bans",
+"playcount": 6
+}
+,
+{
+"name": "21 Savage",
+"playcount": 5
+}
+,
+{
+"name": "Broken Back",
+"playcount": 5
+}
+,
+{
+"name": "deadmau5",
+"playcount": 5
+}
+,
+{
+"name": "Denzel Curry",
+"playcount": 5
+}
+,
+{
+"name": "Drake",
+"playcount": 5
+}
+,
+{
+"name": "J. Cole",
+"playcount": 5
+}
+,
+{
+"name": "Kodak Black",
+"playcount": 5
+}
+,
+{
+"name": "Marcellus Juvann",
+"playcount": 5
+}
+,
+{
+"name": "Post Malone",
+"playcount": 5
+}
+,
+{
+"name": "RICH CHIGGA",
+"playcount": 5
+}
+,
+{
+"name": "A$AP Mob",
+"playcount": 4
+}
+,
+{
+"name": "Bas",
+"playcount": 4
+}
+,
+{
+"name": "Felix Jaehn",
+"playcount": 4
+}
+,
+{
+"name": "Logic",
+"playcount": 4
+}
+,
+{
+"name": "Migos",
+"playcount": 4
+}
+,
+{
+"name": "Trippie Redd",
+"playcount": 4
+}
+,
+{
+"name": "A$AP Rocky",
+"playcount": 3
+}
+,
+{
+"name": "Galimatias",
+"playcount": 3
+}
+,
+{
+"name": "Imagine Dragons",
+"playcount": 3
+}
+,
+{
+"name": "Lil Yachty",
+"playcount": 3
+}
+,
+{
+"name": "Playboi Carti",
+"playcount": 3
+}
+,
+{
+"name": "SNBRN",
+"playcount": 3
+}
+,
+{
+"name": "Tom Hangs & Shermanology",
+"playcount": 3
+}
+,
+{
+"name": "Vince Staples",
+"playcount": 3
+}
+,
+{
+"name": "A Boogie Wit da Hoodie",
+"playcount": 2
+}
+,
+{
+"name": "Amin�",
+"playcount": 2
+}
+,
+{
+"name": "Calvin Harris",
+"playcount": 2
+}
+,
+{
+"name": "Dram",
+"playcount": 2
+}
+,
+{
+"name": "Elton",
+"playcount": 2
+}
+,
+{
+"name": "Famous Dex",
+"playcount": 2
+}
+,
+{
+"name": "Flume",
+"playcount": 2
+}
+]
+}
+,{
+"x": -0.00994266643887639,
+"y": 0.21824454176985808,
+"name": "tafferss",
+"topTag": "ska",
+"artists":  [
+{
+"name": "Car Seat Headrest",
+"playcount": 1513
+}
+,
+{
+"name": "They Might Be Giants",
+"playcount": 1377
+}
+,
+{
+"name": "Animal Collective",
+"playcount": 1185
+}
+,
+{
+"name": "Radiohead",
+"playcount": 1122
+}
+,
+{
+"name": "Gorillaz",
+"playcount": 1015
+}
+,
+{
+"name": "Death Grips",
+"playcount": 1008
+}
+,
+{
+"name": "Modest Mouse",
+"playcount": 913
+}
+,
+{
+"name": "Sufjan Stevens",
+"playcount": 897
+}
+,
+{
+"name": "The Smashing Pumpkins",
+"playcount": 831
+}
+,
+{
+"name": "Daniel Johnston",
+"playcount": 808
+}
+,
+{
+"name": "BROCKHAMPTON",
+"playcount": 658
+}
+,
+{
+"name": "The Smiths",
+"playcount": 630
+}
+,
+{
+"name": "Lemon Demon",
+"playcount": 624
+}
+,
+{
+"name": "Title Fight",
+"playcount": 602
+}
+,
+{
+"name": "Weezer",
+"playcount": 568
+}
+,
+{
+"name": "Wesley Willis",
+"playcount": 558
+}
+,
+{
+"name": "Kanye West",
+"playcount": 555
+}
+,
+{
+"name": "Math the Band",
+"playcount": 540
+}
+,
+{
+"name": "The Aquabats",
+"playcount": 528
+}
+,
+{
+"name": "blink-182",
+"playcount": 520
+}
+,
+{
+"name": "The Beach Boys",
+"playcount": 515
+}
+,
+{
+"name": "Placebo",
+"playcount": 477
+}
+,
+{
+"name": "Boards of Canada",
+"playcount": 463
+}
+,
+{
+"name": "High School Football Heroes",
+"playcount": 451
+}
+,
+{
+"name": "The Brave Little Abacus",
+"playcount": 442
+}
+,
+{
+"name": "Muse",
+"playcount": 415
+}
+,
+{
+"name": "The Beatles",
+"playcount": 411
+}
+,
+{
+"name": "Goldfinger",
+"playcount": 409
+}
+,
+{
+"name": "Less Than Jake",
+"playcount": 404
+}
+,
+{
+"name": "Neutral Milk Hotel",
+"playcount": 402
+}
+,
+{
+"name": "The Microphones",
+"playcount": 386
+}
+,
+{
+"name": "Ween",
+"playcount": 380
+}
+,
+{
+"name": "Swans",
+"playcount": 361
+}
+,
+{
+"name": "Reel Big Fish",
+"playcount": 355
+}
+,
+{
+"name": "Jeff Rosenstock",
+"playcount": 341
+}
+,
+{
+"name": "Blur",
+"playcount": 339
+}
+,
+{
+"name": "Descendents",
+"playcount": 331
+}
+,
+{
+"name": "Have a Nice Life",
+"playcount": 297
+}
+,
+{
+"name": "The Cure",
+"playcount": 287
+}
+,
+{
+"name": "Cap'n Jazz",
+"playcount": 286
+}
+,
+{
+"name": "Bomb the Music Industry!",
+"playcount": 278
+}
+,
+{
+"name": "American Football",
+"playcount": 268
+}
+,
+{
+"name": "Jimmy Eat World",
+"playcount": 264
+}
+,
+{
+"name": "The All-American Rejects",
+"playcount": 264
+}
+,
+{
+"name": "Bis",
+"playcount": 262
+}
+,
+{
+"name": "Sun Kil Moon",
+"playcount": 258
+}
+,
+{
+"name": "Bowling for Soup",
+"playcount": 253
+}
+,
+{
+"name": "The Pillows",
+"playcount": 247
+}
+,
+{
+"name": "Beck",
+"playcount": 243
+}
+,
+{
+"name": "MU330",
+"playcount": 233
+}
+]
+}
+,{
+"x": 0.042859677686087394,
+"y": 0.44405383899522194,
+"name": "thigmotaxis",
+"topTag": "classic rock",
+"artists":  [
+{
+"name": "The Beatles",
+"playcount": 3425
+}
+,
+{
+"name": "The Who",
+"playcount": 2316
+}
+,
+{
+"name": "Arcade Fire",
+"playcount": 1027
+}
+,
+{
+"name": "The Rolling Stones",
+"playcount": 1011
+}
+,
+{
+"name": "Kendrick Lamar",
+"playcount": 987
+}
+,
+{
+"name": "Jeff Buckley",
+"playcount": 908
+}
+,
+{
+"name": "Ween",
+"playcount": 880
+}
+,
+{
+"name": "Electric Light Orchestra",
+"playcount": 784
+}
+,
+{
+"name": "Elvis Costello & The Attractions",
+"playcount": 762
+}
+,
+{
+"name": "Led Zeppelin",
+"playcount": 703
+}
+,
+{
+"name": "King Crimson",
+"playcount": 670
+}
+,
+{
+"name": "The Flaming Lips",
+"playcount": 657
+}
+,
+{
+"name": "Pink Floyd",
+"playcount": 531
+}
+,
+{
+"name": "Sufjan Stevens",
+"playcount": 489
+}
+,
+{
+"name": "Yes",
+"playcount": 464
+}
+,
+{
+"name": "Emerson, Lake & Palmer",
+"playcount": 458
+}
+,
+{
+"name": "Daft Punk",
+"playcount": 454
+}
+,
+{
+"name": "Tame Impala",
+"playcount": 454
+}
+,
+{
+"name": "Brian Eno",
+"playcount": 453
+}
+,
+{
+"name": "Jimi Hendrix",
+"playcount": 445
+}
+,
+{
+"name": "Pete Townshend & Ronnie Lane",
+"playcount": 445
+}
+,
+{
+"name": "King Gizzard & The Lizard Wizard",
+"playcount": 437
+}
+,
+{
+"name": "Rage Against the Machine",
+"playcount": 426
+}
+,
+{
+"name": "David Bowie",
+"playcount": 403
+}
+,
+{
+"name": "Stevie Wonder",
+"playcount": 397
+}
+,
+{
+"name": "Bob Dylan",
+"playcount": 386
+}
+,
+{
+"name": "Prince",
+"playcount": 378
+}
+,
+{
+"name": "XTC",
+"playcount": 378
+}
+,
+{
+"name": "Gorillaz",
+"playcount": 368
+}
+,
+{
+"name": "Paul McCartney",
+"playcount": 360
+}
+,
+{
+"name": "Fr�d�ric Chopin",
+"playcount": 353
+}
+,
+{
+"name": "Kanye West",
+"playcount": 344
+}
+,
+{
+"name": "The Beach Boys",
+"playcount": 332
+}
+,
+{
+"name": "Captain Beefheart & His Magic Band",
+"playcount": 317
+}
+,
+{
+"name": "The Clash",
+"playcount": 311
+}
+,
+{
+"name": "Arctic Monkeys",
+"playcount": 310
+}
+,
+{
+"name": "Creedence Clearwater Revival",
+"playcount": 299
+}
+,
+{
+"name": "Mansun",
+"playcount": 290
+}
+,
+{
+"name": "The Alan Parsons Project",
+"playcount": 289
+}
+,
+{
+"name": "Genesis",
+"playcount": 276
+}
+,
+{
+"name": "Cream",
+"playcount": 269
+}
+,
+{
+"name": "Talking Heads",
+"playcount": 268
+}
+,
+{
+"name": "Starfucker",
+"playcount": 267
+}
+,
+{
+"name": "The Police",
+"playcount": 266
+}
+,
+{
+"name": "Beck",
+"playcount": 261
+}
+,
+{
+"name": "The Black Keys",
+"playcount": 259
+}
+,
+{
+"name": "J.J. Cale",
+"playcount": 255
+}
+,
+{
+"name": "Psychedelic Porn Crumpets",
+"playcount": 245
+}
+,
+{
+"name": "Marijata",
+"playcount": 232
+}
+,
+{
+"name": "Nujabes",
+"playcount": 232
+}
+]
+}
+,{
+"x": -0.1424615451676311,
+"y": 0.15531445534134128,
+"name": "qqalto",
+"topTag": "indie",
+"artists":  [
+{
+"name": "Songs: Ohia",
+"playcount": 118
+}
+,
+{
+"name": "Talons",
+"playcount": 67
+}
+,
+{
+"name": "Fleet Foxes",
+"playcount": 61
+}
+,
+{
+"name": "Beach House",
+"playcount": 60
+}
+,
+{
+"name": "Brand New",
+"playcount": 60
+}
+,
+{
+"name": "Sun Kil Moon",
+"playcount": 56
+}
+,
+{
+"name": "Sufjan Stevens",
+"playcount": 51
+}
+,
+{
+"name": "Mount Eerie",
+"playcount": 37
+}
+,
+{
+"name": "The Smiths",
+"playcount": 36
+}
+,
+{
+"name": "Modest Mouse",
+"playcount": 34
+}
+,
+{
+"name": "Nick Drake",
+"playcount": 33
+}
+,
+{
+"name": "Radiohead",
+"playcount": 28
+}
+,
+{
+"name": "The Dear Hunter",
+"playcount": 28
+}
+,
+{
+"name": "Damien Jurado",
+"playcount": 24
+}
+,
+{
+"name": "Iron & Wine",
+"playcount": 20
+}
+,
+{
+"name": "Queens of the Stone Age",
+"playcount": 20
+}
+,
+{
+"name": "Car Seat Headrest",
+"playcount": 18
+}
+,
+{
+"name": "Neutral Milk Hotel",
+"playcount": 17
+}
+,
+{
+"name": "The Cure",
+"playcount": 17
+}
+,
+{
+"name": "The Reign Of Kindo",
+"playcount": 17
+}
+,
+{
+"name": "Kendrick Lamar",
+"playcount": 16
+}
+,
+{
+"name": "Melody's Echo Chamber",
+"playcount": 14
+}
+,
+{
+"name": "The Smashing Pumpkins",
+"playcount": 12
+}
+,
+{
+"name": "Arctic Monkeys",
+"playcount": 11
+}
+,
+{
+"name": "Father John Misty",
+"playcount": 11
+}
+,
+{
+"name": "Grizzly Bear",
+"playcount": 11
+}
+,
+{
+"name": "Interpol",
+"playcount": 11
+}
+,
+{
+"name": "Muse",
+"playcount": 10
+}
+,
+{
+"name": "Slowdive",
+"playcount": 10
+}
+,
+{
+"name": "Foo Fighters",
+"playcount": 9
+}
+,
+{
+"name": "Xiu Xiu",
+"playcount": 9
+}
+,
+{
+"name": "Bright Eyes",
+"playcount": 8
+}
+,
+{
+"name": "Pixies",
+"playcount": 8
+}
+,
+{
+"name": "Radical Face",
+"playcount": 8
+}
+,
+{
+"name": "Red House Painters",
+"playcount": 8
+}
+,
+{
+"name": "Tool",
+"playcount": 8
+}
+,
+{
+"name": "Townes Van Zandt",
+"playcount": 8
+}
+,
+{
+"name": "Alvvays",
+"playcount": 7
+}
+,
+{
+"name": "Animal Collective",
+"playcount": 7
+}
+,
+{
+"name": "As Tall As Lions",
+"playcount": 7
+}
+,
+{
+"name": "Bon Iver",
+"playcount": 7
+}
+,
+{
+"name": "Cold Fairyland",
+"playcount": 7
+}
+,
+{
+"name": "Gregory Alan Isakov",
+"playcount": 7
+}
+,
+{
+"name": "Joy Division",
+"playcount": 7
+}
+,
+{
+"name": "Sigur R�s",
+"playcount": 7
+}
+,
+{
+"name": "System of a Down",
+"playcount": 7
+}
+,
+{
+"name": "Violent Femmes",
+"playcount": 7
+}
+,
+{
+"name": "Cage the Elephant",
+"playcount": 6
+}
+,
+{
+"name": "Cocteau Twins",
+"playcount": 6
+}
+,
+{
+"name": "Have a Nice Life",
+"playcount": 6
+}
+]
+}
+,{
+"x": 0.004495477621515697,
+"y": -0.07801950548719298,
+"name": "robert11789",
+"topTag": "dubstep",
+"artists":  [
+{
+"name": "$uicideboy$",
+"playcount": 4852
+}
+,
+{
+"name": "Skrillex",
+"playcount": 1873
+}
+,
+{
+"name": "sar.casm",
+"playcount": 1491
+}
+,
+{
+"name": "Sarcasm",
+"playcount": 776
+}
+,
+{
+"name": "LIL PEEP",
+"playcount": 635
+}
+,
+{
+"name": "RoboticSaver",
+"playcount": 539
+}
+,
+{
+"name": "System of a Down",
+"playcount": 500
+}
+,
+{
+"name": "Zomboy",
+"playcount": 481
+}
+,
+{
+"name": "Kendrick Lamar",
+"playcount": 423
+}
+,
+{
+"name": "Pouya",
+"playcount": 419
+}
+,
+{
+"name": "Children of Bodom",
+"playcount": 317
+}
+,
+{
+"name": "What So Not",
+"playcount": 305
+}
+,
+{
+"name": "Virtual Riot",
+"playcount": 303
+}
+,
+{
+"name": "Knife Party",
+"playcount": 292
+}
+,
+{
+"name": "Kazi Ploae",
+"playcount": 291
+}
+,
+{
+"name": "Jack �",
+"playcount": 286
+}
+,
+{
+"name": "Bones",
+"playcount": 246
+}
+,
+{
+"name": "Flume",
+"playcount": 241
+}
+,
+{
+"name": "GhosteMane",
+"playcount": 238
+}
+,
+{
+"name": "Blank Banshee",
+"playcount": 225
+}
+,
+{
+"name": "Silent Strike",
+"playcount": 220
+}
+,
+{
+"name": "Nerub",
+"playcount": 206
+}
+,
+{
+"name": "Zeds Dead",
+"playcount": 203
+}
+,
+{
+"name": "MUST DIE!",
+"playcount": 198
+}
+,
+{
+"name": "etalosed & cap",
+"playcount": 191
+}
+,
+{
+"name": "Barely Alive",
+"playcount": 183
+}
+,
+{
+"name": "Getter",
+"playcount": 181
+}
+,
+{
+"name": "Earl Sweatshirt",
+"playcount": 179
+}
+,
+{
+"name": "Toby Fox",
+"playcount": 162
+}
+,
+{
+"name": "LIL PUMP",
+"playcount": 158
+}
+,
+{
+"name": "Muse",
+"playcount": 147
+}
+,
+{
+"name": "RL Grime",
+"playcount": 141
+}
+,
+{
+"name": "Nero",
+"playcount": 131
+}
+,
+{
+"name": "Skrillex & Diplo",
+"playcount": 130
+}
+,
+{
+"name": "Nero's Day at Disneyland",
+"playcount": 128
+}
+,
+{
+"name": "Moody Good",
+"playcount": 126
+}
+,
+{
+"name": "NGHTMRE",
+"playcount": 118
+}
+,
+{
+"name": "Tape",
+"playcount": 112
+}
+,
+{
+"name": "Akira Yamaoka",
+"playcount": 110
+}
+,
+{
+"name": "xxxtentacion",
+"playcount": 108
+}
+,
+{
+"name": "GTA",
+"playcount": 106
+}
+,
+{
+"name": "Lil Xan",
+"playcount": 104
+}
+,
+{
+"name": "Kazi Ploae si Specii",
+"playcount": 101
+}
+,
+{
+"name": "Borgore",
+"playcount": 97
+}
+,
+{
+"name": "Elliphant",
+"playcount": 96
+}
+,
+{
+"name": "$uicideboy$ & Pouya",
+"playcount": 93
+}
+,
+{
+"name": "Flux Pavilion",
+"playcount": 89
+}
+,
+{
+"name": "K Tano",
+"playcount": 87
+}
+,
+{
+"name": "Excision",
+"playcount": 82
+}
+,
+{
+"name": "Travi$ Scott",
+"playcount": 81
+}
+]
+}
+,{
+"x": -0.1289477883961219,
+"y": 0.168927919507295,
+"name": "Napoleonidas-",
+"topTag": "indie",
+"artists":  [
+{
+"name": "The Smiths",
+"playcount": 1767
+}
+,
+{
+"name": "The Beatles",
+"playcount": 1518
+}
+,
+{
+"name": "Game Theory",
+"playcount": 1307
+}
+,
+{
+"name": "Wire",
+"playcount": 1276
+}
+,
+{
+"name": "The Velvet Underground",
+"playcount": 1091
+}
+,
+{
+"name": "Modest Mouse",
+"playcount": 789
+}
+,
+{
+"name": "Bob Dylan",
+"playcount": 760
+}
+,
+{
+"name": "David Bowie",
+"playcount": 730
+}
+,
+{
+"name": "Wilco",
+"playcount": 652
+}
+,
+{
+"name": "Brian Eno",
+"playcount": 598
+}
+,
+{
+"name": "Les Rallizes D�nud�s",
+"playcount": 598
+}
+,
+{
+"name": "Talking Heads",
+"playcount": 572
+}
+,
+{
+"name": "Cocteau Twins",
+"playcount": 567
+}
+,
+{
+"name": "The Mountain Goats",
+"playcount": 547
+}
+,
+{
+"name": "Guided by Voices",
+"playcount": 541
+}
+,
+{
+"name": "of Montreal",
+"playcount": 529
+}
+,
+{
+"name": "Broken Social Scene",
+"playcount": 527
+}
+,
+{
+"name": "Red House Painters",
+"playcount": 501
+}
+,
+{
+"name": "Swans",
+"playcount": 485
+}
+,
+{
+"name": "Nick Drake",
+"playcount": 475
+}
+,
+{
+"name": "Laura Nyro",
+"playcount": 472
+}
+,
+{
+"name": "Patti Smith",
+"playcount": 463
+}
+,
+{
+"name": "Jim O'Rourke",
+"playcount": 455
+}
+,
+{
+"name": "Can",
+"playcount": 446
+}
+,
+{
+"name": "Radiohead",
+"playcount": 444
+}
+,
+{
+"name": "Television",
+"playcount": 438
+}
+,
+{
+"name": "Pavement",
+"playcount": 433
+}
+,
+{
+"name": "Xiu Xiu",
+"playcount": 415
+}
+,
+{
+"name": "Joy Division",
+"playcount": 411
+}
+,
+{
+"name": "Galaxie 500",
+"playcount": 404
+}
+,
+{
+"name": "The Stooges",
+"playcount": 403
+}
+,
+{
+"name": "Van Morrison",
+"playcount": 401
+}
+,
+{
+"name": "Mercury Rev",
+"playcount": 395
+}
+,
+{
+"name": "Joanna Newsom",
+"playcount": 392
+}
+,
+{
+"name": "This Heat",
+"playcount": 386
+}
+,
+{
+"name": "Pere Ubu",
+"playcount": 376
+}
+,
+{
+"name": "Van Dyke Parks",
+"playcount": 372
+}
+,
+{
+"name": "Belle and Sebastian",
+"playcount": 364
+}
+,
+{
+"name": "Gang of Four",
+"playcount": 364
+}
+,
+{
+"name": "Julia Holter",
+"playcount": 356
+}
+,
+{
+"name": "Public Image Ltd.",
+"playcount": 355
+}
+,
+{
+"name": "The Residents",
+"playcount": 350
+}
+,
+{
+"name": "Captain Beefheart & His Magic Band",
+"playcount": 337
+}
+,
+{
+"name": "Yo La Tengo",
+"playcount": 334
+}
+,
+{
+"name": "The Clientele",
+"playcount": 326
+}
+,
+{
+"name": "Dolly Mixture",
+"playcount": 322
+}
+,
+{
+"name": "Wolf Parade",
+"playcount": 321
+}
+,
+{
+"name": "Kate Bush",
+"playcount": 320
+}
+,
+{
+"name": "Sun Kil Moon",
+"playcount": 319
+}
+,
+{
+"name": "The Fall",
+"playcount": 319
+}
+]
+}
+,{
+"x": 0.11866019316224945,
+"y": -0.08932994143983332,
+"name": "KurtMclester",
+"topTag": "pop",
+"artists":  [
+{
+"name": "Taylor Swift",
+"playcount": 2203
+}
+,
+{
+"name": "Kanye West",
+"playcount": 977
+}
+,
+{
+"name": "Ellie Goulding",
+"playcount": 929
+}
+,
+{
+"name": "Ariana Grande",
+"playcount": 660
+}
+,
+{
+"name": "Ed Sheeran",
+"playcount": 609
+}
+,
+{
+"name": "Monstercat Network Music Producers",
+"playcount": 609
+}
+,
+{
+"name": "Calvin Harris",
+"playcount": 596
+}
+,
+{
+"name": "Avicii",
+"playcount": 590
+}
+,
+{
+"name": "Childish Gambino",
+"playcount": 561
+}
+,
+{
+"name": "deadmau5",
+"playcount": 450
+}
+,
+{
+"name": "The Chainsmokers",
+"playcount": 433
+}
+,
+{
+"name": "Fox Stevenson",
+"playcount": 405
+}
+,
+{
+"name": "David Guetta",
+"playcount": 402
+}
+,
+{
+"name": "Martin Garrix",
+"playcount": 399
+}
+,
+{
+"name": "Kygo",
+"playcount": 375
+}
+,
+{
+"name": "Ke$ha",
+"playcount": 357
+}
+,
+{
+"name": "Little Mix",
+"playcount": 353
+}
+,
+{
+"name": "Shakira",
+"playcount": 345
+}
+,
+{
+"name": "Madeon",
+"playcount": 338
+}
+,
+{
+"name": "Carly Rae Jepsen",
+"playcount": 336
+}
+,
+{
+"name": "Rita Ora",
+"playcount": 325
+}
+,
+{
+"name": "Demi Lovato",
+"playcount": 321
+}
+,
+{
+"name": "Hailee Steinfeld",
+"playcount": 305
+}
+,
+{
+"name": "Clean Bandit",
+"playcount": 295
+}
+,
+{
+"name": "Zedd",
+"playcount": 288
+}
+,
+{
+"name": "Katy Perry",
+"playcount": 277
+}
+,
+{
+"name": "Jason Der�lo",
+"playcount": 268
+}
+,
+{
+"name": "Selena Gomez",
+"playcount": 268
+}
+,
+{
+"name": "Sia",
+"playcount": 258
+}
+,
+{
+"name": "Maroon 5",
+"playcount": 256
+}
+,
+{
+"name": "Charli XCX",
+"playcount": 247
+}
+,
+{
+"name": "Halsey",
+"playcount": 242
+}
+,
+{
+"name": "Rihanna",
+"playcount": 236
+}
+,
+{
+"name": "Dua Lipa",
+"playcount": 228
+}
+,
+{
+"name": "Isosine",
+"playcount": 222
+}
+,
+{
+"name": "The Weeknd",
+"playcount": 222
+}
+,
+{
+"name": "Ti�sto",
+"playcount": 221
+}
+,
+{
+"name": "Macklemore & Ryan Lewis",
+"playcount": 216
+}
+,
+{
+"name": "Coldplay",
+"playcount": 209
+}
+,
+{
+"name": "Zara Larsson",
+"playcount": 208
+}
+,
+{
+"name": "Against the Current",
+"playcount": 205
+}
+,
+{
+"name": "Avril Lavigne",
+"playcount": 203
+}
+,
+{
+"name": "Fall Out Boy",
+"playcount": 203
+}
+,
+{
+"name": "Walk the Moon",
+"playcount": 203
+}
+,
+{
+"name": "NEFFEX",
+"playcount": 199
+}
+,
+{
+"name": "The Killers",
+"playcount": 199
+}
+,
+{
+"name": "Eminem",
+"playcount": 198
+}
+,
+{
+"name": "Lorde",
+"playcount": 198
+}
+,
+{
+"name": "Stormzy",
+"playcount": 197
+}
+,
+{
+"name": "Imagine Dragons",
+"playcount": 195
+}
+]
+}
+,{
+"x": -0.06785197746340063,
+"y": 0.06221520666237416,
+"name": "samleeney",
+"topTag": "electronic",
+"artists":  [
+{
+"name": "Gramatik",
+"playcount": 478
+}
+,
+{
+"name": "Jethro Tull",
+"playcount": 327
+}
+,
+{
+"name": "Jefferson Airplane",
+"playcount": 213
+}
+,
+{
+"name": "Talking Heads",
+"playcount": 163
+}
+,
+{
+"name": "Jesper Ryom",
+"playcount": 160
+}
+,
+{
+"name": "Maribou State",
+"playcount": 133
+}
+,
+{
+"name": "Khruangbin",
+"playcount": 122
+}
+,
+{
+"name": "Guts",
+"playcount": 114
+}
+,
+{
+"name": "Moby",
+"playcount": 112
+}
+,
+{
+"name": "Fatboy Slim",
+"playcount": 106
+}
+,
+{
+"name": "Eddie Vedder",
+"playcount": 103
+}
+,
+{
+"name": "The Slickers",
+"playcount": 89
+}
+,
+{
+"name": "Joe Goddard",
+"playcount": 85
+}
+,
+{
+"name": "Fritz Kalkbrenner",
+"playcount": 81
+}
+,
+{
+"name": "Degiheugi",
+"playcount": 80
+}
+,
+{
+"name": "Caribou",
+"playcount": 77
+}
+,
+{
+"name": "K�lsch",
+"playcount": 77
+}
+,
+{
+"name": "M.O",
+"playcount": 77
+}
+,
+{
+"name": "Fleetwood Mac",
+"playcount": 75
+}
+,
+{
+"name": "Crazy P",
+"playcount": 74
+}
+,
+{
+"name": "Klangkarussell",
+"playcount": 74
+}
+,
+{
+"name": "HEUSE",
+"playcount": 73
+}
+,
+{
+"name": "Mabel",
+"playcount": 73
+}
+,
+{
+"name": "Ron Flatter",
+"playcount": 72
+}
+,
+{
+"name": "Groundation",
+"playcount": 71
+}
+,
+{
+"name": "Cream",
+"playcount": 63
+}
+,
+{
+"name": "Session Victim",
+"playcount": 61
+}
+,
+{
+"name": "Basement Jaxx",
+"playcount": 57
+}
+,
+{
+"name": "Tube & Berger",
+"playcount": 57
+}
+,
+{
+"name": "Donovan",
+"playcount": 56
+}
+,
+{
+"name": "Love",
+"playcount": 56
+}
+,
+{
+"name": "Bonobo",
+"playcount": 55
+}
+,
+{
+"name": "Ten Years After",
+"playcount": 55
+}
+,
+{
+"name": "Faces",
+"playcount": 54
+}
+,
+{
+"name": "DJ Seinfeld",
+"playcount": 53
+}
+,
+{
+"name": "Hans Zimmer",
+"playcount": 53
+}
+,
+{
+"name": "The Rolling Stones",
+"playcount": 53
+}
+,
+{
+"name": "Booka Shade",
+"playcount": 52
+}
+,
+{
+"name": "Frank Zappa",
+"playcount": 50
+}
+,
+{
+"name": "Kungs",
+"playcount": 48
+}
+,
+{
+"name": "Crosby, Stills & Nash",
+"playcount": 46
+}
+,
+{
+"name": "Fatima Yamaha",
+"playcount": 45
+}
+,
+{
+"name": "NAPKEY",
+"playcount": 45
+}
+,
+{
+"name": "Tycho",
+"playcount": 45
+}
+,
+{
+"name": "Akshin Alizadeh",
+"playcount": 42
+}
+,
+{
+"name": "The Prodigy",
+"playcount": 42
+}
+,
+{
+"name": "Nightmares on Wax",
+"playcount": 41
+}
+,
+{
+"name": "Robin Schulz",
+"playcount": 41
+}
+,
+{
+"name": "Bob Dylan",
+"playcount": 39
+}
+,
+{
+"name": "Jan Blomqvist",
+"playcount": 39
+}
+]
+}
+,{
+"x": -0.039910381995965166,
+"y": -0.07992928918778389,
+"name": "chloe-fletcher",
+"topTag": "Drum and bass",
+"artists":  [
+{
+"name": "Wilkinson",
+"playcount": 49
+}
+,
+{
+"name": "FKJ",
+"playcount": 31
+}
+,
+{
+"name": "Alina Baraz",
+"playcount": 17
+}
+,
+{
+"name": "Tom�n",
+"playcount": 13
+}
+,
+{
+"name": "Matrix & Futurebound",
+"playcount": 10
+}
+,
+{
+"name": "Bizen Lopez",
+"playcount": 9
+}
+,
+{
+"name": "Fred V & Grafix",
+"playcount": 8
+}
+,
+{
+"name": "Glok",
+"playcount": 8
+}
+,
+{
+"name": "Molife",
+"playcount": 8
+}
+,
+{
+"name": "Tomas Skyldeberg",
+"playcount": 8
+}
+,
+{
+"name": "Friction",
+"playcount": 7
+}
+,
+{
+"name": "Monsieur Georget",
+"playcount": 7
+}
+,
+{
+"name": "Pig & Dan",
+"playcount": 7
+}
+,
+{
+"name": "Throwing Snow",
+"playcount": 7
+}
+,
+{
+"name": "2raumwohnung",
+"playcount": 6
+}
+,
+{
+"name": "Adam Beyer",
+"playcount": 6
+}
+,
+{
+"name": "Alan Nieves",
+"playcount": 6
+}
+,
+{
+"name": "Diego Santana",
+"playcount": 6
+}
+,
+{
+"name": "DJ Hazard",
+"playcount": 6
+}
+,
+{
+"name": "Fly District",
+"playcount": 6
+}
+,
+{
+"name": "James Dexter",
+"playcount": 6
+}
+,
+{
+"name": "Masomenos",
+"playcount": 6
+}
+,
+{
+"name": "Nuno Lisboa",
+"playcount": 6
+}
+,
+{
+"name": "Sum Wave",
+"playcount": 6
+}
+,
+{
+"name": "The Persuader",
+"playcount": 6
+}
+,
+{
+"name": "Trik",
+"playcount": 6
+}
+,
+{
+"name": "Bassel Darwish",
+"playcount": 5
+}
+,
+{
+"name": "Calyx & TeeBee",
+"playcount": 5
+}
+,
+{
+"name": "Chase & Status",
+"playcount": 5
+}
+,
+{
+"name": "Cospe",
+"playcount": 5
+}
+,
+{
+"name": "Feverkin",
+"playcount": 5
+}
+,
+{
+"name": "Gery Otis",
+"playcount": 5
+}
+,
+{
+"name": "High Contrast",
+"playcount": 5
+}
+,
+{
+"name": "Loadstar",
+"playcount": 5
+}
+,
+{
+"name": "Maceo Plex",
+"playcount": 5
+}
+,
+{
+"name": "Maduk",
+"playcount": 5
+}
+,
+{
+"name": "Many Moons Ago",
+"playcount": 5
+}
+,
+{
+"name": "Metrik",
+"playcount": 5
+}
+,
+{
+"name": "Netsky",
+"playcount": 5
+}
+,
+{
+"name": "Recondite",
+"playcount": 5
+}
+,
+{
+"name": "Sub Focus",
+"playcount": 5
+}
+,
+{
+"name": "DC Breaks",
+"playcount": 4
+}
+,
+{
+"name": "Dimension",
+"playcount": 4
+}
+,
+{
+"name": "DJ Fresh",
+"playcount": 4
+}
+,
+{
+"name": "Drumsound & Bassline Smith",
+"playcount": 4
+}
+,
+{
+"name": "Dubphone",
+"playcount": 4
+}
+,
+{
+"name": "F.eht",
+"playcount": 4
+}
+,
+{
+"name": "Hinz & Ruhmhardt",
+"playcount": 4
+}
+,
+{
+"name": "Kove",
+"playcount": 4
+}
+,
+{
+"name": "Los Reynoso",
+"playcount": 4
+}
+]
+}
+,{
+"x": 0.07934582177105749,
+"y": 0.4173829924593819,
+"name": "Joe_Yelland",
+"topTag": "classic rock",
+"artists":  [
+{
+"name": "The Beatles",
+"playcount": 767
+}
+,
+{
+"name": "Kendrick Lamar",
+"playcount": 565
+}
+,
+{
+"name": "Tyler, the Creator",
+"playcount": 452
+}
+,
+{
+"name": "Mac DeMarco",
+"playcount": 447
+}
+,
+{
+"name": "Arctic Monkeys",
+"playcount": 392
+}
+,
+{
+"name": "Kasabian",
+"playcount": 375
+}
+,
+{
+"name": "Jimi Hendrix",
+"playcount": 330
+}
+,
+{
+"name": "Logic",
+"playcount": 278
+}
+,
+{
+"name": "Tame Impala",
+"playcount": 217
+}
+,
+{
+"name": "Jake Bugg",
+"playcount": 196
+}
+,
+{
+"name": "Joy Division",
+"playcount": 191
+}
+,
+{
+"name": "David Bowie",
+"playcount": 166
+}
+,
+{
+"name": "Led Zeppelin",
+"playcount": 163
+}
+,
+{
+"name": "Cream",
+"playcount": 161
+}
+,
+{
+"name": "Pink Floyd",
+"playcount": 152
+}
+,
+{
+"name": "The Last Shadow Puppets",
+"playcount": 148
+}
+,
+{
+"name": "Bob Dylan",
+"playcount": 140
+}
+,
+{
+"name": "Miles Kane",
+"playcount": 130
+}
+,
+{
+"name": "Bonobo",
+"playcount": 124
+}
+,
+{
+"name": "The Stone Roses",
+"playcount": 118
+}
+,
+{
+"name": "The Doors",
+"playcount": 112
+}
+,
+{
+"name": "Fur",
+"playcount": 107
+}
+,
+{
+"name": "The Kinks",
+"playcount": 102
+}
+,
+{
+"name": "Earl Sweatshirt",
+"playcount": 98
+}
+,
+{
+"name": "The White Stripes",
+"playcount": 98
+}
+,
+{
+"name": "The Who",
+"playcount": 95
+}
+,
+{
+"name": "London Grammar",
+"playcount": 92
+}
+,
+{
+"name": "Nas",
+"playcount": 90
+}
+,
+{
+"name": "Mammal Hands",
+"playcount": 84
+}
+,
+{
+"name": "J. Cole",
+"playcount": 80
+}
+,
+{
+"name": "Gorillaz",
+"playcount": 76
+}
+,
+{
+"name": "The Raconteurs",
+"playcount": 74
+}
+,
+{
+"name": "Fleetwood Mac",
+"playcount": 73
+}
+,
+{
+"name": "The Clash",
+"playcount": 70
+}
+,
+{
+"name": "The Rolling Stones",
+"playcount": 70
+}
+,
+{
+"name": "MALL GRAB",
+"playcount": 68
+}
+,
+{
+"name": "Frank Sinatra",
+"playcount": 67
+}
+,
+{
+"name": "The Jam",
+"playcount": 66
+}
+,
+{
+"name": "Black Sabbath",
+"playcount": 62
+}
+,
+{
+"name": "A$AP Ferg",
+"playcount": 61
+}
+,
+{
+"name": "Iggy Pop",
+"playcount": 61
+}
+,
+{
+"name": "Dire Straits",
+"playcount": 59
+}
+,
+{
+"name": "Johnny Cash",
+"playcount": 59
+}
+,
+{
+"name": "Michael Kiwanuka",
+"playcount": 56
+}
+,
+{
+"name": "Buffalo Springfield",
+"playcount": 52
+}
+,
+{
+"name": "Bob Marley & The Wailers",
+"playcount": 51
+}
+,
+{
+"name": "The Animals",
+"playcount": 51
+}
+,
+{
+"name": "Big Sean",
+"playcount": 50
+}
+,
+{
+"name": "Catfish and The Bottlemen",
+"playcount": 50
+}
+,
+{
+"name": "George Harrison",
+"playcount": 50
+}
+]
+}
+,{
+"x": -0.021098367545739106,
+"y": -0.09915287277852522,
+"name": "roxmodr",
+"topTag": "metalcore",
+"artists":  [
+{
+"name": "Parkway Drive",
+"playcount": 591
+}
+,
+{
+"name": "Breaking Benjamin",
+"playcount": 519
+}
+,
+{
+"name": "Of Mice & Men",
+"playcount": 476
+}
+,
+{
+"name": "Five Finger Death Punch",
+"playcount": 405
+}
+,
+{
+"name": "Bullet for My Valentine",
+"playcount": 200
+}
+,
+{
+"name": "Sick Puppies",
+"playcount": 196
+}
+,
+{
+"name": "Linkin Park",
+"playcount": 184
+}
+,
+{
+"name": "Bury Tomorrow",
+"playcount": 177
+}
+,
+{
+"name": "Eden",
+"playcount": 177
+}
+,
+{
+"name": "Billy Talent",
+"playcount": 140
+}
+,
+{
+"name": "2cellos",
+"playcount": 134
+}
+,
+{
+"name": "Architects",
+"playcount": 121
+}
+,
+{
+"name": "A Day to Remember",
+"playcount": 112
+}
+,
+{
+"name": "Muse",
+"playcount": 96
+}
+,
+{
+"name": "Stone Sour",
+"playcount": 96
+}
+,
+{
+"name": "Hollywood Undead",
+"playcount": 90
+}
+,
+{
+"name": "I See Stars",
+"playcount": 88
+}
+,
+{
+"name": "Slipknot",
+"playcount": 88
+}
+,
+{
+"name": "Shaman's Harvest",
+"playcount": 87
+}
+,
+{
+"name": "The Offspring",
+"playcount": 85
+}
+,
+{
+"name": "Rise Against",
+"playcount": 78
+}
+,
+{
+"name": "Avenged Sevenfold",
+"playcount": 76
+}
+,
+{
+"name": "Disturbed",
+"playcount": 75
+}
+,
+{
+"name": "Cradle of Filth",
+"playcount": 71
+}
+,
+{
+"name": "Ed Sheeran",
+"playcount": 71
+}
+,
+{
+"name": "Luis Fonsi",
+"playcount": 67
+}
+,
+{
+"name": "Three Days Grace",
+"playcount": 66
+}
+,
+{
+"name": "Alestorm",
+"playcount": 65
+}
+,
+{
+"name": "Eminem",
+"playcount": 65
+}
+,
+{
+"name": "Halestorm",
+"playcount": 65
+}
+,
+{
+"name": "Escape the Fate",
+"playcount": 59
+}
+,
+{
+"name": "YoungR",
+"playcount": 58
+}
+,
+{
+"name": "My Nu Leng",
+"playcount": 57
+}
+,
+{
+"name": "Seether",
+"playcount": 57
+}
+,
+{
+"name": "Alan Walker",
+"playcount": 53
+}
+,
+{
+"name": "Skillet",
+"playcount": 53
+}
+,
+{
+"name": "Mako",
+"playcount": 50
+}
+,
+{
+"name": "Thomas Bergersen",
+"playcount": 50
+}
+,
+{
+"name": "Milky Chance",
+"playcount": 47
+}
+,
+{
+"name": "Harry Shotta",
+"playcount": 46
+}
+,
+{
+"name": "Khalid",
+"playcount": 44
+}
+,
+{
+"name": "We Came As Romans",
+"playcount": 43
+}
+,
+{
+"name": "J�iP�",
+"playcount": 42
+}
+,
+{
+"name": "SIKDOPE",
+"playcount": 42
+}
+,
+{
+"name": "Beartooth",
+"playcount": 41
+}
+,
+{
+"name": "In This Moment",
+"playcount": 41
+}
+,
+{
+"name": "Noisia",
+"playcount": 41
+}
+,
+{
+"name": "Post Malone",
+"playcount": 41
+}
+,
+{
+"name": "Cold War Kids",
+"playcount": 40
+}
+,
+{
+"name": "Joe Rogan",
+"playcount": 40
+}
+]
+}
+,{
+"x": 0.10145769591484148,
+"y": -0.05254981394305449,
+"name": "hexmodr",
+"topTag": "Hip-Hop",
+"artists":  [
+{
+"name": "Son Lux",
+"playcount": 710
+}
+,
+{
+"name": "Die Antwoord",
+"playcount": 639
+}
+,
+{
+"name": "Glass Animals",
+"playcount": 542
+}
+,
+{
+"name": "Chill Bump",
+"playcount": 458
+}
+,
+{
+"name": "Al'Tarba",
+"playcount": 423
+}
+,
+{
+"name": "Rainbow Kitten Surprise",
+"playcount": 379
+}
+,
+{
+"name": "Kanye West",
+"playcount": 372
+}
+,
+{
+"name": "Kishi Bashi",
+"playcount": 358
+}
+,
+{
+"name": "Dub Fx",
+"playcount": 328
+}
+,
+{
+"name": "tUnE-yArDs",
+"playcount": 320
+}
+,
+{
+"name": "Max Cooper",
+"playcount": 292
+}
+,
+{
+"name": "Alec Troniq",
+"playcount": 291
+}
+,
+{
+"name": "Goldwash",
+"playcount": 290
+}
+,
+{
+"name": "Kid Cudi",
+"playcount": 281
+}
+,
+{
+"name": "Nick Catchdubs",
+"playcount": 263
+}
+,
+{
+"name": "N'to",
+"playcount": 256
+}
+,
+{
+"name": "Sylvan Esso",
+"playcount": 233
+}
+,
+{
+"name": "DakhaBrakha",
+"playcount": 229
+}
+,
+{
+"name": "A$AP Rocky",
+"playcount": 218
+}
+,
+{
+"name": "Desiigner",
+"playcount": 214
+}
+,
+{
+"name": "Fakear",
+"playcount": 212
+}
+,
+{
+"name": "Nahko and Medicine for the People",
+"playcount": 211
+}
+,
+{
+"name": "Techno Fr�hst�ck",
+"playcount": 205
+}
+,
+{
+"name": "alt-J",
+"playcount": 202
+}
+,
+{
+"name": "Degiheugi",
+"playcount": 197
+}
+,
+{
+"name": "L'Entourloop",
+"playcount": 186
+}
+,
+{
+"name": "Corbin",
+"playcount": 173
+}
+,
+{
+"name": "Jumo",
+"playcount": 173
+}
+,
+{
+"name": "B�RNS",
+"playcount": 172
+}
+,
+{
+"name": "Dijf Sanders",
+"playcount": 169
+}
+,
+{
+"name": "Eating Snow",
+"playcount": 168
+}
+,
+{
+"name": "Barclay Crenshaw",
+"playcount": 165
+}
+,
+{
+"name": "Space Jesus",
+"playcount": 160
+}
+,
+{
+"name": "Jamaican Queens",
+"playcount": 159
+}
+,
+{
+"name": "Darkside",
+"playcount": 157
+}
+,
+{
+"name": "Joachim Pastor",
+"playcount": 147
+}
+,
+{
+"name": "Joywave",
+"playcount": 142
+}
+,
+{
+"name": "Chinese Man",
+"playcount": 140
+}
+,
+{
+"name": "Felix Laband",
+"playcount": 140
+}
+,
+{
+"name": "Big Wild",
+"playcount": 136
+}
+,
+{
+"name": "Birdy Nam Nam",
+"playcount": 134
+}
+,
+{
+"name": "Grandbrothers",
+"playcount": 132
+}
+,
+{
+"name": "Taiwan Mc",
+"playcount": 129
+}
+,
+{
+"name": "Toussaint Morrison",
+"playcount": 128
+}
+,
+{
+"name": "Buraka Som Sistema",
+"playcount": 123
+}
+,
+{
+"name": "Milky Chance",
+"playcount": 113
+}
+,
+{
+"name": "The Acid",
+"playcount": 110
+}
+,
+{
+"name": "Cosmo Sheldrake",
+"playcount": 106
+}
+,
+{
+"name": "Berry Weight",
+"playcount": 105
+}
+,
+{
+"name": "The Architect",
+"playcount": 103
+}
+]
+}
+,{
+"x": -0.11697821773279483,
+"y": -0.10937320637408326,
+"name": "sp1tekiller",
+"topTag": "Progressive metal",
+"artists":  [
+{
+"name": "Dream Theater",
+"playcount": 2925
+}
+,
+{
+"name": "Scar Symmetry",
+"playcount": 2396
+}
+,
+{
+"name": "Mercenary",
+"playcount": 2064
+}
+,
+{
+"name": "Pink Floyd",
+"playcount": 1785
+}
+,
+{
+"name": "Metallica",
+"playcount": 1614
+}
+,
+{
+"name": "Symphony X",
+"playcount": 1573
+}
+,
+{
+"name": "Megadeth",
+"playcount": 1315
+}
+,
+{
+"name": "Tool",
+"playcount": 1307
+}
+,
+{
+"name": "Alter Bridge",
+"playcount": 1174
+}
+,
+{
+"name": "Trivium",
+"playcount": 1159
+}
+,
+{
+"name": "Pain of Salvation",
+"playcount": 1108
+}
+,
+{
+"name": "Rush",
+"playcount": 1073
+}
+,
+{
+"name": "Hans Zimmer",
+"playcount": 1042
+}
+,
+{
+"name": "A Perfect Circle",
+"playcount": 1035
+}
+,
+{
+"name": "Eminem",
+"playcount": 1011
+}
+,
+{
+"name": "Strapping Young Lad",
+"playcount": 995
+}
+,
+{
+"name": "Protest the Hero",
+"playcount": 962
+}
+,
+{
+"name": "10 Years",
+"playcount": 943
+}
+,
+{
+"name": "Paradise Lost",
+"playcount": 935
+}
+,
+{
+"name": "Alice in Chains",
+"playcount": 923
+}
+,
+{
+"name": "Devin Townsend",
+"playcount": 921
+}
+,
+{
+"name": "Devin Townsend Project",
+"playcount": 917
+}
+,
+{
+"name": "Nine Inch Nails",
+"playcount": 910
+}
+,
+{
+"name": "Drake",
+"playcount": 908
+}
+,
+{
+"name": "Chevelle",
+"playcount": 900
+}
+,
+{
+"name": "Between the Buried and Me",
+"playcount": 890
+}
+,
+{
+"name": "In Flames",
+"playcount": 875
+}
+,
+{
+"name": "Stone Sour",
+"playcount": 858
+}
+,
+{
+"name": "Karnivool",
+"playcount": 856
+}
+,
+{
+"name": "Avenged Sevenfold",
+"playcount": 817
+}
+,
+{
+"name": "Machine Head",
+"playcount": 796
+}
+,
+{
+"name": "Insomnium",
+"playcount": 795
+}
+,
+{
+"name": "Opeth",
+"playcount": 794
+}
+,
+{
+"name": "Porcupine Tree",
+"playcount": 756
+}
+,
+{
+"name": "Coheed and Cambria",
+"playcount": 729
+}
+,
+{
+"name": "James LaBrie",
+"playcount": 712
+}
+,
+{
+"name": "Nevermore",
+"playcount": 681
+}
+,
+{
+"name": "The Smashing Pumpkins",
+"playcount": 679
+}
+,
+{
+"name": "Shinedown",
+"playcount": 623
+}
+,
+{
+"name": "Tremonti",
+"playcount": 610
+}
+,
+{
+"name": "Lupe Fiasco",
+"playcount": 566
+}
+,
+{
+"name": "Soilwork",
+"playcount": 558
+}
+,
+{
+"name": "Kendrick Lamar",
+"playcount": 557
+}
+,
+{
+"name": "Mastodon",
+"playcount": 544
+}
+,
+{
+"name": "Manufacturer's Pride",
+"playcount": 528
+}
+,
+{
+"name": "Ulver",
+"playcount": 527
+}
+,
+{
+"name": "Deftones",
+"playcount": 522
+}
+,
+{
+"name": "Hurt",
+"playcount": 509
+}
+,
+{
+"name": "Anthrax",
+"playcount": 506
+}
+,
+{
+"name": "Meshuggah",
+"playcount": 500
+}
+]
+}
+,{
+"x": -0.26920079033560124,
+"y": -0.06970013864686297,
+"name": "Fridgeboy",
+"topTag": "rock",
+"artists":  [
+{
+"name": "Muse",
+"playcount": 2665
+}
+,
+{
+"name": "Jeremy Soule",
+"playcount": 1558
+}
+,
+{
+"name": "Sonata Arctica",
+"playcount": 1464
+}
+,
+{
+"name": "Kamelot",
+"playcount": 1451
+}
+,
+{
+"name": "Porcupine Tree",
+"playcount": 1281
+}
+,
+{
+"name": "Edguy",
+"playcount": 1107
+}
+,
+{
+"name": "Alter Bridge",
+"playcount": 1069
+}
+,
+{
+"name": "Graeme Norgate",
+"playcount": 954
+}
+,
+{
+"name": "????",
+"playcount": 880
+}
+,
+{
+"name": "Coldplay",
+"playcount": 764
+}
+,
+{
+"name": "Ozric Tentacles",
+"playcount": 744
+}
+,
+{
+"name": "Foo Fighters",
+"playcount": 735
+}
+,
+{
+"name": "Radiohead",
+"playcount": 681
+}
+,
+{
+"name": "U2",
+"playcount": 639
+}
+,
+{
+"name": "Blind Guardian",
+"playcount": 627
+}
+,
+{
+"name": "Vangelis",
+"playcount": 591
+}
+,
+{
+"name": "Oceansize",
+"playcount": 550
+}
+,
+{
+"name": "Ayreon",
+"playcount": 548
+}
+,
+{
+"name": "Namco Sound Team",
+"playcount": 507
+}
+,
+{
+"name": "Adam Skorupa",
+"playcount": 501
+}
+,
+{
+"name": "Dream Theater",
+"playcount": 454
+}
+,
+{
+"name": "Freedom Call",
+"playcount": 406
+}
+,
+{
+"name": "Thrice",
+"playcount": 391
+}
+,
+{
+"name": "Ensiferum",
+"playcount": 387
+}
+,
+{
+"name": "In Flames",
+"playcount": 380
+}
+,
+{
+"name": "Stewart Copeland",
+"playcount": 379
+}
+,
+{
+"name": "Steve Henifin",
+"playcount": 366
+}
+,
+{
+"name": "Nickelback",
+"playcount": 350
+}
+,
+{
+"name": "Gladiator",
+"playcount": 337
+}
+,
+{
+"name": "metal gear solid 3",
+"playcount": 328
+}
+,
+{
+"name": "Pendulum",
+"playcount": 324
+}
+,
+{
+"name": "Bill Brown",
+"playcount": 318
+}
+,
+{
+"name": "The Darkness",
+"playcount": 317
+}
+,
+{
+"name": "Allen-Lande",
+"playcount": 282
+}
+,
+{
+"name": "Bon Jovi",
+"playcount": 280
+}
+,
+{
+"name": "Red Hot Chili Peppers",
+"playcount": 274
+}
+,
+{
+"name": "Angra",
+"playcount": 270
+}
+,
+{
+"name": "Elvenking",
+"playcount": 267
+}
+,
+{
+"name": "Sigur R�s",
+"playcount": 254
+}
+,
+{
+"name": "Pain of Salvation",
+"playcount": 253
+}
+,
+{
+"name": "Lostprophets",
+"playcount": 235
+}
+,
+{
+"name": "Iron Maiden",
+"playcount": 197
+}
+,
+{
+"name": "Submersed",
+"playcount": 197
+}
+,
+{
+"name": "Queen",
+"playcount": 195
+}
+,
+{
+"name": "Stereophonics",
+"playcount": 195
+}
+,
+{
+"name": "Bloc Party",
+"playcount": 183
+}
+,
+{
+"name": "Riverside",
+"playcount": 183
+}
+,
+{
+"name": "Journey",
+"playcount": 182
+}
+,
+{
+"name": "Blackfield",
+"playcount": 178
+}
+,
+{
+"name": "Firewind",
+"playcount": 168
+}
+]
+}
+,{
+"x": -0.2777169085422243,
+"y": -0.0929130848210819,
+"name": "Jc1990",
+"topTag": "Progressive rock",
+"artists":  [
+{
+"name": "Pain of Salvation",
+"playcount": 3141
+}
+,
+{
+"name": "Porcupine Tree",
+"playcount": 1890
+}
+,
+{
+"name": "Thrice",
+"playcount": 1826
+}
+,
+{
+"name": "Sonata Arctica",
+"playcount": 1736
+}
+,
+{
+"name": "Kamelot",
+"playcount": 1493
+}
+,
+{
+"name": "Oceansize",
+"playcount": 1422
+}
+,
+{
+"name": "Evergrey",
+"playcount": 1323
+}
+,
+{
+"name": "Anathema",
+"playcount": 1148
+}
+,
+{
+"name": "Iron Maiden",
+"playcount": 1042
+}
+,
+{
+"name": "Dream Theater",
+"playcount": 908
+}
+,
+{
+"name": "Radiohead",
+"playcount": 888
+}
+,
+{
+"name": "Frank Zappa",
+"playcount": 839
+}
+,
+{
+"name": "The Receiving End of Sirens",
+"playcount": 804
+}
+,
+{
+"name": "Opeth",
+"playcount": 779
+}
+,
+{
+"name": "Sigur R�s",
+"playcount": 744
+}
+,
+{
+"name": "Angra",
+"playcount": 741
+}
+,
+{
+"name": "Riverside",
+"playcount": 726
+}
+,
+{
+"name": "The Dear Hunter",
+"playcount": 684
+}
+,
+{
+"name": "Children of Bodom",
+"playcount": 647
+}
+,
+{
+"name": "Edguy",
+"playcount": 627
+}
+,
+{
+"name": "Biffy Clyro",
+"playcount": 588
+}
+,
+{
+"name": "In Flames",
+"playcount": 586
+}
+,
+{
+"name": "Rush",
+"playcount": 583
+}
+,
+{
+"name": "Mew",
+"playcount": 569
+}
+,
+{
+"name": "�lafur Arnalds",
+"playcount": 514
+}
+,
+{
+"name": "God Is An Astronaut",
+"playcount": 497
+}
+,
+{
+"name": "Idlewild",
+"playcount": 429
+}
+,
+{
+"name": "Anathallo",
+"playcount": 422
+}
+,
+{
+"name": "Stratovarius",
+"playcount": 421
+}
+,
+{
+"name": "Ulver",
+"playcount": 402
+}
+,
+{
+"name": "HammerFall",
+"playcount": 399
+}
+,
+{
+"name": "Ayreon",
+"playcount": 393
+}
+,
+{
+"name": "Symphony X",
+"playcount": 391
+}
+,
+{
+"name": "Bloodbound",
+"playcount": 377
+}
+,
+{
+"name": "Dream Evil",
+"playcount": 357
+}
+,
+{
+"name": "Mogwai",
+"playcount": 355
+}
+,
+{
+"name": "The Samuel Jackson Five",
+"playcount": 349
+}
+,
+{
+"name": "Wolverine",
+"playcount": 349
+}
+,
+{
+"name": "Alter Bridge",
+"playcount": 312
+}
+,
+{
+"name": "Dark Tranquillity",
+"playcount": 300
+}
+,
+{
+"name": "Mattias IA Eklundh",
+"playcount": 299
+}
+,
+{
+"name": "Consider The Thief",
+"playcount": 294
+}
+,
+{
+"name": "Circus Maximus",
+"playcount": 293
+}
+,
+{
+"name": "dredg",
+"playcount": 291
+}
+,
+{
+"name": "Scar Symmetry",
+"playcount": 291
+}
+,
+{
+"name": "Explosions in the Sky",
+"playcount": 285
+}
+,
+{
+"name": "Axamenta",
+"playcount": 281
+}
+,
+{
+"name": "Marillion",
+"playcount": 277
+}
+,
+{
+"name": "Pink Floyd",
+"playcount": 273
+}
+,
+{
+"name": "Beyond Twilight",
+"playcount": 272
+}
+]
+}
+]

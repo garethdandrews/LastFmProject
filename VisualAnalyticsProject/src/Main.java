@@ -20,7 +20,7 @@ class User {
 
     String name;
     String topTag;
-    ArrayList artists;
+    ArrayList<Artist> artists;
 
     User(String name, String topTag) {
         this.name = name;
@@ -66,7 +66,7 @@ public class Main {
         loadJSON("jsonArrayInputTopTag1000.json");
         double[][] dissimilarities = getDissimilarityMatrix();
         double[][] output = MDSJ.classicalScaling(dissimilarities);
-        writeToCSV(output);
+        writeToFile(output);
     }
 
     /**
@@ -102,16 +102,62 @@ public class Main {
      * @param output x,y array
      * @throws IOException
      */
-    static void writeToCSV(double[][] output) throws IOException {
+    static void writeToFile(double[][] output) throws IOException {
         StringBuilder b = new StringBuilder();
-        b.append("x,y,name,topGenre");
-        b.append("\n");
+//        b.append("x,y,name,topGenre");
+//        for (int i = 1; i <= 50; i++) {
+//            b.append(",A" + i + ",P" + i);
+//        }
+//        b.append("\n");
+//
+//        for (int i = 0; i < output[0].length; i++) {
+//            User u = User.users.get(i);
+//
+//            b.append(output[0][i] + "," + output[1][i] + "," + u.name + "," + u.topTag);
+//
+//            for (int j = 0; j < u.artists.size(); j++) {
+//                Artist a = u.artists.get(j);
+//                b.append("," + a.name + "," + a.playcount);
+//            }
+//
+//            b.append("\n");
+//        }
 
+        b.append("[" + "\n");
         for (int i = 0; i < output[0].length; i++) {
-            b.append(output[0][i] + "," + output[1][i] + "," + User.users.get(i).name + "," + User.users.get(i).topTag);
-            b.append("\n");
+            User u = User.users.get(i);
+
+            b.append("{" + "\n");
+            b.append("\"x\": " + output[0][i] + ',' + "\n");
+            b.append("\"y\": " + output[1][i] + "," + "\n");
+            b.append("\"name\": \"" + u.name + "\"," + "\n");
+            b.append("\"topTag\": \"" + u.topTag + "\"," + "\n");
+            b.append("\"artists\":  [" + "\n");
+
+            for (int j = 0; j < u.artists.size(); j++) {
+                Artist a = u.artists.get(j);
+                b.append("{" + "\n");
+                String n = a.name;
+                n.replaceAll("\\\\", "\\\\\\\\");
+                n.replace("\"", "'");
+                b.append("\"name\": \"" + n + "\"," + "\n");
+                b.append("\"playcount\": " + a.playcount + "\n");
+                b.append("}" + "\n");
+                if (j != u.artists.size() - 1) {
+                    b.append("," + "\n");
+                }
+            }
+            b.append("]" + "\n");
+            b.append("}" + "\n");
+
+            if (i != output[0].length - 1) {
+                b.append(",");
+            }
         }
-        BufferedWriter w = new BufferedWriter(new FileWriter("CosineMDSPointsTopTags1000.csv"));
+
+        b.append("]");
+
+        BufferedWriter w = new BufferedWriter(new FileWriter("CosineMDSPointsTopTagsArtists1000.json"));
         w.write(b.toString());
         w.close();
     }

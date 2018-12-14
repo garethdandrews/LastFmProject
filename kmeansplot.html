@@ -6,6 +6,7 @@
     <title>Visualisation</title>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+    <script src="https://d3js.org/d3-polygon.v1.min.js"></script>
 
     <style>
         svg {
@@ -13,10 +14,7 @@
             border-width: 3px;
         }
 
-        circle {
-            fill: #5481c9;
-            opacity: 50%;
-        }
+        
 
         div.tooltip {
             position: absolute;
@@ -34,21 +32,21 @@
         body {
             font-family: "Arial", sans-serif;
         }
-        
+
         .bar {
             fill: #5481c9;
         }
-        
+
         .axis {
             font-size: 13px;
         }
-        
+
         .axis path,
         .axis line {
             fill: none;
             display: none;
         }
-        
+
         .label {
             font-size: 13px;
         }
@@ -56,34 +54,248 @@
 </head>
 
 <body>
-    <script>
+    <div id="kmeansChart">
 
-        var width = 1000;
-        var height = 1000;
+    </div>
+
+    <script>
+        var data;
+        var k = 10;
+
+        var margin = {
+            top: 30,
+            right: 30,
+            bottom: 30,
+            left: 30
+        };
+
+        var svgWidth = 1000, svgHeight = 1000;
+        var plotWidth = svgWidth - margin.right - margin.left;
+        var plotHeight = svgHeight - margin.top - margin.bottom;
 
         // Define the div for the tooltip
         var div = d3.select("body").append("div")
             .attr("class", "tooltip")
             .style("opacity", 0);
 
-        var svg = d3.select("body").append("svg")
-            .attr("width", width)
-            .attr("height", height)
-            .attr("id", "svg");
+        var svg = d3.select("#kmeansChart").append("svg")
+            .attr("width", svgWidth)
+            .attr("height", svgHeight)
+            .attr("id", "kmeansChart");
 
-        var xScale = d3.scale.linear().range([0, width - 60]);
-        var yScale = d3.scale.linear().range([height - 60, 0]);
+        var xScale = d3.scale.linear().range([margin.left, plotWidth]);
+        var yScale = d3.scale.linear().range([plotHeight, margin.top]);
 
-        function kmeans(data) {
+        var hulls = svg.append("g").attr("id", "hulls");
+        var circles = svg.append("g").attr("id", "circles");
+
+        var colours = ["#ff0000", "#5bbf3b", "black", "#ff9000", "blue", "#ffe500", "brown", "#07f7e7", "#e307f7", "#a9aab2"];
+
+        var clusters = d3.range(0, k).map((n) => n.toString());
+        console.log(clusters);
+
+        var costs = [];
+
+        hulls.selectAll("path")
+            .data(clusters)
+            .enter()
+            .append("path")
+            .attr("class", "hull")
+            .attr("id", d => "hull_" + d);
+
+
+        function kmeans() {
             console.log(data);
-            
-            var stoppingCriteria = true;
-            
+            setScaleDomains();
+            plotCircles();
 
-            while (!stoppingCriteria) {
+            var randomNumber = Math.floor(Math.random() * (data.length));
 
+            var initialCentroids = clusters.map(() => data[Math.round(randomNumber)]);
+
+            assignCluster(initialCentroids);
+            addHull();
+
+            costs.push(computeCost());
+
+            // var interval = setInterval(function () {
+            //         var c = computeCentroids();
+
+            //         assignCluster(c);
+            //         addHull();
+
+            //         var cost = computeCost();
+
+            //         if (cost == costs[costs.length - 1]) {
+            //             displayStats(costs);
+            //             alert("Done");
+            //             clearInterval(interval);
+            //         }
+
+            //         costs.push(cost);
+            // }, 500);
+
+            var okay = true;
+            var i = 0;
+            while (okay && i < 50) {
+                setInterval(function () {
+                    var c = computeCentroids();
+
+                    assignCluster(c);
+                    addHull();
+
+                    var cost = computeCost();
+
+                    if (cost == costs[costs.length - 1]) {
+                        displayStats(costs);
+                        alert("Done");
+                        okay = false;
+                        clearInterval(interval);
+                    }
+
+                    costs.push(cost);
+                    i++;
+                }, 500);
             }
 
+            // var iterate = d3.interval(() => {
+            //     var c = computeCentroids();
+
+            //     assignCluster(c);
+            //     addHull();
+
+            //     var cost = computeCost();
+
+            //     // iterate until convergence
+            //     if (cost == costs[costs.length - 1]) {
+            //         displayStats(costs);
+            //         iterate.stop();
+            //     }
+
+            //     costs.push(cost);
+            // }, 500);
+
+
+
+        }
+
+        function displayStats(costs) {
+            var stats = svg.append("g")
+                .attr("id", "stats");
+
+            var formatMin = d3.format(".4");
+
+            var n_iters = stats.append("text")
+                .attr("x", 10)
+                .attr("y", 20);
+
+            n_iters.append("tspan")
+                .style("font-weight", "bold")
+                .text("Num. Iterations: ");
+
+            n_iters.append("tspan")
+                .text(costs.length);
+
+            var cost = stats.append("text")
+                .attr("x", 10)
+                .attr("y", 40);
+
+            cost.append("tspan")
+                .style("font-weight", "bold")
+                .text("Local Minimum: ");
+
+            cost.append("tspan")
+                .text(formatMin(costs[costs.length - 1]));
+        }
+
+        function computeCentroids() {
+            var centroids = clusters.map(cluster => {
+
+                var d = d3.selectAll(".cluster_" + cluster)
+                    .data(),
+                    n = d.length;
+
+                var x_sum = d3.sum(d, d => d.x),
+                    y_sum = d3.sum(d, d => d.y);
+
+                return { x: (x_sum / n), y: (y_sum / n) };
+            });
+
+            return centroids;
+        }
+
+        function addHull() {
+            clusters.forEach(cluster => {
+                // parse cluster data
+                var d_cluster = d3.selectAll(".cluster_" + cluster)
+                    .data()
+                    .map((d) => [xScale(d.x), yScale(d.y)]);
+
+                // path given data points for cluster
+                var d_path = d3.polygonHull(d_cluster);
+
+                var colour = colours[+cluster];
+
+                // ref: https://bl.ocks.org/mbostock/4341699
+                d3.select("#hull_" + cluster)
+                    .attr("id", "hull_" + cluster)
+                    .transition()
+                    .duration(250)
+                    .attr("d", d_path === null ? null : "M" + d_path.join("L") + "Z")
+                    .attr("fill", colour)
+                    .style("stroke", colour);
+            });
+        }
+
+        function computeCost() {
+            var dists = d3.selectAll("circle")
+                .data()
+                .map(d => d._dist);
+
+            return d3.sum(dists);
+        }
+
+        function assignCluster(centroids) {
+            d3.selectAll("circle")
+                .each(function (d) {
+                    // distances of data point from all centroids
+                    var dists = computeDistances(centroids, d);
+                    // min. distance defines cluster number 
+                    var dist_min = d3.min(dists);
+                    var cluster_num = dists.findIndex(dist => dist == dist_min);
+
+                    var colour = colours[cluster_num];
+                    // stash min. distance to compute cost
+                    d._dist = dist_min;
+                    // assign data point to cluster of minimum distance
+                    d3.select(this)
+                        .attr("fill", colour)
+                        .attr("class", "pt cluster_" + cluster_num);
+                });
+        }
+
+        function computeDistances(centroids, d_pt) {
+            var dists = centroids.map(centroid => {
+                var dist = Math.sqrt(Math.pow(d_pt.x - centroid.x, 2) + Math.pow(d_pt.y - centroid.y, 2));
+                return dist;
+            })
+            return dists;
+        }
+
+        function setScaleDomains() {
+            xScale.domain(d3.extent(data, d => d.x));
+            yScale.domain(d3.extent(data, d => d.y));
+        }
+
+        function plotCircles() {
+            circles.selectAll("circle")
+                .data(data)
+                .enter()
+                .append("circle")
+                .attr("class", "pt")
+                .attr("r", 4)
+                .attr("cx", (d) => xScale(d.x))
+                .attr("cy", (d) => yScale(d.y));
         }
 
         function type(d) {
@@ -92,8 +304,10 @@
             return d;
         }
 
-        d3.csv("VisualAnalyticsProject/CosineMDSPointsTopTags1000.csv", type, kmeans);
-
+        d3.json("VisualAnalyticsProject/BinaryEuclideanMDSPointsTopTagsArtists50.json", function (e, d) {
+            data = d;
+            kmeans();
+        });
     </script>
 
     <div id="charts">
