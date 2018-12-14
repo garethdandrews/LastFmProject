@@ -12,6 +12,7 @@
         svg {
             border-style: solid;
             border-width: 3px;
+            float: left;
         }
 
         div.tooltip {
@@ -48,10 +49,28 @@
         .label {
             font-size: 13px;
         }
+
+        #barChart {
+            padding-left: 50px;
+            float: left;
+        }
     </style>
 </head>
 
 <body>
+
+        <div>
+            <h1>ENTER TITLE OF TOOL HERE</h1>
+
+                Username: <input id="username" type="text">
+                <button onclick="recommend()">Recommend Artists</button>
+                <button onclick="clicked()">Highlight User</button>
+                <input type="checkbox" id="genreTags" onclick="genreTags()"> Genre Tags
+                <button onclick="kmeans(10)">K-Means</button>
+                <button onclick="reset()">Reset Canvas</button>
+        
+        <hr>
+            </div>
     <script>
         var data;
 
@@ -67,7 +86,7 @@
             left: 30
         };
 
-        var svgWidth = 1000, svgHeight = 1000;
+        var svgWidth = 900, svgHeight = 900;
         var plotWidth = svgWidth - margin.right - margin.left;
         var plotHeight = svgHeight - margin.top - margin.bottom;
 
@@ -229,12 +248,13 @@
             });
 
             //sort bars based on value
-            var artists = u[0].artists.sort(function (a, b) {
-                return d3.ascending(a.playcount, b.playcount);
-            })
+            var artists = u[0].artists;
+            // var artists = temp.sort(function (a, b) {
+            //     return d3.ascending(a.playcount, b.playcount);
+            // })
 
             var url = "https://www.last.fm/user/" + user + "/library/artists";
-            document.getElementById('barChart').innerHTML = "<h2><a href=" + url + ">" + user + "</a></h2>";
+            document.getElementById('barChart').innerHTML = "<h2><a href=" + url + ">" + user + "</a> - <i>" + u[0].topTag + "</i></h2>";
 
             //set up svg using margin conventions - we'll need plenty of room on the left for labels
             var margin = {
@@ -244,7 +264,7 @@
                 left: 200
             };
 
-            var svgWidth = 1000, svgHeight = 1000;
+            var svgWidth = 800, svgHeight = 800;
             var plotWidth = svgWidth - margin.right - margin.left;
             var plotHeight = svgHeight - margin.top - margin.bottom;
 
@@ -318,8 +338,6 @@
             var user = userDataPoint[0][0].__data__;
 
             var closestUsers = findNearBy(userDataPoint[0][0]);
-
-            console.log(closestUsers);
 
             var recommended = [];
             var count = 0, i = 0;
@@ -412,7 +430,7 @@
 
     </script>
 
-    <div>
+    <!-- <div>
         Username: <input id="username" type="text">
         <button onclick="recommend()">Recommend Artists</button>
         <button onclick="clicked()">Highlight User</button>
@@ -421,7 +439,7 @@
         <button onclick="reset()">Reset Canvas</button>
 
 
-    </div>
+    </div> -->
 
     <div id="barChart">
 
