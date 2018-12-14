@@ -12,7 +12,6 @@
         svg {
             border-style: solid;
             border-width: 3px;
-            float: left;
         }
 
         div.tooltip {
@@ -59,18 +58,19 @@
 
 <body>
 
-        <div>
-            <h1>Visualising the Similarity of Last.fm Users to Aid in the Discovery of Music</h1>
+    <div>
+        <h1>Visualising the Similarity of Last.fm Users to Aid in the Discovery of Music</h1>
 
-                Username: <input id="username" type="text">
-                <button onclick="recommend()">Recommend Artists</button>
-                <button onclick="clicked()">Highlight User</button>
-                <input type="checkbox" id="genreTags" onclick="genreTags()"> Genre Tags
-                <button onclick="kmeans(10)">K-Means</button>
-                <button onclick="reset()">Reset Canvas</button>
-        
+        Username: <input id="username" type="text">
+        <button onclick="recommend()">Recommend Artists</button>
+        <button onclick="clicked()">Highlight User</button>
+        <br>
+        <input type="checkbox" id="genreTags" onclick="genreTags()"> Genre Tags
+        <button onclick="kmeans(10)">K-Means</button>
+        <button onclick="reset()">Reset Canvas</button>
+
         <hr>
-            </div>
+    </div>
     <script>
         var data;
 
@@ -86,7 +86,7 @@
             left: 30
         };
 
-        var svgWidth = 900, svgHeight = 900;
+        var svgWidth = 800, svgHeight = 800;
         var plotWidth = svgWidth - margin.right - margin.left;
         var plotHeight = svgHeight - margin.top - margin.bottom;
 
@@ -244,14 +244,10 @@
                 return d.name == user;
             });
 
-            //sort bars based on value
             var artists = u[0].artists;
-            // var artists = temp.sort(function (a, b) {
-            //     return d3.ascending(a.playcount, b.playcount);
-            // })
 
-            var url = "https://www.last.fm/user/" + user + "/library/artists";
-            document.getElementById('barChart').innerHTML = "<h2><a href=" + url + ">" + user + "</a> - <i>" + u[0].topTag + "</i></h2>";
+            // var url = "https://www.last.fm/user/" + user + "/library/artists";
+            // document.getElementById('barChart').innerHTML = "<h2><a href=" + url + ">" + user + "</a> - <i>" + u[0].topTag + "</i></h2>";
 
             //set up svg using margin conventions - we'll need plenty of room on the left for labels
             var margin = {
@@ -265,12 +261,28 @@
             var plotWidth = svgWidth - margin.right - margin.left;
             var plotHeight = svgHeight - margin.top - margin.bottom;
 
-            var svg = d3.select("#barChart").append("svg")
+            var svg = d3.select("body").append("svg")
                 .attr("width", svgWidth)
                 .attr("height", svgHeight)
                 .append("g")
                 .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
                 .attr("id", "barchart");
+
+            var text = svg.selectAll("text")
+                .data(user)
+                .enter()
+                .append("text");
+
+            var textLabels = text
+                .attr("x", 400)
+                .attr("y", 50)
+                .text(user)
+                .attr("font-size", "20px")
+                .attr("fill", "blue")
+                .on("click", function (d) {
+                    var url = "https://www.last.fm/user/" + user;
+                    window.open(url, "_blank");
+                });
 
             var xScale = d3.scale.linear().range([0, plotWidth]).domain([0, d3.max(artists, function (d) { return d.playcount; })]);
             var yScale = d3.scale.ordinal().rangeRoundBands([plotHeight, 0], .1).domain(artists.map(function (d) { return d.name; }));
@@ -338,7 +350,7 @@
 
             var recommended = [];
             var count = 0, i = 0;
-            var str = "Users similar to "+ username + " listen to: \n"
+            var str = "Users similar to " + username + " listen to: \n"
 
             while (count < 10) {
                 var nearByUser = data.filter(function (d) {
@@ -372,14 +384,21 @@
 
         function clicked() {
             var username = document.getElementById("username").value;
+            // console.log(circles);
+            circles[0].forEach(function (d) {
+                if (d.__data__.name === username) {
+                    d.attributes.style.nodeValue = "fill: red; fill-opacity: 1; stroke: black;";
+                    d.attributes.r.nodeValue = "12";
+                }
+            });
 
-            svg.selectAll("circle")
-                .data(data.filter(function (d) {
-                    return d.name === username;
-                }))
-                .attr("r", 12)
-                .style("fill", "red")
-                .style("fill-opacity", 1);
+            // svg.selectAll("circle")
+            //     .data(data.filter(function (d) {
+            //         return d.name === username;
+            //     }))
+            //     .attr("r", 12)
+            //     .style("fill", "red")
+            //     .style("fill-opacity", 1);
 
             generateBarChart(username);
         }
@@ -433,3 +452,5 @@
 
     <div id="kmeans" class="kmeans-chart"></div>
 </body>
+
+</html>
