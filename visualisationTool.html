@@ -60,7 +60,7 @@
 <body>
 
         <div>
-            <h1>ENTER TITLE OF TOOL HERE</h1>
+            <h1>Visualising the Similarity of Last.fm Users to Aid in the Discovery of Music</h1>
 
                 Username: <input id="username" type="text">
                 <button onclick="recommend()">Recommend Artists</button>
@@ -168,9 +168,6 @@
                 centroids.push(point);
             }
 
-            // circles[0].forEach(function (d) {
-            //     d.cluster = 0;
-            // });
             var iteration = 0;
             while (iteration < 1) {
                 circles[0].forEach(function (d, i) {
@@ -429,17 +426,6 @@
 
 
     </script>
-
-    <!-- <div>
-        Username: <input id="username" type="text">
-        <button onclick="recommend()">Recommend Artists</button>
-        <button onclick="clicked()">Highlight User</button>
-        <input type="checkbox" id="genreTags" onclick="genreTags()"> Genre Tags
-        <button onclick="kmeans(10)">K-Means</button>
-        <button onclick="reset()">Reset Canvas</button>
-
-
-    </div> -->
 
     <div id="barChart">
 
