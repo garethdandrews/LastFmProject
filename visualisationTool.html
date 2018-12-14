@@ -199,7 +199,6 @@
             }
 
             function getEuclidianDistance(a, b) {
-
                 var dx = b.attributes.cx.nodeValue - a.x,
                     dy = b.attributes.cy.nodeValue - a.y;
                 return Math.sqrt(Math.pow(dx, 2) + Math.pow(dy, 2));
@@ -221,6 +220,8 @@
 
 
         }
+
+
 
         function generateBarChart(user) {
             var u = data.filter(function (d) {
@@ -282,6 +283,78 @@
             });
         }
 
+        function getEuclidianDistanceForNearby(a, b) {
+            var dx = a.x - b.x,
+                dy = a.y - b.y;
+            return Math.sqrt(Math.pow(dx, 2) + Math.pow(dy, 2));
+        }
+
+        function findNearBy(user) {
+            var nearBy = [];
+            data.forEach(function (d) {
+                nearBy.push({
+                    name: d.name,
+                    distance: getEuclidianDistanceForNearby(user.__data__, d)
+                });
+            });
+
+            var res = nearBy.sort(function (a, b) {
+                return d3.ascending(a.distance, b.distance);
+            })
+
+            return res;
+        }
+
+
+
+        function recommend() {
+            var username = document.getElementById("username").value;
+
+            var userDataPoint = svg.selectAll("circle")
+                .data(data.filter(function (d) {
+                    return d.name === username;
+                }))
+
+            var user = userDataPoint[0][0].__data__;
+
+            var closestUsers = findNearBy(userDataPoint[0][0]);
+
+            console.log(closestUsers);
+
+            var recommended = [];
+            var count = 0, i = 0;
+            var str = "Users similar to "+ username + " listen to: \n"
+
+            while (count < 10) {
+                var nearByUser = data.filter(function (d) {
+                    return d.name == closestUsers[i].name;
+                });
+                i++;
+
+                var topArtistName = nearByUser[0].artists[0].name;
+
+                if (!hasArtistInTop50(user, topArtistName)) {
+                    recommended.push(topArtistName);
+                    count++;
+                    str += "\t" + count + ": " + topArtistName + "\n";
+                }
+            }
+
+            console.log(recommended);
+            alert(str);
+
+        }
+
+        function hasArtistInTop50(user, topArtistName) {
+            var bool = false;
+            user.artists.forEach(function (d) {
+                if (d.name === topArtistName) {
+                    bool = true;
+                }
+            });
+            return bool;
+        }
+
         function clicked() {
             var username = document.getElementById("username").value;
 
@@ -340,13 +413,14 @@
     </script>
 
     <div>
-            Username: <input id="username" type="text">
-            <button onclick="clicked()">Highlight User</button>
+        Username: <input id="username" type="text">
+        <button onclick="recommend()">Recommend Artists</button>
+        <button onclick="clicked()">Highlight User</button>
         <input type="checkbox" id="genreTags" onclick="genreTags()"> Genre Tags
         <button onclick="kmeans(10)">K-Means</button>
         <button onclick="reset()">Reset Canvas</button>
-        
-        
+
+
     </div>
 
     <div id="barChart">
