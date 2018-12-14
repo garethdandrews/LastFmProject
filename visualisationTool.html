@@ -333,7 +333,7 @@
 
                 var topArtistName = nearByUser[0].artists[0].name;
 
-                if (!hasArtistInTop50(user, topArtistName)) {
+                if (!hasArtistInTop50(user, topArtistName) && topArtistName != "Coldplay") {
                     recommended.push(topArtistName);
                     count++;
                     str += "\t" + count + ": " + topArtistName + "\n";
