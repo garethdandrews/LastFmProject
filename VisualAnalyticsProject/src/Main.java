@@ -1,17 +1,14 @@
-import com.oracle.tools.packager.IOUtils;
-import jdk.management.cmm.SystemResourcePressureMXBean;
-import org.json.JSONException;
-
 import mdsj.MDSJ;
-import org.json.simple.JSONObject;
+import org.json.JSONException;
 import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
-import java.io.*;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 
@@ -46,18 +43,6 @@ class Artist {
 
 public class Main {
 
-    /**
-     * JSONArray string from API:
-     * users:
-     * [{
-     *      name: string,
-     *      artists:
-     *      [{
-     *           name: string,
-     *           playcount: int
-     *      }]
-     * }]
-     */
     static int NUM_USERS;
     static int NUM_ARTISTS = 50;
 
@@ -98,30 +83,12 @@ public class Main {
     }
 
     /**
-     * Write output to CSV file
+     * Write output to json file
      * @param output x,y array
      * @throws IOException
      */
     static void writeToFile(double[][] output) throws IOException {
         StringBuilder b = new StringBuilder();
-//        b.append("x,y,name,topGenre");
-//        for (int i = 1; i <= 50; i++) {
-//            b.append(",A" + i + ",P" + i);
-//        }
-//        b.append("\n");
-//
-//        for (int i = 0; i < output[0].length; i++) {
-//            User u = User.users.get(i);
-//
-//            b.append(output[0][i] + "," + output[1][i] + "," + u.name + "," + u.topTag);
-//
-//            for (int j = 0; j < u.artists.size(); j++) {
-//                Artist a = u.artists.get(j);
-//                b.append("," + a.name + "," + a.playcount);
-//            }
-//
-//            b.append("\n");
-//        }
 
         b.append("[" + "\n");
         for (int i = 0; i < output[0].length; i++) {
@@ -173,7 +140,6 @@ public class Main {
             ArrayList<Artist> userA = User.users.get(i).artists;
             for (int j = 0; j < NUM_USERS; j++) {
                 ArrayList<Artist> userB = User.users.get(j).artists;
-                //System.out.println(i + ": " + User.users.get(i).name + " " + j + ": " + User.users.get(i).name);
                 dissimilarities[i][j] = 1 - getSimilarity(userA, userB);
             }
         }
@@ -194,7 +160,7 @@ public class Main {
      * Convert JSON string data into structured objects
      * @throws JSONException
      */
-    static void loadJSON(String fileName) throws JSONException, IOException, ParseException {
+    static void loadJSON(String fileName) throws IOException, ParseException {
         JSONParser parser = new JSONParser();
         JSONArray jUsers = (JSONArray) parser.parse(new FileReader(fileName));
 
@@ -250,10 +216,6 @@ public class Main {
             u1[i] = getPlaycount(userA, artist);
             u2[i] = getPlaycount(userB, artist);
         }
-
-//        for (int i = 0; i < n; i++) {
-//            System.out.println(uniqueArtists.get(i) + ": " + u1[i] + " : " + u2[i]);
-//        }
 
         return cosineSimilarity(u1, u2);
 //        return EuclideanDistance(u1, u2);
